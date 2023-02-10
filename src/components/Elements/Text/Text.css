@@ -1,0 +1,13 @@
+p{
+    color:#eff7ff;
+    font-size: 130%;
+    font-family: "Helvetica Neue", sans-serif;
+    line-height: 2;
+}
+
+.textBox{
+    display: block;
+    width: fit-content;
+    max-width: 80%;
+    margin: auto;
+}

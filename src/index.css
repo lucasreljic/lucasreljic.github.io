@@ -1,0 +1,135 @@
+body {
+  background-color: 004F71;  /* fallback for old browsers 
+  background: -webkit-linear-gradient(to top,#845EC2, #2C73D2, #0081CF, #0089BA, #008E9B, #008F7A);  /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to top, #845EC2, #2C73D2, #0081CF, #0089BA, #008E9B, #008F7A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  border: none;
+}
+
+/* IMPORTANT! to ensure compatibility with both desktop viewing and mobile
+ the margin is held between to minimums*/
+.body {
+  display: block;
+}
+
+
+
+.header img {
+  float: inherit;
+  width: 100px;
+  height: auto;
+
+}
+
+.header {
+  z-index: 1;
+  left: 0%;
+  width: 100%;
+  height: auto;
+
+  background: #424242;
+  color: #505050;
+}
+
+/* Page content */
+.content {
+  align-items: right;
+  align-self: right;
+  align-content: right;
+  padding-top: 10%;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0%;
+  border-top: 8px solid #e7e7e7;
+  width: 99.15%;
+  z-index: 2;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.content {
+  padding-top: 8px;
+}
+
+h1 {
+  margin: 0%;
+  color:  #EEFBFB;
+  font-size: 200%;
+  padding: 0%;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+
+h2 {
+
+  color:  #EEFBFB;
+  font-size: 150%;
+  margin: 0%;
+  font-family: "Arial", Arial, Sans-serif;
+  border-radius: 25px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+
+}
+
+
+.logonav {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10%;
+}
+
+.logonav img {
+  height: auto;
+  width: 100%;
+}
+
+
+img {
+  height: auto;
+  width: auto;
+}
+
+a {
+  color: #48a3de;
+  font-family: Cascadia Code;
+  text-decoration: none;
+}
+
+b {
+  /*clicked tab */
+  padding-left: 1%;
+  padding-right: 1%;
+  outline-color: black;
+  color: rgb(0, 64, 124);
+  font-family: 'Impact, Haettenschweiler, ' Arial Narrow Bold', sans-serif';
+  font-weight: bold;
+  white-space: 100px;
+  text-decoration: none;
+
+}
+
+p {
+  display:contents;
+  background-color: white;
+  margin: 5%;
+  font-family: Cascadia Code;
+  align-items: left;
+  text-align: left;
+  color: white;
+}
+
+
+
+
+.logo {
+  text-decoration: none;
+  font-size: 25px;
+  color: inherit;
+  margin-right: 20px;
+}

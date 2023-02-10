@@ -1,0 +1,15 @@
+.title{
+  color:  #EEFBFB;
+  padding-left: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.parallax{
+  background-image: '../components/Elements/Slide/photos/misc/IMG_6832.jpeg';
+}
+
+.title:hover{
+  font-size: 125%;
+}
