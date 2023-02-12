@@ -91,8 +91,8 @@ const Openmv = () => {
         <SlideBox photo='photoopenmv3'>
           Early Implementation of the Code
         </SlideBox>
-        <SlideBox photo='photoopenmv'>
-          The Robot using the OpenMV to get the object
+        <SlideBox photo='photofrc6'>
+          Tracking target using OpenMV
         </SlideBox>
       </Slide>
       <br></br>
@@ -130,7 +130,7 @@ const Gokart = () => {
         of mechanical knowledge. Everything including designing the project, welding the frame, soldering the circuitry,
         was all from scratch. It took around eight months
         to complete and it is one of my proudest achievements. I was only able to build such a large project because I
-        was a part of <a href="roots2stem">Roots 2 Stem</a>.
+        was a part of <a href="/#/roots2stem">Roots 2 Stem</a>.
       </Text>
     </Container>
   )
@@ -142,21 +142,17 @@ const Plant = () => {
       <h1 id="Plant Watering">Automatic Plant Watering</h1>
       <h2>2021</h2>
       <Slide>
-        <div className="each-slide-effect">
-          <div className='photoplant3'></div>
+        <SlideBox photo='photoplant3'>
+          Watering plants
+        </SlideBox>
 
+        <SlideBox photo='photoplant2'>
+          Completed unit
+        </SlideBox>
 
-        </div>
-        <div className="each-slide-effect">
-          <div className='photoplant2'></div>
-
-
-        </div>
-        <div className="each-slide-effect">
-          <div className='photoplant1'></div>
-
-
-        </div>
+        <SlideBox photo='photoplant1'>
+          Wiring
+        </SlideBox>
       </Slide>
       <br></br>
       <Text>
@@ -190,15 +186,15 @@ const Plant = () => {
         perfect
         for any indoor plant, and is for anyone who might forget to water their plants.
       </Text>
-    </Container>
+    </Container >
   )
 };
 
 const Sanitizer = () => {
   return (
     <Container fluid>
-            <h1 id="sanitizer">Hand Sanitizer</h1>
-            <h1>2020</h1>
+      <h1 id="sanitizer">Hand Sanitizer</h1>
+      <h1>2020</h1>
       <Slide>
         <SlideBox photo='photosanitizer'>
           Final Design
@@ -211,7 +207,7 @@ const Sanitizer = () => {
         </SlideBox>
         <SlideBox photo='photosanitizer1'>
           Initial Design
-          </SlideBox>
+        </SlideBox>
       </Slide>
 
       <Text>
@@ -260,7 +256,7 @@ const RCplanes = () => {
       <h1 id="rcplanes">RC Planes</h1>
       <h2>2014 - 2020</h2>
       <Slide>
-      <SlideBox photo='photoplane7'>
+        <SlideBox photo='photoplane7'>
           First Plane
         </SlideBox>
         <SlideBox photo='photoplane2'>
@@ -271,11 +267,11 @@ const RCplanes = () => {
         </SlideBox>
         <SlideBox photo='photoplane8'>
           Completed amphibious plane
-          </SlideBox>
-        
+        </SlideBox>
+
       </Slide>
       <Text>
-        I discovered my passion for Aerospace when I built my first Delta wing RC plane in <a href="roots2stem">Roots 2 Stem</a>
+        I discovered my passion for Aerospace when I built my first Delta wing RC plane in <a href="/#/roots2stem">Roots 2 Stem</a>
         . I have made around 5 iterations of my initial Delta wing RC Plane, flying whenever I have free time. My most recent RC Plane
         deviates from the Delta wing design and is a top fixed wing amphibious plane. The wings are constructed with standard foamboard,
         while the fuselage is a 3D printed custom design.

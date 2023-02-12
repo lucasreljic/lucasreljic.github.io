@@ -9,19 +9,20 @@
 
 .caption a {
     overflow: hidden;
-    font-size: 20px;
+    font-size: 100%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
+    font-family: "Helvetica Neue", sans-serif;
     backface-visibility: hidden;
     display: block;
     opacity: 1;
 }
 
-.caption{
+.caption {
     border-radius: 10px 10px;
-    background-color:#28559A;
+    background-color: #28559A;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -29,8 +30,8 @@
     margin: auto;
 }
 
-.caption a:hover{
-    font-size: 135%;
+.caption a:hover {
+    font-size: 101%;
     color: white;
     text-align: center;
     margin: auto;
@@ -46,28 +47,27 @@ button {
 
 .photofrc1 {
     background-image: url('./photos/FRC/2022 Robot.JPG');
-    width: 30%;
+    width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .photofrc2 {
     background-image: url('./photos/FRC/IMG_2781.jpeg');
-    width: 40%;
+    width: 550px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .photofrc3 {
     background-image: url('./photos/FRC/IMG_3426.JPG');
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 600px;
+    margin: auto;
 }
 
 .photofrc4 {
     background-image: url('./photos/FRC/OpenMV Cam on Robot.jpeg');
-    width: 40%;
+    width: 400px;
     margin: auto;
     background-position: 50% 50%;
 }
@@ -88,7 +88,7 @@ button {
 
 .photofrc7 {
     background-image: url('./photos/FRC/2018Comp.jpg');
-    width: 35%;
+    width: 350px;
     margin: auto;
     background-position: 50% 90%;
 }
@@ -105,14 +105,14 @@ Go kart
 */
 .photokart1 {
     background-image: url('./photos/gokart/IMG_1418.jpeg');
-    width: 40%;
+    max-width: 900px;
     background-position: 60% 50%;
     margin: auto;
 }
 
 .photokart2 {
     background-image: url('./photos/gokart/IMG_1424.jpeg');
-    width: 40%;
+    max-width: 900px;
     background-position: 60% 50%;
     margin: auto;
 }
@@ -148,7 +148,7 @@ Hand Sanitizer
 */
 .photosanitizer {
     background-image: url('./photos/handSanitizer/IMG_2949.jpeg');
-    width: 40%;
+    width: 470px;
     margin: auto;
     background-position: 50% 50%;
 }
@@ -162,14 +162,14 @@ Hand Sanitizer
 
 .photosanitizer2 {
     background-image: url('./photos/handSanitizer/IMG_2952.jpeg');
-    width: 50%;
+    width: 470px;
     margin: auto;
     background-position: 50% 50%;
 }
 
 .photosanitizer3 {
     background-image: url('./photos/handSanitizer/IMG_2960.jpeg');
-    width: 30%;
+    width: 470px;
     margin: auto;
     background-position: 50% 50%;
 }
@@ -184,7 +184,7 @@ Hand Sanitizer
 
 .photomarket {
     background-image: url('./photos/misc/marketalarm.PNG');
-    width: 50%;
+    max-width: 1500px;
     margin: auto;
 }
 
@@ -197,16 +197,17 @@ Robot Project 1A
 */
 .photorobot1a {
     background-image: url('./photos/1AProject/robot1A.jpg');
+    background-position: 20% 60%;
 }
 
 .photorobot1a2 {
     background-image: url('./photos/1AProject/20221201_193342.jpg');
-    background-position: 0% 90%;
+    background-position: 40% 90%;
 }
 
 .photorobot1a3 {
     background-image: url('./photos/1AProject/20221201_192840.jpg');
-    background-position: 0% 90%;
+    background-position: 50% 90%;
 }
 
 /*
@@ -215,20 +216,20 @@ Automatic Plant Watering
 .photoplant1 {
     background-image: url('./photos/plantWaterer/IMG_3518.jpeg');
     background-position: 0% 60%;
-    width: 50%;
+    width: 470px;
     margin: auto;
 }
 
 .photoplant2 {
     background-image: url('./photos/plantWaterer/IMG_3525.jpeg');
     background-position: 0% 30%;
-    width: 40%;
+    width: 470px;
     margin: auto;
 }
 
 .photoplant3 {
     background-image: url('./photos/plantWaterer/IMG_3641_Moment.jpg');
-    background-position: 50% 70%;
+    background-position: 00% 70%;
     width: 100%;
     margin: auto;
 }
@@ -252,21 +253,21 @@ RC planes
 .photoplane2 {
     background-image: url('./photos/RCplanes/2ndplane.JPG');
     background-position: 50% 80%;
-    width: 35%;
+    width: 460px;
     margin: auto;
 }
 
 .photoplane3 {
     background-image: url('./photos/RCplanes/IMG_0197.JPG');
     background-position: 50% 80%;
-    width: 35%;
+    width: 460px;
     margin: auto;
 }
 
 .photoplane4 {
     background-image: url('./photos/RCplanes/IMG_3098.jpeg');
-    background-position: 50% 80%;
-    width: 35%;
+    background-position: 50% 50%;
+    max-width: 900px;
     margin: auto;
 }
 
@@ -285,8 +286,8 @@ RC planes
 
 .photoplane8 {
     background-image: url('./photos/RCplanes/IMG_6971.jpeg');
-    background-position: 50% 50%;
-    width: 35%;
+    background-position: 50% 80%;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -296,13 +297,14 @@ RPi Laptop
 .photolaptop1 {
     background-image: url('./photos/RPiLaptop/IMG_6924.jpeg');
     background-position: 60% 80%;
-    width: 35%;
+    width: 470px;
     margin: auto;
 }
+
 .photolaptop2 {
     background-image: url('./photos/RPiLaptop/IMG_6923.jpeg');
     background-position: 60% 50%;
-    width: 35%;
+    width: 470px;
     margin: auto;
 }
 
@@ -311,22 +313,22 @@ Openmv
 */
 .photoopenmv {
     background-image: url('./photos/FRC/2020\ Robot\ Ball\ Detection.jpg');
-    background-position: 30% 50%;
-    width: 35%;
+    background-position: 50% 50%;
+    width: 600px;
     margin: auto;
 }
 
 .photoopenmv2 {
     background-image: url('./photos/FRC/IMG_3426.JPG');
-    background-position: 30% 50%;
-    width: 35%;
+    background-position: 40% 50%;
+    width: 470px;
     margin: auto;
 }
 
 .photoopenmv3 {
     background-image: url('./photos/FRC/IMG_3428.jpeg');
     background-position: 30% 50%;
-    width: 30%;
+    width: 600px;
     margin: auto;
 }
 
@@ -336,28 +338,28 @@ Toyota Innovation
 .phototoyota {
     background-image: url('./photos/ToyotaChallenge/Capture.PNG');
     background-position: 30% 50%;
-    width: 60%;
+    width: 900px;
     margin: auto;
 }
 
 .phototoyota1 {
     background-image: url('./photos/ToyotaChallenge/Capture1.PNG');
     background-position: 30% 50%;
-    width: 60%;
+    width: 900px;
     margin: auto;
 }
 
 .phototoyota2 {
     background-image: url('./photos/ToyotaChallenge/Capture3.PNG');
     background-position: 30% 50%;
-    width: 60%;
+    width: 900px;
     margin: auto;
 }
 
 .phototoyota3 {
     background-image: url('./photos/ToyotaChallenge/CodeSnippet.png');
     background-position: 30% 50%;
-    width: 60%;
+    width: 900px;
     margin: auto;
 }
 
@@ -367,13 +369,13 @@ UofT hacks
 .photouofthacks {
     background-image: url('./photos/UofTHacks/original.jpg');
     background-position: 30% 50%;
-    width: 20%;
+    width: 470px;
     margin: auto;
 }
 
 .photouofthacks1 {
     background-image: url('./photos/UofTHacks/gallery.jpg');
     background-position: 30% 50%;
-    width: 20%;
+    width: 470px;
     margin: auto;
 }

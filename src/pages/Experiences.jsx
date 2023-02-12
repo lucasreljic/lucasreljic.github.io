@@ -148,7 +148,7 @@ const Roots2stem = () => {
                 engineering. This program provided me with an environment to design, build, and engineer my ideas. During my
                 time there, I discovered my interest in innovating and inventing. The club gave me
                 access to all the supplies and machines a 10-year-old junior engineer could want, from 3d printers to arc
-                welders. Using all the supplies I had access to, I made rovers, <a href="rcplanes">RC airplanes</a>, and eventually an <a href="gokart">electric go-kart.</a>
+                welders. Using all the supplies I had access to, I made rovers, <a href="/#/rcplanes">RC airplanes</a>, and eventually an <a href="/#/gokart">electric go-kart.</a>
             </Text>
             <br></br>
             <Text> An article was even written about my time there.<br></br><a

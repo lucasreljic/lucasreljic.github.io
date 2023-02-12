@@ -97,28 +97,16 @@ img {
 
 a {
   color: #48a3de;
-  font-family: Cascadia Code;
+  font-family: "Helvetica Neue", sans-serif;
   text-decoration: none;
 }
 
-b {
-  /*clicked tab */
-  padding-left: 1%;
-  padding-right: 1%;
-  outline-color: black;
-  color: rgb(0, 64, 124);
-  font-family: 'Impact, Haettenschweiler, ' Arial Narrow Bold', sans-serif';
-  font-weight: bold;
-  white-space: 100px;
-  text-decoration: none;
-
-}
 
 p {
   display:contents;
   background-color: white;
   margin: 5%;
-  font-family: Cascadia Code;
+  font-family: "Helvetica Neue", sans-serif;
   align-items: left;
   text-align: left;
   color: white;

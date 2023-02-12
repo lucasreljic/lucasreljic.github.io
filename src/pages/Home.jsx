@@ -21,7 +21,7 @@ import rocketryPhoto from './../icons/rocketry.png';
 
 const Home = () => {
     return (
-        <Parallax pages={3.02} style={{
+        <Parallax pages={3} style={{
             top: '67px', left: '0',
             height: '-moz-calc(100% - 67px)',
             /* Webkit */
@@ -53,7 +53,7 @@ const Home = () => {
                         repeat={false} />
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={0.2} speed={1}>
+                <ParallaxLayer offset={0.15} speed={1}>
                     <Row md={2} xs={1} className='justify-content-center'>
                         <Col md='auto' className='justify-content-center'>
                             <img className={styles.profile} src={photo} alt="me"></img>
@@ -77,12 +77,9 @@ const Home = () => {
                     </Appear>
                 </ParallaxLayer>
                 <ParallaxLayer offset={1} speed={0} style={{ backgroundColor: '#0F2557', opacity: '0.4' }} />
-                <ParallaxLayer offset={1} speed={0.8} style={{ pointerEvents: 'none', width: 'fit-content', marginLeft: '1%', marginTop: '5px' }}>
+                <ParallaxLayer offset={1} speed={1.5} style={{ pointerEvents: 'none' }}>
                     <h1 className={styles.skills}>Programming Skills</h1>
-                </ParallaxLayer>
-                <ParallaxLayer offset={1} speed={0.5} style={{ pointerEvents: 'none', width: 'fit-content', marginLeft: '20%', marginTop: '100px' }}>
-
-                    <Row lg={3} md={2} xs={1}>
+                    <Row lg={3} md={2} xs={2}>
                         <Col>
                             <SkillBox header="3 YEARS" width='90px' url={"https://www.svgrepo.com/show/184143/java.svg"}>
                                 Java
@@ -115,11 +112,9 @@ const Home = () => {
 
                     </Row>
                 </ParallaxLayer>
-                <ParallaxLayer offset={1.8} speed={1} style={{ width: 'fit-content', marginLeft: '1%', marginTop: '0%' }}>
-                    <h1 className={styles.skills}>Clubs</h1>
-                </ParallaxLayer>
-                <ParallaxLayer offset={1.8} speed={1} >
-                    <Row lg={3} xs={1} className='justify-content-center'>
+                <ParallaxLayer offset={1.76} speed={1} >
+                <h1 className={styles.skills}>Clubs</h1>
+                    <Row lg={3} xs={2} className='justify-content-center'>
                         <Col>
                             <SkillBox width='120px' url={rocketryPhoto}>
                             </SkillBox>
@@ -133,7 +128,7 @@ const Home = () => {
                 <ParallaxLayer offset={2} speed={1}>
                     <h1 className={styles.gallery}>Gallery</h1>
                 </ParallaxLayer>
-                <ParallaxLayer offset={2} speed={2} style={{ marginTop: '5%' }}>
+                <ParallaxLayer offset={2.04} speed={2} style={{ paddingTop: '0px' }}>
                     <Slide>
                         <SlideBox link='/#/1afinalproject' photo='photorobot1a'>
                             Mechatronics 1A project
