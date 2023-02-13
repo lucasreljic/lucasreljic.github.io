@@ -134,7 +134,7 @@ const Home = () => {
                             Mechatronics 1A project
                         </SlideBox>
 
-                        <SlideBox link='/#/openmv' photo='photoopenmv2'>
+                        <SlideBox link='/#/openmv' photo='photofrc3'>
                             OpenMV Strategic Color Tracking
                         </SlideBox>
 
