@@ -1,15 +1,43 @@
 .title{
   color:  #EEFBFB;
-  padding-left: 10%;
+  margin-right: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 120%;
 }
+.title:hover{
+  font-size: 125%;
+}
 
+.navSocial{
+  width: 35px;
+}
+.navSocialGmail{
+  width: 35px;
+  padding-top: 9px;
+}
+
+@media (max-width: 800px) {
+  .title{
+    font-size: 95%;
+    padding-left: 0%;
+    margin-right: 0px;
+    
+  }
+  .title:hover{
+    font-size: 97%;
+  }
+
+  .navSocial{
+    width: 28px;
+  }
+  .navSocialGmail{
+    width: 28px;
+    padding-top: 8px;
+  }
+
+}
 .parallax{
   background-image: '../components/Elements/Slide/photos/misc/IMG_6832.jpeg';
 }
 
-.title:hover{
-  font-size: 125%;
-}

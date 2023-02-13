@@ -11,7 +11,7 @@ import { TypeAnimation } from 'react-type-animation';
 const Intro = () => {
     return (
         <div className={styles.body}>
-            <div className={styles.start}>C:\Users\Lucas\OneDrive\Desktop\Portfolio Website\Portfolio&gt;
+            <div className={styles.start}>C:\Users\Lucas\Portfolio&gt;
                 <Type cursor={false} speed={1} repeat={0} duration={0.1} fillmode={"forwards"}>
                     npm start
                     </Type>
@@ -29,7 +29,7 @@ const Intro = () => {
                 <TypeAnimation
                     sequence={[
                         100,
-                        ' —',
+                        ' -',
                         100,
                         ' \\',
                         100,

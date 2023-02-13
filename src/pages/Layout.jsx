@@ -14,13 +14,13 @@ const Layout = () => {
         <Navbar bg="dark" variant="dark">
           <Container fluid>
             <Nav className="justify-content-center">
-              <Navbar.Brand href="/#/home">
+              <Navbar.Brand className="mx-0" href="/#/home">
                 <span className={styles.title}>
                   Home
                 </span>
               </Navbar.Brand>
             </Nav>
-            <Nav className="me-auto">
+            <Nav className="me-auto justify-content-center">
               <NavDropdown title="Projects" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="/#/1afinalproject">
                   1A Final Project
@@ -67,25 +67,22 @@ const Layout = () => {
               </NavDropdown>
 
             </Nav>
-            <Nav fill className="justify-content-end">
+            <Nav className="justify-self-start" size="xs">
               <Nav.Item>
                 <Nav.Link className={styles.icon} href="https://github.com/lucasreljic/"><img
                   src={github}
-                  style={{ width: 35 }}
-                  className="d-inline-block align-top"
+                  className={styles.navSocial}
                   alt="github logo" /></Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link className={styles.icon} href="https://www.linkedin.com/in/lucas-reljic/"><img
-                  className="d-inline-block align-top"
-                  style={{ width: 35 }}
+                  className={styles.navSocial}
                   src={linkedIn}
                   alt="linkedIn logo" /></Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link className={styles.icon} href="mailto:lucas.reljic+Portfolio@gmail.com"><img
-                  className="d-inline-block align-top"
-                  style={{ width: 35, paddingTop: 9 }}
+                  className={styles.navSocialGmail}
                   src={mail}
                   alt="github logo" /></Nav.Link>
               </Nav.Item>

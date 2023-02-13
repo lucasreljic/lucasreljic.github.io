@@ -82,7 +82,7 @@ const Openmv = () => {
       <h1>OpenMV Strategic Color Tracking</h1>
       <h2>2021</h2>
       <Slide>
-        <SlideBox photo='photoopenmv2'>
+        <SlideBox photo='photofrc3'>
           The OpenMV Camera Mounted on a custom PCB Board
         </SlideBox>
         <SlideBox photo='photoopenmv'>

@@ -81,31 +81,31 @@ const Home = () => {
                     <h1 className={styles.skills}>Programming Skills</h1>
                     <Row lg={3} md={2} xs={2}>
                         <Col>
-                            <SkillBox header="3 YEARS" width='90px' url={"https://www.svgrepo.com/show/184143/java.svg"}>
+                            <SkillBox header="3 YEARS" width='18%' url={"https://www.svgrepo.com/show/184143/java.svg"}>
                                 Java
                             </SkillBox>
                         </Col>
 
                         <Col>
-                            <SkillBox header="2 YEARS" width='90px' url={"https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"}>
+                            <SkillBox header="2 YEARS" width='18%' url={"https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"}>
                                 Python
                             </SkillBox>
                         </Col>
 
                         <Col>
-                            <SkillBox header="2 YEARS" width='90px' url={jsonPhoto}>
+                            <SkillBox header="2 YEARS" width='18%' url={jsonPhoto}>
                                 JSON
                             </SkillBox>
                         </Col>
 
                         <Col>
-                            <SkillBox header="6 MONTHS" width='85px' url={CppPhoto}>
+                            <SkillBox header="6 MONTHS" width='17%' url={CppPhoto}>
                                 C++
                             </SkillBox>
                         </Col>
 
                         <Col>
-                            <SkillBox className='App-logo' header="1 MONTH" width='140px' url={ReactSVG}>
+                            <SkillBox className={styles.Applogo} header="1 MONTH" width='31%' url={ReactSVG}>
                                 React JS
                             </SkillBox>
                         </Col>
@@ -116,11 +116,11 @@ const Home = () => {
                 <h1 className={styles.skills}>Clubs</h1>
                     <Row lg={3} xs={2} className='justify-content-center'>
                         <Col>
-                            <SkillBox width='120px' url={rocketryPhoto}>
+                            <SkillBox width='30%' url={rocketryPhoto}>
                             </SkillBox>
                         </Col>
                         <Col>
-                            <SkillBox width='190px' url={frcPhoto}>
+                            <SkillBox width='40%' url={frcPhoto}>
                             </SkillBox>
                         </Col>
                     </Row>

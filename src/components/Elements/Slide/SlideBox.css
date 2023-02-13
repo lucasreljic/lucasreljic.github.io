@@ -7,6 +7,12 @@
     text-align: center;
 }
 
+@media (max-width: 992px) {
+    .each-slide-effect>div {
+    height: 570px;
+    }
+}
+
 .caption a {
     overflow: hidden;
     font-size: 100%;
@@ -47,7 +53,8 @@ button {
 
 .photofrc1 {
     background-image: url('./photos/FRC/2022 Robot.JPG');
-    width: 600px;
+    background-position: 90% 80%;
+    width: 500px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -62,6 +69,7 @@ button {
 .photofrc3 {
     background-image: url('./photos/FRC/IMG_3426.JPG');
     width: 600px;
+    background-position: 70% 80%;
     margin: auto;
 }
 
@@ -138,7 +146,8 @@ Go kart
 
 .photokart6 {
     background-image: url('./photos/misc/welding.JPG');
-    width: 40%;
+    width: 100%;
+    max-width: 800px;
     background-position: 60% 50%;
     margin: auto;
 }
@@ -318,12 +327,6 @@ Openmv
     margin: auto;
 }
 
-.photoopenmv2 {
-    background-image: url('./photos/FRC/IMG_3426.JPG');
-    background-position: 40% 50%;
-    width: 470px;
-    margin: auto;
-}
 
 .photoopenmv3 {
     background-image: url('./photos/FRC/IMG_3428.jpeg');
@@ -337,29 +340,33 @@ Toyota Innovation
 */
 .phototoyota {
     background-image: url('./photos/ToyotaChallenge/Capture.PNG');
-    background-position: 30% 50%;
-    width: 900px;
+    background-position: 50% 50%;
+    max-width: 1000px;
+    width: 100%;
     margin: auto;
 }
 
 .phototoyota1 {
     background-image: url('./photos/ToyotaChallenge/Capture1.PNG');
-    background-position: 30% 50%;
-    width: 900px;
+    background-position: 50% 50%;
+    max-width: 1000px;
+    width: 100%;
     margin: auto;
 }
 
 .phototoyota2 {
     background-image: url('./photos/ToyotaChallenge/Capture3.PNG');
-    background-position: 30% 50%;
-    width: 900px;
+    background-position: 50% 50%;
+    max-width: 1000px;
+    width: 100%;
     margin: auto;
 }
 
 .phototoyota3 {
     background-image: url('./photos/ToyotaChallenge/CodeSnippet.png');
-    background-position: 30% 50%;
-    width: 900px;
+    background-position: 0% 50%;
+    max-width: 1000px;
+    width: 100%;
     margin: auto;
 }
 
@@ -369,13 +376,15 @@ UofT hacks
 .photouofthacks {
     background-image: url('./photos/UofTHacks/original.jpg');
     background-position: 30% 50%;
-    width: 470px;
+    width: 59%;
+    max-width: 400px;
     margin: auto;
 }
 
 .photouofthacks1 {
     background-image: url('./photos/UofTHacks/gallery.jpg');
     background-position: 30% 50%;
-    width: 470px;
+    width: 59%;
+    max-width: 400px;
     margin: auto;
 }

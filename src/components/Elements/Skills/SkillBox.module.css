@@ -16,7 +16,7 @@
     color: #EEFBFB;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-@media (max-width: 800px) {
+@media (max-width: 992px) {
 .h2{
     font-size: 200%;
 }

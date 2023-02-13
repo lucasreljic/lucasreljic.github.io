@@ -49,11 +49,19 @@ li{
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .Applogo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .skills {
   background-color: #0F2557;
   font-weight: 550;
@@ -90,7 +98,7 @@ li{
 /*
 For mobile
 */
-@media (max-width: 800px) {
+@media (max-width: 992px) {
   .profile{
     margin-top: 0px;
     margin-bottom: 11px;
@@ -98,6 +106,20 @@ For mobile
   }
   .mainHeader{
     font-weight: 550;
-    font-size: 550%;
+    font-size: 450%;
+  }
+  .arrow {
+    width: 90px;
+    opacity: 0.6;
+  }
+  .gallery{
+    font-weight: 600;
+    font-size: 150%;
+  }
+  .skills {
+    background-color: #0F2557;
+    font-weight: 600;
+    padding: 2px;
+    font-size: 25px;
   }
 } 
