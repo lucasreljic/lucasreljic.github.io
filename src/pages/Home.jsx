@@ -62,10 +62,9 @@ const Home = () => {
                         <Col style={{ marginTop: '1%' }}>
                             <Text>
                                 My name is Lucas Reljic-Dumont, I am currently 19 years old and
-                                pursuing a BASc in Mechatronics Engineering at the University of Waterloo, currently
-                                in term 1B. I have a passion for mechanical and software projects as
+                                pursuing a BASc in Mechatronics Engineering at the University of Waterloo. Currently in my first year. I have a passion for mechanical and software projects as
                                 evident through the various projects I have
-                                accomplished over the years. Some of which is visible on this website. Many of my experiences
+                                accomplished over the years, some of which are visible on this website. Many of my experiences
                                 prior to university guided me towards pursuing an Engineering degree.
                             </Text>
                         </Col>
@@ -113,54 +112,78 @@ const Home = () => {
                     </Row>
                 </ParallaxLayer>
                 <ParallaxLayer offset={1.76} speed={1} >
-                <h1 className={styles.skills}>Clubs</h1>
+                    <h1 className={styles.skills}>Clubs</h1>
                     <Row lg={3} xs={2} className='justify-content-center'>
                         <Col>
-                            <SkillBox width='30%' url={rocketryPhoto}>
+                            <SkillBox width='27%' url={rocketryPhoto}>
                             </SkillBox>
                         </Col>
                         <Col>
-                            <SkillBox width='40%' url={frcPhoto}>
+                            <SkillBox width='37%' url={frcPhoto}>
                             </SkillBox>
                         </Col>
                     </Row>
                 </ParallaxLayer>
                 <ParallaxLayer offset={2} speed={1}>
-                    <h1 className={styles.gallery}>Gallery</h1>
+                    <h1 className={styles.gallery}>CLICK ON PROJECTS BELOW</h1>
                 </ParallaxLayer>
                 <ParallaxLayer offset={2.04} speed={2} style={{ paddingTop: '0px' }}>
                     <Slide>
-                        <SlideBox link='/#/1afinalproject' photo='photorobot1a'>
-                            Mechatronics 1A project
-                        </SlideBox>
-
-                        <SlideBox link='/#/openmv' photo='photofrc3'>
-                            OpenMV Strategic Color Tracking
-                        </SlideBox>
-
-                        <SlideBox link='/#/UofTHacks' photo='photouofthacks1'>
-                            UofT Hackathon X
-                        </SlideBox>
-
-                        <SlideBox link='/#/plant' photo='photoplant3'>
-                            Automatic Plant Watering
-                        </SlideBox>
-
-                        <SlideBox link='/#/sanitizer' photo='photosanitizer'>
-                            Hand Sanitizer
-                        </SlideBox>
-
-                        <SlideBox link='/#/rcplanes' photo='photoplane7'>
-                            My First Delta Wing RC Plane
-                        </SlideBox>
-
-                        <SlideBox link='/#/rcplanes' photo='photoplane1'>
-                            RC Planes
-                        </SlideBox>
-
-                        <SlideBox link='/#/gokart' photo='photokart3'>
-                            Electric Gokart
-                        </SlideBox>
+                        <a className={styles.galleryClick} href='/#/1afinalproject'>
+                            <SlideBox link='/#/1afinalproject' disabled={true} photo='photorobot1a'>
+                                Mechatronics 1A project
+                            </SlideBox>
+                        </a>
+                        <a className={styles.galleryClick} href='/#/openmv'>
+                            <SlideBox link='/#/openmv' photo='photofrc3'>
+                                OpenMV Strategic Color Tracking
+                            </SlideBox>
+                        </a>
+                        <a className={styles.galleryClick} href='/#/toyotainnovation'>
+                            <SlideBox link='/#/toyotainnovation' photo='phototoyota1'>
+                                Toyota Innovation Challenge
+                            </SlideBox>
+                        </a>
+                        <a className={styles.galleryClick} href='/#/UofTHacks'>
+                            <SlideBox link='/#/UofTHacks' photo='photouofthacks1'>
+                                UofT Hackathon X
+                            </SlideBox>
+                        </a>
+                        <a className={styles.galleryClick} href='/#/frc4627'>
+                            <SlideBox link='/#/frc4627' photo='photofrc1'>
+                                FRC 4627 2022 Competition Robot
+                            </SlideBox>
+                        </a>
+                        <a className={styles.galleryClick} href='/#/plant'>
+                            <SlideBox link='/#/plant' photo='photoplant3'>
+                                Automatic Plant Watering
+                            </SlideBox>
+                        </a>
+                        <a className={styles.galleryClick} href='/#/sanitizer'>
+                            <SlideBox link='/#/sanitizer' photo='photosanitizer'>
+                                Hand Sanitizer
+                            </SlideBox>
+                        </a>
+                        <a className={styles.galleryClick} href='/#/RPilaptop'>
+                            <SlideBox link='/#/RPilaptop' photo='photolaptop1'>
+                                Raspberry Pi Laptop
+                            </SlideBox>
+                        </a>
+                        <a className={styles.galleryClick} href='/#/rcplanes'>
+                            <SlideBox link='/#/rcplanes' photo='photoplane7'>
+                                My First Delta Wing RC Plane
+                            </SlideBox>
+                        </a>
+                        <a className={styles.galleryClick} href='/#/rcplanes'>
+                            <SlideBox link='/#/rcplanes' photo='photoplane1'>
+                                RC Planes
+                            </SlideBox>
+                        </a>
+                        <a className={styles.galleryClick} href='/#/gokart'>
+                            <SlideBox link='/#/gokart' photo='photokart3'>
+                                Electric Gokart
+                            </SlideBox>
+                        </a>
                     </Slide>
                 </ParallaxLayer>
 

@@ -6,6 +6,7 @@
   font-size: 120%;
 }
 .title:hover{
+  transition: 150ms;
   font-size: 125%;
 }
 

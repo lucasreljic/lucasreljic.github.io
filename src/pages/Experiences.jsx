@@ -17,9 +17,17 @@ const UofTHacks = () => {
                 </SlideBox>
             </Slide>
             <Text>
+                - Programmed in React JS
+                <br></br>
+                - Utilized Firebase for user information storage and secure authentication
+                <br></br>
+                - A multitude of APIs were used including Google Cloud API.
+            </Text>
+            <br></br>
+            <Text>
                 UofT Hackathon X was an amazing weekend experience. As my first hackathon
-                there was a learning curve to the amount of time pressure. This increased
-                my React JS skills. <a href="https://devpost.com/software/berealocated">The Devpost</a>
+                there was a learning curve to the amount of time pressure. This greatly increased
+                my React JS skills. I was a member of a team of 3, for more information here is the <a href="https://devpost.com/software/berealocated">Devpost</a>.
             </Text>
         </Container>
     )
@@ -44,6 +52,14 @@ const Toyota = () => {
                     Code Snippet
                 </SlideBox>
             </Slide>
+            <Text>
+                - Programmed in Python with OpenCV
+                <br></br>
+                - Developed real-time tracking method adaptable to 3 different model cars
+                <br></br>
+                - Detected where the track was and the start/end locations
+            </Text>
+            <br></br>
             <Text>
                 During Term 1A I participated in a weekend competition known as the Toyota Innovation Challenge.
                 The challenge operated as a hackathon with the main objective being to utilize computer vision to detect
@@ -80,6 +96,16 @@ const FRC4627 = () => {
                 </SlideBox>
             </Slide>
             <Text>
+                - Developed Team Leadership and organizational skills
+                <br></br>
+                - Taught new members Java and Python
+                <br></br>
+                - Programmed in Java for the robot and MicroPython for <a href="/#/openmv">vision system</a>
+                <br></br>
+                - Developed PID controls loops for all systems on the robot
+            </Text>
+            <br></br>
+            <Text>
                 In the 2022 season, I was team captain. In this role,
                 I had to organize daily meetings and supervise the design and production of the robot.
                 During the season, my leadership skills grew immensely with my communication skills as
@@ -112,6 +138,14 @@ const FRC5078 = () => {
                 </SlideBox>
             </Slide>
             <Text>
+                - Programmed in Java using Eclipse and later with VS Code
+                <br></br>
+                - Developed fundamental electrical and pneumatics knowledge
+            </Text>
+            <br></br>
+            <Text>
+                In 2018, our team stood second in the regional competition in Victoria. The year after I led my team to the semi-finals
+                at the Canadian Rockies Regional Competition in Calgary.
                 As one of the few programmers on the team I developed the majority of the Java code on the robot across 2 seasons.
                 This position introduced me to the field of robotics and to object-oriented programming. It laid a great foundation for my Java,
                 electrical and FRC skills.

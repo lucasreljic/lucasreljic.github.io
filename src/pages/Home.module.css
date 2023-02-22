@@ -90,6 +90,9 @@ li{
   font-weight: 600;
   font-size: 200%;
 }
+.galleryClick{
+  opacity: 1;
+}
 
 .arrow {
   width: 100px;
@@ -118,7 +121,7 @@ For mobile
   }
   .skills {
     background-color: #0F2557;
-    font-weight: 600;
+    font-weight: 400;
     padding: 2px;
     font-size: 25px;
   }

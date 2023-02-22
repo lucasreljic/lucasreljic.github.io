@@ -14,9 +14,9 @@ const Button = () => {
 }
 // explains how to do transform https://github.com/ueeieiie/styled-transition-transform/blob/master/src/index.js
 const animation = keyframes`
-0% { opacity: 1; width: 80%; margin-top: 30px; margin-bottom: 30px; background: linear-gradient(0deg, #067a29 0%, #2626ff 35%, rgba(0, 212, 255, 1) 100%);}
-50% { opacity: 0.6; width: 50%; margin-top: 10px; margin-bottom: 10px; background: linear-gradient(0deg, #0cc945 0%, #2626ff 35%, rgba(0, 212, 255, 1) 100%); }
-100% { opacity: 1; width: 80%; margin-top: 30px; margin-bottom: 30px; background: linear-gradient(0deg, #008311 0%,  #2626ff 35%, rgba(0, 212, 255, 1) 100%);}
+0% { opacity: 1; width: 50%; margin-top: 30px; margin-bottom: 30px;}
+50% { opacity: 0.7; width: 45%; margin-top: 10px; margin-bottom: 10px;}
+100% { opacity: 1; width: 50%; margin-top: 30px; margin-bottom: 30px;}
 `
 const Wrapper = styled.div`
     animation-name: ${animation};

@@ -21,6 +21,12 @@ const Project1a = () => {
       </Slide>
       <Text>Code is on GitHub <a href="https://github.com/lucasreljic/RobotProject1A">here</a></Text>
       <br></br>
+      <Text>
+        - Programmed in C
+        <br></br>
+        - Developed custom PID control loops and integrated legacy libraries
+      </Text>
+      <br></br>
       <Text>The final project for term 1A consisted of a Robot that picks up a cube in a 1m X 1m
         area.
         The purpose of this project was to create a robot that solved a specific problem. The problem chosen
@@ -46,6 +52,13 @@ const Marketalarm = () => {
       <Text>Full code is on GitHub <a
         href="https://github.com/lucasreljic/Market-Alarm">here</a></Text>
       <br></br>
+      <Text>
+        - Programmed with Python
+        <br></br>
+        - Utilized Google Cloud API
+        <br></br>
+        - Parsed JSON payloads
+      </Text>
       <Text>Python code that reads email sent to an email address that contains information on which
         stocks
         to track at certain
@@ -68,6 +81,12 @@ const PiLaptop = () => {
           Photo 2
         </SlideBox>
       </Slide>
+      <Text>
+        - Designed Laptop using Fusion 360
+        <br></br>
+        - 3D printed model
+      </Text>
+      <br></br>
       <Text>
         A 3D printed case I designed for my Raspberry Pi 2B. It allows for easy transport and testing of electronics with its
         included GPIO breakout and breadboard. The battery pack makes testing on the go simple and easy.
@@ -97,10 +116,22 @@ const Openmv = () => {
       </Slide>
       <br></br>
       <Text>
-        During the 2021 FRC Season I developed a Color Tracking program using an OpenMV Camera.
+        - Programmed in MicroPython
+        <br></br> 
+        -  Sent JSON payloads using UART that are converted to RS232 through a converter to then be read by a Linux machine.
+        <br></br>
+        - Utilized regex to confirm validity of the payload on the Linux end.
+
+      </Text>
+      <br></br>
+      <Text>
+        During the 2021 FRC Season I developed a Color Tracking program using an OpenMV Camera. However, this OpenMV is 
+        modded to house a ring of LEDs for better object detection.
         It performs specific manipulations on the raw camera image to optimize the image for color tracking
         based on its environment. It then performs color tracking along with custom object detection code tailored to the required object.
-        It then packages all the necessary information into JSON and sends it over UART.
+        It then packages all the necessary information into JSON and sends it over UART. While this project
+        deviates from the usual method of machine vision using OpenCV, it taught me to utilize a camera's raw capture to its full potential
+        before using complex algorithms and machine learning.
 
 
       </Text>
@@ -156,6 +187,14 @@ const Plant = () => {
       </Slide>
       <br></br>
       <Text>
+        - Programmed in Python which ran on a Raspberry Pi Zero
+        <br></br>
+        - Designed a production worthy housing using Fusion 360
+        <br></br>
+        - Implemented a modular system to allow for expansion
+      </Text>
+      <br></br>
+      <Text>
         I noticed that I would often forget to water my multiple plants. In order to remedy this I designed an Automatic
         Plant Watering system. I began with an idea for a compact box that
         housed a Raspberry Pi or Arduino board that
@@ -209,7 +248,13 @@ const Sanitizer = () => {
           Initial Design
         </SlideBox>
       </Slide>
-
+      <br></br>
+      <Text>
+        - Programmed in C++ on an Arduino Nano
+        <br></br>
+        - Designed a production worthy mechanical design using Fusion 360
+      </Text>
+      <br></br>
       <Text>
         During the Covid-19 pandemic you had to continually sanitize and clean your hands. Especially when returning
         from a
