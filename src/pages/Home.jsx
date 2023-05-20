@@ -4,7 +4,7 @@ import Text from '../components/Elements/Text/Text';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import SlideBox from '../components/Elements/Slide/SlideBox';
+import Blocks from '../components/Elements/Blocks/Blocks';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import SkillBox from '../components/Elements/Skills/SkillBox';
 import Appear from '../components/Intro/Appear';
@@ -18,10 +18,23 @@ import ReactSVG from "./../icons/react.svg";
 import frcPhoto from './../icons/FRC-Vertical.png';
 import CppPhoto from './../icons/C++_Logo.png';
 import rocketryPhoto from './../icons/rocketry.png';
+import image from './../icons/stars.jpg'
+
+//images
+import robot1a from '../components/Elements/Slide/photos/1AProject/20221201_192840.jpg';
+import openmv from '../components/Elements/Slide/photos/FRC/IMG_3426.JPG';
+import toyota from '../components/Elements/Slide/photos/ToyotaChallenge/Capture1.PNG';
+import uoftHacks from '../components/Elements/Slide/photos/UofTHacks/original.jpg';
+import frc4627 from '../components/Elements/Slide/photos/FRC/2022_Practice.jpg';
+import plant from '../components/Elements/Slide/photos/plantWaterer/IMG_3518.jpeg';
+import sanitizer from '../components/Elements/Slide/photos/handSanitizer/IMG_2949.jpeg';
+import piLaptop from '../components/Elements/Slide/photos/RPiLaptop/IMG_6924.jpeg';
+import planes from '../components/Elements/Slide/photos/RCplanes/latest1.jpeg';
+import gokart from '../components/Elements/Slide/photos/gokart/IMG_1418.jpeg';
 
 const Home = () => {
     return (
-        <Parallax pages={3} style={{
+        <Parallax pages={4} style={{
             top: '67px', left: '0',
             height: '-moz-calc(100% - 67px)',
             /* Webkit */
@@ -30,7 +43,7 @@ const Home = () => {
             height: '-o-calc(100% - 67px)',
             /* Standard */
             height: 'calc(100% - 67px)',
-            background: '#004F71',/*'linear-gradient(to left top, #051937, #004d7a, #008793, #00bf72, #a8eb12)'*/
+            background: '#000000',/*'linear-gradient(to left top, #051937, #004d7a, #008793, #00bf72, #a8eb12)'*/
         }}>
             <Container fluid>
                 <ParallaxLayer offset={0} speed={2}>
@@ -128,63 +141,40 @@ const Home = () => {
                     <h1 className={styles.gallery}>CLICK ON PROJECTS BELOW</h1>
                 </ParallaxLayer>
                 <ParallaxLayer offset={2.04} speed={2} style={{ paddingTop: '0px' }}>
-                    <Slide>
-                        <a className={styles.galleryClick} href='/#/1afinalproject'>
-                            <SlideBox link='/#/1afinalproject' disabled={true} photo='photorobot1a'>
+                    <Container className={styles.containerFluid}fluid>
+                         <Blocks link='/#/1afinalproject' disabled={true} photo={robot1a}>
                                 Mechatronics 1A project
-                            </SlideBox>
-                        </a>
-                        <a className={styles.galleryClick} href='/#/openmv'>
-                            <SlideBox link='/#/openmv' photo='photofrc3'>
+                            </Blocks>
+
+                            <Blocks link='/#/openmv' photo={openmv}>
                                 OpenMV Strategic Color Tracking
-                            </SlideBox>
-                        </a>
-                        <a className={styles.galleryClick} href='/#/toyotainnovation'>
-                            <SlideBox link='/#/toyotainnovation' photo='phototoyota1'>
+                            </Blocks>
+                            <Blocks link='/#/toyotainnovation' photo={toyota}>
                                 Toyota Innovation Challenge
-                            </SlideBox>
-                        </a>
-                        <a className={styles.galleryClick} href='/#/UofTHacks'>
-                            <SlideBox link='/#/UofTHacks' photo='photouofthacks1'>
+                            </Blocks>
+                            <Blocks link='/#/UofTHacks' photo={uoftHacks}>
                                 UofT Hackathon X
-                            </SlideBox>
-                        </a>
-                        <a className={styles.galleryClick} href='/#/frc4627'>
-                            <SlideBox link='/#/frc4627' photo='photofrc1'>
+                            </Blocks>
+                            <Blocks link='/#/frc4627' photo={frc4627}>
                                 FRC 4627 2022 Competition Robot
-                            </SlideBox>
-                        </a>
-                        <a className={styles.galleryClick} href='/#/plant'>
-                            <SlideBox link='/#/plant' photo='photoplant3'>
+                            </Blocks>
+                            <Blocks link='/#/plant' photo={plant}>
                                 Automatic Plant Watering
-                            </SlideBox>
-                        </a>
-                        <a className={styles.galleryClick} href='/#/sanitizer'>
-                            <SlideBox link='/#/sanitizer' photo='photosanitizer'>
+                            </Blocks>
+                            <Blocks link='/#/sanitizer' photo={sanitizer}>
                                 Hand Sanitizer
-                            </SlideBox>
-                        </a>
-                        <a className={styles.galleryClick} href='/#/RPilaptop'>
-                            <SlideBox link='/#/RPilaptop' photo='photolaptop1'>
+                            </Blocks>
+                            <Blocks link='/#/RPilaptop' photo={piLaptop}>
                                 Raspberry Pi Laptop
-                            </SlideBox>
-                        </a>
-                        <a className={styles.galleryClick} href='/#/rcplanes'>
-                            <SlideBox link='/#/rcplanes' photo='photoplane7'>
-                                My First Delta Wing RC Plane
-                            </SlideBox>
-                        </a>
-                        <a className={styles.galleryClick} href='/#/rcplanes'>
-                            <SlideBox link='/#/rcplanes' photo='photoplane1'>
-                                RC Planes
-                            </SlideBox>
-                        </a>
-                        <a className={styles.galleryClick} href='/#/gokart'>
-                            <SlideBox link='/#/gokart' photo='photokart3'>
+                            </Blocks>
+                            <Blocks link='/#/gokart' photo={gokart}>
                                 Electric Gokart
-                            </SlideBox>
-                        </a>
-                    </Slide>
+                            </Blocks>
+                            <Blocks link='/#/rcplanes' photo={planes}>
+                                RC Planes
+                            </Blocks>
+                        
+                    </Container>
                 </ParallaxLayer>
 
 

@@ -1,0 +1,391 @@
+.box_outer {
+    border-radius: 10px 10px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 15rem;
+	height:	15rem;
+	text-align: center;
+	padding-left: 0rem;
+	padding-right: 0rem;
+	margin-bottom: 10rem;
+	margin-left: 3rem;
+	margin-right: auto;
+}
+
+.caption a {
+    overflow: hidden;
+    font-size: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15rem;
+    padding: 0.8rem;
+    font-family: "Helvetica Neue", sans-serif;
+    backface-visibility: hidden;
+    display: block;
+    opacity: 1;
+}
+
+.caption {
+    border-radius: 10px 10px;
+    background-color: #28559A;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: max-content;
+    margin-top: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caption a:hover {
+    font-size: 105%;
+    color: white;
+}
+
+
+button {
+    margin-left: 20px;
+    margin-right: 20px;
+    resize: both;
+    scale: 150%;
+}
+
+.photofrc1 {
+    background-image: url('./photos/FRC/2022 Robot.JPG');
+    background-position: 90% 80%;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photofrc2 {
+    background-image: url('./photos/FRC/IMG_2781.jpeg');
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photofrc3 {
+    background-image: url('./photos/FRC/IMG_3426.JPG');
+    width: 600px;
+    background-position: 70% 80%;
+    margin: auto;
+}
+
+.photofrc4 {
+    background-image: url('./photos/FRC/OpenMV Cam on Robot.jpeg');
+    width: 400px;
+    margin: auto;
+    background-position: 50% 50%;
+}
+
+.photofrc5 {
+    background-image: url('./photos/FRC/Programming.jpg');
+    width: 100%;
+    margin: auto;
+    background-position: 50% 90%;
+}
+
+.photofrc6 {
+    background-image: url('./photos/FRC/2022_Practice.jpg');
+    width: 100%;
+    margin: auto;
+    background-position: 50% 90%;
+}
+
+.photofrc7 {
+    background-image: url('./photos/FRC/2018Comp.jpg');
+    width: 350px;
+    margin: auto;
+    background-position: 50% 90%;
+}
+
+.photofrc8 {
+    background-image: url('./photos/FRC/2019RobotTesting.jpg');
+    width: 100%;
+    margin: auto;
+    background-position: 50% 90%;
+}
+
+/*
+Go kart
+*/
+.photokart1 {
+    background-image: url('./photos/gokart/IMG_1418.jpeg');
+    max-width: 900px;
+    background-position: 60% 50%;
+    margin: auto;
+}
+
+.photokart2 {
+    background-image: url('./photos/gokart/IMG_1424.jpeg');
+    max-width: 900px;
+    background-position: 60% 50%;
+    margin: auto;
+}
+
+.photokart3 {
+    background-image: url('./photos/gokart/IMG_1460_Moment.jpg');
+    background-position: 60% 50%;
+}
+
+.photokart4 {
+    background-image: url('./photos/gokart/IMG_1470.jpeg');
+    width: 40%;
+    background-position: 60% 50%;
+    margin: auto;
+}
+
+.photokart5 {
+    background-image: url('./photos/gokart/IMG_5826.PNG');
+    width: 40%;
+    background-position: 60% 50%;
+    margin: auto;
+}
+
+.photokart6 {
+    background-image: url('./photos/misc/welding.JPG');
+    width: 100%;
+    max-width: 800px;
+    background-position: 60% 50%;
+    margin: auto;
+}
+
+/*
+Hand Sanitizer
+*/
+.photosanitizer {
+    background-image: url('./photos/handSanitizer/IMG_2949.jpeg');
+    width: 470px;
+    margin: auto;
+    background-position: 50% 50%;
+}
+
+.photosanitizer1 {
+    background-image: url('./photos/handSanitizer/IMG_2912.jpeg');
+    width: 60%;
+    margin: auto;
+    background-position: 50% 50%;
+}
+
+.photosanitizer2 {
+    background-image: url('./photos/handSanitizer/IMG_2952.jpeg');
+    width: 470px;
+    margin: auto;
+    background-position: 50% 50%;
+}
+
+.photosanitizer3 {
+    background-image: url('./photos/handSanitizer/IMG_2960.jpeg');
+    width: 470px;
+    margin: auto;
+    background-position: 50% 50%;
+}
+
+.photo3dprint {
+    background-image: url('./photos/misc/3dprinter.JPG');
+}
+
+.photobike {
+    background-image: url('./photos/misc/bike.jpg');
+}
+
+.photomarket {
+    background-image: url('./photos/misc/marketalarm.PNG');
+    max-width: 1500px;
+    margin: auto;
+}
+
+.photoprofile {
+    background-image: url('./photos/misc/profile.jpeg');
+}
+
+/*
+Robot Project 1A
+*/
+.photorobot1a {
+    background-image: url('./photos/1AProject/robot1A.jpg');
+    background-position: 20% 60%;
+}
+
+.photorobot1a2 {
+    background-image: url('./photos/1AProject/20221201_193342.jpg');
+    background-position: 40% 90%;
+}
+
+.photorobot1a3 {
+    background-image: url('./photos/1AProject/20221201_192840.jpg');
+    background-position: 50% 90%;
+}
+
+/*
+Automatic Plant Watering
+*/
+.photoplant1 {
+    background-image: url('./photos/plantWaterer/IMG_3518.jpeg');
+    background-position: 0% 60%;
+    width: 470px;
+    margin: auto;
+}
+
+.photoplant2 {
+    background-image: url('./photos/plantWaterer/IMG_3525.jpeg');
+    background-position: 0% 30%;
+    width: 470px;
+    margin: auto;
+}
+
+.photoplant3 {
+    background-image: url('./photos/plantWaterer/IMG_3641_Moment.jpg');
+    background-position: 00% 70%;
+    width: 100%;
+    margin: auto;
+}
+
+.photoplant4 {
+    background-image: url('./photos/plantWaterer/IMG_3641_Moment.jpg');
+}
+
+.photoplant5 {
+    background-image: url('./photos/plantWaterer/IMG_3645.JPG');
+}
+
+/*
+RC planes
+*/
+.photoplane1 {
+    background-image: url('./photos/RCplanes/1stplane.JPG');
+    background-position: 50% 70%;
+}
+
+.photoplane2 {
+    background-image: url('./photos/RCplanes/2ndplane.JPG');
+    background-position: 50% 80%;
+    width: 460px;
+    margin: auto;
+}
+
+.photoplane3 {
+    background-image: url('./photos/RCplanes/IMG_0197.JPG');
+    background-position: 50% 80%;
+    width: 460px;
+    margin: auto;
+}
+
+.photoplane4 {
+    background-image: url('./photos/RCplanes/IMG_3098.jpeg');
+    background-position: 50% 50%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.photoplane5 {
+    background-image: url('./photos/RCplanes/IMG_3101.jpeg');
+}
+
+.photoplane6 {
+    background-image: url('./photos/RCplanes/latest1.jpeg');
+}
+
+.photoplane7 {
+    background-image: url('./photos/RCplanes/moment.jpg');
+    background-position: 50% 80%;
+}
+
+.photoplane8 {
+    background-image: url('./photos/RCplanes/IMG_6971.jpeg');
+    background-position: 50% 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*
+RPi Laptop
+*/
+.photolaptop1 {
+    background-image: url('./photos/RPiLaptop/IMG_6924.jpeg');
+    background-position: 60% 80%;
+    width: 470px;
+    margin: auto;
+}
+
+.photolaptop2 {
+    background-image: url('./photos/RPiLaptop/IMG_6923.jpeg');
+    background-position: 60% 50%;
+    width: 470px;
+    margin: auto;
+}
+
+/*
+Openmv
+*/
+.photoopenmv {
+    background-image: url('./photos/FRC/2020\ Robot\ Ball\ Detection.jpg');
+    background-position: 50% 50%;
+    width: 600px;
+    margin: auto;
+}
+
+
+.photoopenmv3 {
+    background-image: url('./photos/FRC/IMG_3428.jpeg');
+    background-position: 30% 50%;
+    width: 600px;
+    margin: auto;
+}
+
+/*
+Toyota Innovation
+*/
+.phototoyota {
+    background-image: url('./photos/ToyotaChallenge/Capture.PNG');
+    background-position: 50% 50%;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+.phototoyota1 {
+    background-image: url('./photos/ToyotaChallenge/Capture1.PNG');
+    background-position: 50% 50%;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+.phototoyota2 {
+    background-image: url('./photos/ToyotaChallenge/Capture3.PNG');
+    background-position: 50% 50%;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+.phototoyota3 {
+    background-image: url('./photos/ToyotaChallenge/CodeSnippet.png');
+    background-position: 0% 50%;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+/*
+UofT hacks
+*/
+.photouofthacks {
+    background-image: url('./photos/UofTHacks/original.jpg');
+    background-position: 30% 50%;
+    width: 59%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.photouofthacks1 {
+    background-image: url('./photos/UofTHacks/gallery.jpg');
+    background-position: 30% 50%;
+    width: 59%;
+    max-width: 400px;
+    margin: auto;
+}

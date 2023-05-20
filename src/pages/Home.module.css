@@ -7,7 +7,15 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
+.containerFluid {
+  display:flex;
+	clear: both;
+  flex-wrap: wrap;
+	padding-left: 5rem;
+	padding-right: 5rem;
+	padding-bottom: 1.5rem;
+	margin: 0;
+}
 .each-slide-effect>div {
   display: flex;
   border-radius: 10px 10px;
@@ -91,6 +99,8 @@ li{
   font-size: 200%;
 }
 .galleryClick{
+  width: 15rem;
+  height: 15rem;
   opacity: 1;
 }
 
