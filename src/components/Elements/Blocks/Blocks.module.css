@@ -3,13 +3,13 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	width: 15rem;
-	height:	15rem;
+	width: 18rem;
+	height:	18rem;
 	text-align: center;
 	padding-left: 0rem;
 	padding-right: 0rem;
 	margin-bottom: 10rem;
-	margin-left: 3rem;
+	margin-left: auto;
 	margin-right: auto;
 }
 
@@ -19,7 +19,8 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 15rem;
+    background-color: #050c13;
+    width: 18rem;
     padding: 0.8rem;
     font-family: "Helvetica Neue", sans-serif;
     backface-visibility: hidden;
@@ -29,12 +30,11 @@
 
 .caption {
     border-radius: 10px 10px;
-    background-color: #28559A;
-    color: white;
+    padding-top: 18rem;
+    color: #61c2ec;
     text-decoration: none;
     text-align: center;
     width: max-content;
-    margin-top: 15rem;
     margin-left: auto;
     margin-right: auto;
 }

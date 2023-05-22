@@ -11,7 +11,7 @@ import linkedIn from './../components/NavSocials/official-linkedin-logo----17.pn
 const Layout = () => {
   return (
     <>
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="dark" variant="dark" style={{ top: '0.5rem', display: 'inline'}}>
           <Container fluid>
             <Nav className="justify-content-center">
               <Navbar.Brand className="mx-0" href="/#/home">
@@ -72,6 +72,7 @@ const Layout = () => {
                 <Nav.Link className={styles.icon} href="https://github.com/lucasreljic/"><img
                   src={github}
                   className={styles.navSocial}
+                  style={{ backgroundColor: 'grey', borderRadius: '1.5rem 1.5rem'}}
                   alt="github logo" /></Nav.Link>
               </Nav.Item>
               <Nav.Item>

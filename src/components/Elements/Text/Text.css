@@ -9,12 +9,14 @@ p{
     display: block;
     width: fit-content;
     max-width: 80%;
+    min-width: 15rem;
     margin: auto;
+    margin-bottom: 5rem;
 }
 
 @media (max-width: 800px) {
     .textBox{
-        max-width: 100%;
+        max-width: 90%;
         
     }
     

@@ -12,13 +12,13 @@
 }
 
 .h2{
-    font-size: 500%;
+    font-size: 400%;
     color: #EEFBFB;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 @media (max-width: 992px) {
 .h2{
-    font-size: 200%;
+    font-size: 300%;
 }
 }
 
