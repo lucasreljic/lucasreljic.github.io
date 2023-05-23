@@ -1,15 +1,14 @@
 import React from "react";
 import styles from "./Home.module.css";
 import Text from "../components/Elements/Text/Text";
-import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import { Container, Row, Col, Fade } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Blocks from "../components/Elements/Blocks/Blocks";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import SkillBox from "../components/Elements/Skills/SkillBox";
 import Appear from "../components/Intro/Appear";
 import { TypeAnimation } from "react-type-animation";
-import Reveal, { Bounce, Hinge } from "react-awesome-reveal";
+import { Slide, Fade, JackInTheBox, Roll, Zoom, Bounce } from "react-awesome-reveal";
 
 // Photos/logos
 import arrow from "../icons/arrow-down-3101.svg";
@@ -72,24 +71,9 @@ const Home = () => {
             repeat={false}
           />
         </ParallaxLayer>
-
-        <ParallaxLayer offset={0.15} speed={1}>
-          <Fade>
-            <Text style={{ fontSize: "1.1rem" }}>
-              My name is Lucas Reljic-Dumont, I am currently 19 years old and
-              pursuing a BASc in Mechatronics Engineering at the University of
-              Waterloo. Currently in my first year. I have a passion for
-              mechanical and software projects as evident through the various
-              projects I have accomplished over the years, some of which are
-              visible on this website. Many of my experiences prior to
-              university guided me towards pursuing an Engineering degree.
-            </Text>
-          </Fade>
-        </ParallaxLayer>
         <ParallaxLayer offset={0.5} speed={0.4}>
           <Row md={3} sm={1} xs={1}>
             <Col>
-              <br></br>
               <br></br>
               <SkillBox width="60%" url={rocketryPhoto}></SkillBox>
             </Col>
@@ -101,6 +85,25 @@ const Home = () => {
             </Col>
           </Row>
         </ParallaxLayer>
+        <ParallaxLayer offset={0.18} speed={1}>
+          <Fade delay={4000} damping={1e-1} triggerOnce={true}>
+            <Text
+              style={{
+                fontSize: "1.1rem",
+                textShadow:
+                  "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black",
+              }}
+            >
+              My name is Lucas Reljic-Dumont, I am currently 19 years old and
+              pursuing a BASc in Mechatronics Engineering at the University of
+              Waterloo. Currently in my first year. I have a passion for
+              mechanical and software projects as evident through the various
+              projects I have accomplished over the years, some of which are
+              visible on this website. Many of my experiences prior to
+              university guided me towards pursuing an Engineering degree.
+            </Text>
+          </Fade>
+        </ParallaxLayer>
         <ParallaxLayer offset={0.8} speed={-0.1}>
           <Appear timeout={4} fillmode={"forwards"} duration={3}>
             <img className={styles.arrow} src={arrow} alt="arrow"></img>
@@ -109,79 +112,118 @@ const Home = () => {
         <ParallaxLayer offset={1} speed={1.5} style={{ pointerEvents: "none" }}>
           <Row md={2} sm={1} xs={1}>
             <Col>
-              <Bounce>
+              <Slide delay={100} duration={2000}>
                 <SkillBox
                   header="3 YEARS"
-                  width="20%"
+                  width="6rem"
                   url={"https://www.svgrepo.com/show/184143/java.svg"}
                 >
                   Java
                 </SkillBox>
-              </Bounce>
+              </Slide>
             </Col>
             <Col>
-              <Text style={{ fontSize: "1rem" }}>
-                Throughout my involvement in FRC, I consistently utilized Java
-                as the primary programming language for controlling the main
-                robot. This extended duration of hands-on experience allowed me
-                to develop a deep understanding of Java's syntax, features, and
-                best practices. Working with Java in the context of FRC not only
-                involved writing code but also required me to apply my
-                programming skills in a practical setting. This real-world
-                application of Java allowed me to tackle complex challenges and
-                develop solutions that were robust, efficient, and reliable.
-                Over five years, I encountered various scenarios and diverse
-                problems, which honed my problem-solving abilities and enhanced
-                my proficiency in Java.
-              </Text>
-            </Col>
-            <Col>
-              <SkillBox
-                header="2 YEARS"
-                width="18%"
-                url={
-                  "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-                }
-              >
-                Python
-              </SkillBox>
-            </Col>
-            <Col>
-              <Fade>
-                <Text style={{ fontSize: "1rem" }}>
-                  In my FRC team I was also given the role of programming the
-                  vision system, I had the opportunity to explore the various
-                  features and capabilities of Python. I leveraged Python's rich
-                  ecosystem of libraries and tools to implement robust and
-                  efficient solutions for image processing and analysis. This
-                  hands-on experience allowed me to become well-versed in
-                  Python's syntax, data structures, and built-in functions.
-                  <br></br>I was able to expand on this experience through other
-                  projects and experiences such as the Toyota Challenge.
+              <Slide direction="right" delay={800} duration={3000}>
+                <Text>
+                  During my five-year involvement in FRC, Java was the language
+                  for programming the robots. This extensive hands-on experience
+                  enabled me to gain a deep understanding of Java's syntax,
+                  features, and best practices. Applying Java in real-world FRC
+                  scenarios enhanced my problem-solving skills and enabled me to
+                  develop robust, efficient, and reliable solutions to complex
+                  challenges.
                 </Text>
-              </Fade>
+              </Slide>
             </Col>
             <Col>
-              <SkillBox header="2 YEARS" width="18%" url={jsonPhoto}>
-                JSON
-              </SkillBox>
+              <Slide direction="left" delay={100} duration={2000}>
+                <SkillBox
+                  header="2 YEARS"
+                  width="6rem"
+                  url={
+                    "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                  }
+                >
+                  Python
+                </SkillBox>
+              </Slide>
             </Col>
-
             <Col>
-              <SkillBox header="6 MONTHS" width="17%" url={CppPhoto}>
-                C++
-              </SkillBox>
+              <Slide direction="right" delay={800} duration={3000}>
+                <Text>
+                  As a part of FRC, I gained extensive experience in Python
+                  programming, specifically in vision systems. Utilizing
+                  Python's libraries and tools, I implemented efficient
+                  solutions for image processing and analysis. This hands-on
+                  experience enhanced my proficiency in Python's syntax, data
+                  structures, and built-in functions, which I further expanded
+                  through experiences like the Toyota Challenge.
+                </Text>
+              </Slide>
             </Col>
-
             <Col>
-              <SkillBox
-                className={styles.Applogo}
-                header="1 MONTH"
-                width="31%"
-                url={ReactSVG}
-              >
-                React JS
-              </SkillBox>
+              <Slide delay={100} duration={2000}>
+                <SkillBox header="2 YEARS" width="5.7rem" url={jsonPhoto}>
+                  JSON
+                </SkillBox>
+              </Slide>
+            </Col>
+            <Col>
+              <Slide direction="right" delay={800} duration={3000}>
+                <Text>
+                  I gained valuable experience working with JSON as well during
+                  my time in FRC, where I focused on creating a seamless
+                  pipeline between Python and Java. It involved effectively
+                  handling and manipulating JSON strings to facilitate data
+                  exchange between the languages. Through this, I developed a
+                  strong understanding of JSON syntax and best practices,
+                  enabling me to establish efficient communication channels
+                  between separate codebases.
+                </Text>
+              </Slide>
+            </Col>
+            <Col>
+              <Slide direction="left" delay={100} duration={2000}>
+                <SkillBox header="6 MONTHS" width="5.5rem" url={CppPhoto}>
+                  C++
+                </SkillBox>
+              </Slide>
+            </Col>
+            <Col>
+              <Slide direction="right" delay={800} duration={3000}>
+                <Text>
+                  In my engineering program, I gained extensive knowledge of the
+                  C++ programming language, achieving top marks in my
+                  programming classes. I also have hands-on experience with
+                  Arduino boards, utilizing C++ to program and control
+                  electronic systems. This practical application of C++ through
+                  Arduino projects has strengthened my proficiency in the
+                  language and working with hardware.
+                </Text>
+              </Slide>
+            </Col>
+            <Col>
+              <JackInTheBox duration={2000}>
+                <SkillBox
+                  className={styles.Applogo}
+                  header="3 MONTH"
+                  width="10rem"
+                  url={ReactSVG}
+                >
+                  React JS
+                </SkillBox>
+              </JackInTheBox>
+            </Col>
+            <Col>
+              <Bounce delay={800} duration={2000}>
+                <Text>
+                  Through my involvement in Waterloo Rocketry, I gained valuable
+                  experience in React, learning its syntax, styles, and various
+                  components. Working on projects like the Rocketry website and
+                  this current website has significantly enhanced my Javascript
+                  skills and provided me with a solid foundation in React.
+                </Text>
+              </Bounce>
             </Col>
           </Row>
         </ParallaxLayer>

@@ -21,7 +21,7 @@ const Layout = () => {
               </Navbar.Brand>
             </Nav>
             <Nav className="me-auto justify-content-center">
-              <NavDropdown title="Projects" id="navbarScrollingDropdown">
+              <NavDropdown style={{ color: 'white'}} title="Projects" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="/#/1afinalproject">
                   1A Final Project
                 </NavDropdown.Item>
