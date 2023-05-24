@@ -13,6 +13,7 @@ import {
   Fade,
   JackInTheBox,
   Bounce,
+  AttentionSeeker,
 } from "react-awesome-reveal";
 
 // Photos/logos
@@ -79,22 +80,30 @@ const Home = () => {
         </ParallaxLayer>
         <ParallaxLayer offset={0.5} speed={0.4}>
           <Row md={3} sm={1} xs={1}>
+            <Fade triggerOnce={true} duration={1000} delay={5000}>
             <Col>
               <br></br>
-              <SkillBox
-                className={styles.rocketryIcon}
-                url={rocketryPhoto}
-              ></SkillBox>
+              <AttentionSeeker effect='pulse' delay={6500} duration={1500}>
+                <SkillBox
+                  className={styles.rocketryIcon}
+                  url={rocketryPhoto}
+                ></SkillBox>
+              </AttentionSeeker>
             </Col>
             <Col>
-              <SkillBox
-                className={styles.uwaterlooIcon}
-                url={uwaterlooPhoto}
-              ></SkillBox>
+              <AttentionSeeker effect='pulse' delay={5500} duration={1500}>
+                <SkillBox
+                  className={styles.uwaterlooIcon}
+                  url={uwaterlooPhoto}
+                ></SkillBox>
+              </AttentionSeeker>
             </Col>
             <Col>
-              <SkillBox className={styles.frcIcon} url={frcPhoto}></SkillBox>
+              <AttentionSeeker effect='pulse' delay={6500} duration={1500}>
+                <SkillBox className={styles.frcIcon} url={frcPhoto}></SkillBox>
+              </AttentionSeeker>
             </Col>
+            </Fade>
           </Row>
         </ParallaxLayer>
         <ParallaxLayer offset={0.18} speed={1}>
@@ -136,9 +145,7 @@ const Home = () => {
             </Col>
             <Col className={styles.skillText}>
               <Slide direction="right" delay={800} duration={3000}>
-                <Text
-                  style={{ fontSize: "1.1rem" }}
-                >
+                <Text style={{ fontSize: "1.1rem" }}>
                   During my five-year involvement in FRC, Java was the language
                   for programming the robots. This extensive hands-on experience
                   enabled me to gain a deep understanding of Java's syntax,
@@ -164,9 +171,7 @@ const Home = () => {
             </Col>
             <Col className={styles.skillText}>
               <Slide direction="right" delay={800} duration={3000}>
-                <Text
-                  style={{ fontSize: "1.1rem" }}
-                >
+                <Text style={{ fontSize: "1.1rem" }}>
                   As a part of FRC, I gained extensive experience in Python
                   programming, specifically in vision systems. Utilizing
                   Python's libraries and tools, I implemented efficient
@@ -252,14 +257,10 @@ const Home = () => {
         </ParallaxLayer>
         <ParallaxLayer offset={2.7} speed={1}>
           <Hinge triggerOnce={true} duration={4000} delay={2000}>
-          <h1 className={styles.gallery}>CLICK ON PROJECTS BELOW</h1>
+            <h1 className={styles.gallery}>CLICK ON PROJECTS BELOW</h1>
           </Hinge>
         </ParallaxLayer>
-        <ParallaxLayer
-          offset={2.89}
-          speed={2}
-          style={{ paddingTop: "0px" }}
-        >
+        <ParallaxLayer offset={2.89} speed={2} style={{ paddingTop: "0px" }}>
           <Container className={styles.containerFluid} fluid>
             <Row xxl={4} lg={3} md={2} sm={1} xs={1}>
               <Col>
