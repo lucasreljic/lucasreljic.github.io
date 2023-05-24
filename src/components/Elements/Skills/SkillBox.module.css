@@ -1,25 +1,53 @@
-.skillbox{
+.skillbox {
+  display: block;
+  margin-bottom: 3rem;
+  margin-top: 9rem;
+}
+
+.img {
+  width: 90px;
+}
+
+.h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 250%;
+}
+
+.h2 {
+  font-size: 400%;
+  color: #eefbfb;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+@media (max-width: 1200px) {
+  .h2 {
+    font-size: 400%;
+  }
+  .h1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 250%;
+  }
+
+  .skillbox {
     display: block;
     margin-bottom: 2rem;
+    margin-top: 0rem;
+  }
 }
 
-.img{
-    width: 90px;
-}
+@media (max-width: 576px) {
+  .h2 {
+    font-size: 200%;
+    margin-top: 0.6rem;
+  }
+  .h1 {
+    font-size: 100%;
+  }
 
-.h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
+  .skillbox {
+    display: block;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+  }
 }
-
-.h2{
-    font-size: 400%;
-    color: #EEFBFB;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-@media (max-width: 992px) {
-.h2{
-    font-size: 300%;
-}
-}
-

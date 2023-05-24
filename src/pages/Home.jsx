@@ -8,7 +8,12 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import SkillBox from "../components/Elements/Skills/SkillBox";
 import Appear from "../components/Intro/Appear";
 import { TypeAnimation } from "react-type-animation";
-import { Slide, Fade, JackInTheBox, Roll, Zoom, Bounce } from "react-awesome-reveal";
+import {
+  Slide,
+  Fade,
+  JackInTheBox,
+  Bounce,
+} from "react-awesome-reveal";
 
 // Photos/logos
 import arrow from "../icons/arrow-down-3101.svg";
@@ -30,6 +35,7 @@ import sanitizer from "../components/Elements/Slide/photos/handSanitizer/IMG_294
 import piLaptop from "../components/Elements/Slide/photos/RPiLaptop/IMG_6924.jpeg";
 import planes from "../components/Elements/Slide/photos/RCplanes/latest1.jpeg";
 import gokart from "../components/Elements/Slide/photos/gokart/IMG_1418.jpeg";
+import { Hinge } from "react-awesome-reveal";
 
 const Home = () => {
   return (
@@ -75,13 +81,19 @@ const Home = () => {
           <Row md={3} sm={1} xs={1}>
             <Col>
               <br></br>
-              <SkillBox width="60%" url={rocketryPhoto}></SkillBox>
+              <SkillBox
+                className={styles.rocketryIcon}
+                url={rocketryPhoto}
+              ></SkillBox>
             </Col>
             <Col>
-              <SkillBox width="30%" url={uwaterlooPhoto}></SkillBox>
+              <SkillBox
+                className={styles.uwaterlooIcon}
+                url={uwaterlooPhoto}
+              ></SkillBox>
             </Col>
             <Col>
-              <SkillBox width="37%" url={frcPhoto}></SkillBox>
+              <SkillBox className={styles.frcIcon} url={frcPhoto}></SkillBox>
             </Col>
           </Row>
         </ParallaxLayer>
@@ -115,16 +127,18 @@ const Home = () => {
               <Slide delay={100} duration={2000}>
                 <SkillBox
                   header="3 YEARS"
-                  width="6rem"
+                  className={styles.javaIcon}
                   url={"https://www.svgrepo.com/show/184143/java.svg"}
                 >
                   Java
                 </SkillBox>
               </Slide>
             </Col>
-            <Col>
+            <Col className={styles.skillText}>
               <Slide direction="right" delay={800} duration={3000}>
-                <Text>
+                <Text
+                  style={{ fontSize: "1.1rem" }}
+                >
                   During my five-year involvement in FRC, Java was the language
                   for programming the robots. This extensive hands-on experience
                   enabled me to gain a deep understanding of Java's syntax,
@@ -139,7 +153,7 @@ const Home = () => {
               <Slide direction="left" delay={100} duration={2000}>
                 <SkillBox
                   header="2 YEARS"
-                  width="6rem"
+                  className={styles.pythonIcon}
                   url={
                     "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
                   }
@@ -148,9 +162,11 @@ const Home = () => {
                 </SkillBox>
               </Slide>
             </Col>
-            <Col>
+            <Col className={styles.skillText}>
               <Slide direction="right" delay={800} duration={3000}>
-                <Text>
+                <Text
+                  style={{ fontSize: "1.1rem" }}
+                >
                   As a part of FRC, I gained extensive experience in Python
                   programming, specifically in vision systems. Utilizing
                   Python's libraries and tools, I implemented efficient
@@ -163,14 +179,18 @@ const Home = () => {
             </Col>
             <Col>
               <Slide delay={100} duration={2000}>
-                <SkillBox header="2 YEARS" width="5.7rem" url={jsonPhoto}>
+                <SkillBox
+                  header="2 YEARS"
+                  className={styles.jsonIcon}
+                  url={jsonPhoto}
+                >
                   JSON
                 </SkillBox>
               </Slide>
             </Col>
-            <Col>
+            <Col className={styles.skillText}>
               <Slide direction="right" delay={800} duration={3000}>
-                <Text>
+                <Text style={{ fontSize: "1.1rem" }}>
                   I gained valuable experience working with JSON as well during
                   my time in FRC, where I focused on creating a seamless
                   pipeline between Python and Java. It involved effectively
@@ -184,14 +204,18 @@ const Home = () => {
             </Col>
             <Col>
               <Slide direction="left" delay={100} duration={2000}>
-                <SkillBox header="6 MONTHS" width="5.5rem" url={CppPhoto}>
+                <SkillBox
+                  header="6 MONTHS"
+                  className={styles.cppIcon}
+                  url={CppPhoto}
+                >
                   C++
                 </SkillBox>
               </Slide>
             </Col>
-            <Col>
+            <Col className={styles.skillText}>
               <Slide direction="right" delay={800} duration={3000}>
-                <Text>
+                <Text style={{ fontSize: "1.1rem" }}>
                   In my engineering program, I gained extensive knowledge of the
                   C++ programming language, achieving top marks in my
                   programming classes. I also have hands-on experience with
@@ -207,16 +231,15 @@ const Home = () => {
                 <SkillBox
                   className={styles.Applogo}
                   header="3 MONTH"
-                  width="10rem"
                   url={ReactSVG}
                 >
                   React JS
                 </SkillBox>
               </JackInTheBox>
             </Col>
-            <Col>
+            <Col className={styles.skillText}>
               <Bounce delay={800} duration={2000}>
-                <Text>
+                <Text style={{ fontSize: "1.1rem" }}>
                   Through my involvement in Waterloo Rocketry, I gained valuable
                   experience in React, learning its syntax, styles, and various
                   components. Working on projects like the Rocketry website and
@@ -227,10 +250,16 @@ const Home = () => {
             </Col>
           </Row>
         </ParallaxLayer>
-        <ParallaxLayer offset={3} speed={1}>
+        <ParallaxLayer offset={2.7} speed={1}>
+          <Hinge triggerOnce={true} duration={4000} delay={2000}>
           <h1 className={styles.gallery}>CLICK ON PROJECTS BELOW</h1>
+          </Hinge>
         </ParallaxLayer>
-        <ParallaxLayer offset={3} speed={2} style={{ paddingTop: "0px" }}>
+        <ParallaxLayer
+          offset={2.89}
+          speed={2}
+          style={{ paddingTop: "0px" }}
+        >
           <Container className={styles.containerFluid} fluid>
             <Row xxl={4} lg={3} md={2} sm={1} xs={1}>
               <Col>

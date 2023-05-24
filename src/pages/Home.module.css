@@ -154,7 +154,10 @@ li{
   color: #ffffff;
 }
 
-
+.skillText{
+  margin-top: 11.5rem;
+  
+}
 
 .mainHeader{
   color:   #61c2ec;
@@ -177,10 +180,42 @@ li{
   color: #e9dcdc;
 }
 
+.javaIcon{
+  width: 6rem;
+}
+
+.pythonIcon{
+  width: 6rem;
+}
+
+.jsonIcon{
+  width: 5.7rem;
+}
+
+.cppIcon{
+  width: 5rem;
+}
+
+.Applogo{
+  width: 8.5rem;
+}
+
+.rocketryIcon{
+  width: 18rem;
+}
+
+.uwaterlooIcon{
+  width: 13rem;
+}
+
+.frcIcon{
+  width: 13rem;
+}
+
 /*
 For mobile
 */
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .profile{
     margin-top: 0px;
     margin-bottom: 11px;
@@ -203,4 +238,47 @@ For mobile
     padding: 2px;
     font-size: 25px;
   }
+  .skillText{
+    margin-top: 0rem;
+    
+  }
 } 
+
+@media (max-width: 576px) {
+  .skillText{
+    margin-top: 0rem;
+    
+  }
+  .javaIcon{
+    width: 4.4rem;
+  }
+
+  .pythonIcon{
+    width: 3.7rem;
+  }
+  
+  .jsonIcon{
+    width: 3rem;
+  }
+  
+  .cppIcon{
+    width: 3rem;
+  }
+  
+  .Applogo{
+    width: 5rem;
+  }
+
+  .rocketryIcon{
+    margin-top: 2rem;
+    width: 9rem;
+  }
+  
+  .uwaterlooIcon{
+    width: 6rem;
+  }
+  
+  .frcIcon{
+    width: 8rem;
+  }
+}
