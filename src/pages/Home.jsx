@@ -81,28 +81,31 @@ const Home = () => {
         <ParallaxLayer offset={0.5} speed={0.4}>
           <Row md={3} sm={1} xs={1}>
             <Fade triggerOnce={true} duration={1000} delay={5000}>
-            <Col>
-              <br></br>
-              <AttentionSeeker effect='pulse' delay={6500} duration={1500}>
-                <SkillBox
-                  className={styles.rocketryIcon}
-                  url={rocketryPhoto}
-                ></SkillBox>
-              </AttentionSeeker>
-            </Col>
-            <Col>
-              <AttentionSeeker effect='pulse' delay={5500} duration={1500}>
-                <SkillBox
-                  className={styles.uwaterlooIcon}
-                  url={uwaterlooPhoto}
-                ></SkillBox>
-              </AttentionSeeker>
-            </Col>
-            <Col>
-              <AttentionSeeker effect='pulse' delay={6500} duration={1500}>
-                <SkillBox className={styles.frcIcon} url={frcPhoto}></SkillBox>
-              </AttentionSeeker>
-            </Col>
+              <Col>
+                <br></br>
+                <AttentionSeeker effect="pulse" delay={6500} duration={1500}>
+                  <SkillBox
+                    className={styles.rocketryIcon}
+                    url={rocketryPhoto}
+                  ></SkillBox>
+                </AttentionSeeker>
+              </Col>
+              <Col>
+                <AttentionSeeker effect="pulse" delay={5500} duration={1500}>
+                  <SkillBox
+                    className={styles.uwaterlooIcon}
+                    url={uwaterlooPhoto}
+                  ></SkillBox>
+                </AttentionSeeker>
+              </Col>
+              <Col>
+                <AttentionSeeker effect="pulse" delay={6500} duration={1500}>
+                  <SkillBox
+                    className={styles.frcIcon}
+                    url={frcPhoto}
+                  ></SkillBox>
+                </AttentionSeeker>
+              </Col>
             </Fade>
           </Row>
         </ParallaxLayer>
@@ -232,15 +235,17 @@ const Home = () => {
               </Slide>
             </Col>
             <Col>
-              <JackInTheBox duration={2000}>
-                <SkillBox
-                  className={styles.Applogo}
-                  header="3 MONTH"
-                  url={ReactSVG}
-                >
-                  React JS
-                </SkillBox>
-              </JackInTheBox>
+              <Fade delay={900} duration={500}>
+                <JackInTheBox delay={800} duration={2000}>
+                  <SkillBox
+                    className={styles.Applogo}
+                    header="3 MONTH"
+                    url={ReactSVG}
+                  >
+                    React JS
+                  </SkillBox>
+                </JackInTheBox>
+              </Fade>
             </Col>
             <Col className={styles.skillText}>
               <Bounce delay={800} duration={2000}>
