@@ -7,7 +7,6 @@ import Blocks from "../components/Elements/Blocks/Blocks";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import SkillBox from "../components/Elements/Skills/SkillBox";
 import Appear from "../components/Intro/Appear";
-import { TypeAnimation } from "react-type-animation";
 import {
   Slide,
   Fade,
@@ -57,26 +56,17 @@ const Home = () => {
       }}
     >
       <Container fluid>
-        <ParallaxLayer offset={0} speed={2}>
-          <TypeAnimation
-            sequence={[
-              800,
-              "Who",
-              500,
-              "Who am",
-              500,
-              "Who am I",
-              500,
-              "Who am I?",
-              500,
-              () => {},
-            ]}
-            wrapper="h1"
-            speed={1}
-            cursor={false}
-            className={styles.mainHeader}
-            repeat={false}
-          />
+        <ParallaxLayer offset={0} speed={-0.1}>
+          <h1 className={styles.mainHeader}>
+            <Fade
+              cascade
+              damping={1e-1}
+              triggerOnce={true}
+              duration={3000}
+            >
+              Who Am I?
+            </Fade>
+          </h1>
         </ParallaxLayer>
         <ParallaxLayer offset={0.5} speed={0.4}>
           <Row md={3} sm={1} xs={1}>
@@ -109,7 +99,7 @@ const Home = () => {
             </Fade>
           </Row>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.18} speed={1}>
+        <ParallaxLayer offset={0.18} speed={0}>
           <Fade delay={4000} damping={1e-1} triggerOnce={true}>
             <Text
               style={{
@@ -136,7 +126,7 @@ const Home = () => {
         <ParallaxLayer offset={1} speed={1.5} style={{ pointerEvents: "none" }}>
           <Row md={2} sm={1} xs={1}>
             <Col>
-              <Slide delay={100} duration={2000}>
+              <Slide delay={100} duration={2000} triggerOnce={true}>
                 <SkillBox
                   header="3 YEARS"
                   className={styles.javaIcon}
@@ -147,7 +137,12 @@ const Home = () => {
               </Slide>
             </Col>
             <Col className={styles.skillText}>
-              <Slide direction="right" delay={800} duration={3000}>
+              <Slide
+                direction="right"
+                delay={800}
+                duration={3000}
+                triggerOnce={true}
+              >
                 <Text style={{ fontSize: "1.1rem" }}>
                   During my five-year involvement in FRC, Java was the language
                   for programming the robots. This extensive hands-on experience
@@ -160,7 +155,12 @@ const Home = () => {
               </Slide>
             </Col>
             <Col>
-              <Slide direction="left" delay={100} duration={2000}>
+              <Slide
+                direction="left"
+                delay={100}
+                duration={2000}
+                triggerOnce={true}
+              >
                 <SkillBox
                   header="2 YEARS"
                   className={styles.pythonIcon}
@@ -173,7 +173,12 @@ const Home = () => {
               </Slide>
             </Col>
             <Col className={styles.skillText}>
-              <Slide direction="right" delay={800} duration={3000}>
+              <Slide
+                direction="right"
+                delay={800}
+                duration={3000}
+                triggerOnce={true}
+              >
                 <Text style={{ fontSize: "1.1rem" }}>
                   As a part of FRC, I gained extensive experience in Python
                   programming, specifically in vision systems. Utilizing
@@ -186,7 +191,7 @@ const Home = () => {
               </Slide>
             </Col>
             <Col>
-              <Slide delay={100} duration={2000}>
+              <Slide delay={100} duration={2000} triggerOnce={true}>
                 <SkillBox
                   header="2 YEARS"
                   className={styles.jsonIcon}
@@ -197,7 +202,12 @@ const Home = () => {
               </Slide>
             </Col>
             <Col className={styles.skillText}>
-              <Slide direction="right" delay={800} duration={3000}>
+              <Slide
+                direction="right"
+                delay={800}
+                duration={3000}
+                triggerOnce={true}
+              >
                 <Text style={{ fontSize: "1.1rem" }}>
                   I gained valuable experience working with JSON as well during
                   my time in FRC, where I focused on creating a seamless
@@ -211,7 +221,12 @@ const Home = () => {
               </Slide>
             </Col>
             <Col>
-              <Slide direction="left" delay={100} duration={2000}>
+              <Slide
+                direction="left"
+                delay={100}
+                duration={2000}
+                triggerOnce={true}
+              >
                 <SkillBox
                   header="6 MONTHS"
                   className={styles.cppIcon}
@@ -222,7 +237,12 @@ const Home = () => {
               </Slide>
             </Col>
             <Col className={styles.skillText}>
-              <Slide direction="right" delay={800} duration={3000}>
+              <Slide
+                direction="right"
+                delay={800}
+                duration={3000}
+                triggerOnce={true}
+              >
                 <Text style={{ fontSize: "1.1rem" }}>
                   In my engineering program, I gained extensive knowledge of the
                   C++ programming language, achieving top marks in my
@@ -235,8 +255,8 @@ const Home = () => {
               </Slide>
             </Col>
             <Col>
-              <Fade delay={900} duration={500}>
-                <JackInTheBox delay={800} duration={2000}>
+              <Fade delay={900} duration={500} triggerOnce={true}>
+                <JackInTheBox delay={800} duration={2000} triggerOnce={true}>
                   <SkillBox
                     className={styles.Applogo}
                     header="3 MONTH"
@@ -248,7 +268,7 @@ const Home = () => {
               </Fade>
             </Col>
             <Col className={styles.skillText}>
-              <Bounce delay={800} duration={2000}>
+              <Bounce delay={800} duration={2000} triggerOnce={true}>
                 <Text style={{ fontSize: "1.1rem" }}>
                   Through my involvement in Waterloo Rocketry, I gained valuable
                   experience in React, learning its syntax, styles, and various
