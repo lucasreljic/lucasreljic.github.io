@@ -4,9 +4,7 @@ import Text from "../components/Elements/Text/Text";
 import "react-slideshow-image/dist/styles.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Blocks from "../components/Elements/Blocks/Blocks";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import SkillBox from "../components/Elements/Skills/SkillBox";
-import Appear from "../components/Intro/Appear";
 import {
   Slide,
   Fade,
@@ -37,26 +35,9 @@ import planes from "../components/Elements/Slide/photos/RCplanes/latest1.jpeg";
 import gokart from "../components/Elements/Slide/photos/gokart/IMG_1418.jpeg";
 import { Hinge } from "react-awesome-reveal";
 
-const Home = () => {
+export default function Home(){
   return (
-    <Parallax
-      pages={5}
-      style={{
-        top: "67px",
-        left: "0",
-        height: "-moz-calc(100% - 67px)",
-        /* Webkit */
-        height: "-webkit-calc(100% - 67px)",
-        /* Opera */
-        height: "-o-calc(100% - 67px)",
-        /* Standard */
-        height: "calc(100% - 67px)",
-        background:
-          "#000000" /*'linear-gradient(to left top, #051937, #004d7a, #008793, #00bf72, #a8eb12)'*/,
-      }}
-    >
       <Container fluid>
-        <ParallaxLayer offset={0} speed={-0.1}>
           <h1 className={styles.mainHeader}>
             <Fade
               cascade
@@ -67,8 +48,7 @@ const Home = () => {
               Who Am I?
             </Fade>
           </h1>
-        </ParallaxLayer>
-        <ParallaxLayer offset={0.5} speed={0.4}>
+
           <Row md={3} sm={1} xs={1}>
             <Fade triggerOnce={true} duration={1000} delay={5000}>
               <Col>
@@ -98,9 +78,7 @@ const Home = () => {
               </Col>
             </Fade>
           </Row>
-        </ParallaxLayer>
-        <ParallaxLayer offset={0.18} speed={0}>
-          <Fade delay={4000} damping={1e-1} triggerOnce={true}>
+         <Fade delay={4000} damping={1e-1} triggerOnce={true}>
             <Text
               style={{
                 fontSize: "1.1rem",
@@ -117,16 +95,15 @@ const Home = () => {
               university guided me towards pursuing an Engineering degree.
             </Text>
           </Fade>
-        </ParallaxLayer>
-        <ParallaxLayer offset={0.8} speed={-0.1}>
-          <Appear timeout={4} fillmode={"forwards"} duration={3}>
+          <Slide delay={4500} duration ={1000} direction="down">
+          <Fade delay={4000} duration={3000}>
             <img className={styles.arrow} src={arrow} alt="arrow"></img>
-          </Appear>
-        </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={1.5} style={{ pointerEvents: "none" }}>
+          </Fade>
+          </Slide>
           <Row md={2} sm={1} xs={1}>
             <Col>
-              <Slide delay={100} duration={2000} triggerOnce={true}>
+            <Fade fraction={0}delay={0} duration={2000}>
+              <Slide delay={5000} duration={2000} triggerOnce={true}>
                 <SkillBox
                   header="3 YEARS"
                   className={styles.javaIcon}
@@ -135,11 +112,12 @@ const Home = () => {
                   Java
                 </SkillBox>
               </Slide>
+              </Fade>
             </Col>
             <Col className={styles.skillText}>
               <Slide
                 direction="right"
-                delay={800}
+                delay={5800}
                 duration={3000}
                 triggerOnce={true}
               >
@@ -155,6 +133,7 @@ const Home = () => {
               </Slide>
             </Col>
             <Col>
+            <Fade delay={0} duration={2000}>
               <Slide
                 direction="left"
                 delay={100}
@@ -171,6 +150,7 @@ const Home = () => {
                   Python
                 </SkillBox>
               </Slide>
+              </Fade>
             </Col>
             <Col className={styles.skillText}>
               <Slide
@@ -191,6 +171,7 @@ const Home = () => {
               </Slide>
             </Col>
             <Col>
+            <Fade delay={0} duration={2000}>
               <Slide delay={100} duration={2000} triggerOnce={true}>
                 <SkillBox
                   header="2 YEARS"
@@ -200,6 +181,7 @@ const Home = () => {
                   JSON
                 </SkillBox>
               </Slide>
+              </Fade>
             </Col>
             <Col className={styles.skillText}>
               <Slide
@@ -221,6 +203,7 @@ const Home = () => {
               </Slide>
             </Col>
             <Col>
+            <Fade delay={0} duration={2000}>
               <Slide
                 direction="left"
                 delay={100}
@@ -235,6 +218,7 @@ const Home = () => {
                   C++
                 </SkillBox>
               </Slide>
+              </Fade>
             </Col>
             <Col className={styles.skillText}>
               <Slide
@@ -255,7 +239,7 @@ const Home = () => {
               </Slide>
             </Col>
             <Col>
-              <Fade delay={900} duration={500} triggerOnce={true}>
+              <Fade delay={0} duration={2000}>
                 <JackInTheBox delay={800} duration={2000} triggerOnce={true}>
                   <SkillBox
                     className={styles.Applogo}
@@ -279,13 +263,9 @@ const Home = () => {
               </Bounce>
             </Col>
           </Row>
-        </ParallaxLayer>
-        <ParallaxLayer offset={2.7} speed={1}>
           <Hinge triggerOnce={true} duration={4000} delay={2000}>
             <h1 className={styles.gallery}>CLICK ON PROJECTS BELOW</h1>
           </Hinge>
-        </ParallaxLayer>
-        <ParallaxLayer offset={2.89} speed={2} style={{ paddingTop: "0px" }}>
           <Container className={styles.containerFluid} fluid>
             <Row xxl={4} lg={3} md={2} sm={1} xs={1}>
               <Col>
@@ -344,10 +324,7 @@ const Home = () => {
               </Col>
             </Row>
           </Container>
-        </ParallaxLayer>
       </Container>
-    </Parallax>
   );
-};
+}
 
-export default Home;

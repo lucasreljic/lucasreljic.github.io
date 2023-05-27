@@ -168,6 +168,8 @@ li{
 .gallery{
   font-weight: 600;
   font-size: 200%;
+  margin-top: 15rem;
+  margin-bottom: 4rem;
 }
 .galleryClick{
   width: 15rem;
@@ -178,6 +180,7 @@ li{
 .arrow {
   width: 100px;
   color: #e9dcdc;
+  padding-bottom: 15rem;
 }
 
 .javaIcon{
