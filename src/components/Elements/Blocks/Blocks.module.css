@@ -20,35 +20,59 @@
     }
 
 }
-.caption a {
+
+
+.caption {
+    display: inline-flex;
+    opacity: 0;
+    border-radius: 10px 10px;
+    color: #61c2ec;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: auto;
+    height: 18rem;
+    width: 18rem;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 500ms;
+    background-color: #050c13;
+}
+
+.caption p {
+    font-size: 0.5rem;
+    color: #61c2ec;
     overflow: hidden;
     font-size: 100%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    font-family: "Helvetica Neue", sans-serif;
     background-color: #050c13;
-    width: 18rem;
-    padding: 0.8rem;
+    backface-visibility: hidden;
+    display: block;
+    opacity: 1;
+}
+
+.caption a {
+    overflow: hidden;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #050c13;
+    padding: 3rem;
+    padding-top: 7rem;
     font-family: "Helvetica Neue", sans-serif;
     backface-visibility: hidden;
     display: block;
     opacity: 1;
 }
 
-.caption {
-    border-radius: 10px 10px;
-    padding-top: 18rem;
-    color: #61c2ec;
-    text-decoration: none;
-    text-align: center;
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
+.caption a:hover {
+    font-size: 1.2rem;
+    color: white;
 }
 
-.caption a:hover {
-    font-size: 105%;
-    color: white;
+.caption:hover{
+    animation-duration: 500ms;
+    opacity: 0.9;
 }
 
 
