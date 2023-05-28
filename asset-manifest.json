@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.31cc3ee0.css",
-    "main.js": "/static/js/main.d951b6cf.js",
+    "main.css": "/static/css/main.7ec40946.css",
+    "main.js": "/static/js/main.d98105a0.js",
     "static/js/787.aeca62f9.chunk.js": "/static/js/787.aeca62f9.chunk.js",
     "static/media/20221201_192840.jpg": "/static/media/20221201_192840.d5ac9f6aa0654ebc79eb.jpg",
     "static/media/20221201_193342.jpg": "/static/media/20221201_193342.d962a0288164a2f624e1.jpg",
@@ -19,6 +19,7 @@
     "static/media/1stplane.JPG": "/static/media/1stplane.c428189c08468abf40dc.JPG",
     "static/media/IMG_0197.JPG": "/static/media/IMG_0197.4b4ef05cb6b2498df22d.JPG",
     "static/media/welding.JPG": "/static/media/welding.51034717dd19bb30f637.JPG",
+    "static/media/output2.png": "/static/media/output2.3c90cdf2c50586f339e8.png",
     "static/media/IMG_3518.jpeg": "/static/media/IMG_3518.17d415bc943a4f664596.jpeg",
     "static/media/IMG_6924.jpeg": "/static/media/IMG_6924.311e5531ada4c4a135c3.jpeg",
     "static/media/original.jpg": "/static/media/original.ffe9bab95fb632f6db1a.jpg",
@@ -49,22 +50,24 @@
     "static/media/gmail.png": "/static/media/gmail.df4fdc0d13e2c249872f.png",
     "static/media/C++_Logo.png": "/static/media/C++_Logo.5185ce2f4c945505ee4f.png",
     "static/media/gallery.jpg": "/static/media/gallery.d21273eb0f920aff940e.jpg",
+    "static/media/output.png": "/static/media/output.fdef281ca3907e0aada2.png",
     "static/media/CodeSnippet.png": "/static/media/CodeSnippet.310a0ea1803e9da46228.png",
     "static/media/bike.jpg": "/static/media/bike.349d382098b71f634fb4.jpg",
     "static/media/official-linkedin-logo----17.png": "/static/media/official-linkedin-logo----17.bf34d6877011977497d6.png",
     "static/media/Programming.jpg": "/static/media/Programming.127e20402bfa298a4eac.jpg",
+    "static/media/file.jpg": "/static/media/file.4ec383095a7d3cfef773.jpg",
     "static/media/marketalarm.PNG": "/static/media/marketalarm.4394e14aef7dc13839af.PNG",
     "static/media/json1.png": "/static/media/json1.c58c05a55154f792f6ab.png",
     "static/media/profile.jpeg": "/static/media/profile.74f57c1a5026ecee3cee.jpeg",
     "static/media/react.svg": "/static/media/react.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "static/media/arrow-down-3101.svg": "/static/media/arrow-down-3101.d36ade42531520d19d1029bc6a0698a5.svg",
-    "main.31cc3ee0.css.map": "/static/css/main.31cc3ee0.css.map",
-    "main.d951b6cf.js.map": "/static/js/main.d951b6cf.js.map",
+    "main.7ec40946.css.map": "/static/css/main.7ec40946.css.map",
+    "main.d98105a0.js.map": "/static/js/main.d98105a0.js.map",
     "787.aeca62f9.chunk.js.map": "/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.31cc3ee0.css",
-    "static/js/main.d951b6cf.js"
+    "static/css/main.7ec40946.css",
+    "static/js/main.d98105a0.js"
   ]
 }
