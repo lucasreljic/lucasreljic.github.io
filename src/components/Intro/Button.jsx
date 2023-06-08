@@ -6,7 +6,7 @@ const Button = () => {
     return (
         <Wrapper className={styles.body}>
             <div className={styles.border}>
-            <Link className={styles.button} to="home"><h1 className={styles.text}>HomePage</h1></Link>
+            <Link className={styles.button} to="/"><h1 className={styles.text}>HomePage</h1></Link>
             </div>
         </Wrapper>
     )

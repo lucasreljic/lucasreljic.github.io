@@ -1,7 +1,7 @@
 .skillbox {
   display: block;
   margin-bottom: 3rem;
-  margin-top: 12rem;
+  margin-top: 16rem;
 }
 
 .h1 {
@@ -28,10 +28,17 @@
   .skillbox {
     display: block;
     margin-bottom: 2rem;
-    margin-top: 0rem;
+    margin-top: 10rem;
   }
 }
+@media (max-width: 768px) {
+  .skillbox {
+    display: block;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+  }
 
+}
 @media (max-width: 576px) {
   .h2 {
     font-size: 200%;
@@ -44,6 +51,6 @@
   .skillbox {
     display: block;
     margin-bottom: 0rem;
-    margin-top: 0rem;
+    margin-top: 4rem;
   }
 }

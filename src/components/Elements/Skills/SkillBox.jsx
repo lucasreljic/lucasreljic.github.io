@@ -2,7 +2,6 @@ import styles from "./SkillBox.module.css";
 const SkillBox = (props) => {
   return (
     <div className={styles.skillbox}>
-      <h2 className={styles.h2}>{props.header}</h2>
       <img
         className={`${props.className}`}
         style={{ width: `${props.width}` }}

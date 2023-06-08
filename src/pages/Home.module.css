@@ -133,12 +133,15 @@ li{
 
 .rocketryIcon{
   width: 18rem;
-  padding-bottom: 1rem;
 }
 
 .uwaterlooIcon{
   width: 13rem;
   padding-bottom: 1rem;
+}
+
+.goodlabsIcon{
+  width: 13rem;
 }
 
 .frcIcon{
@@ -181,6 +184,16 @@ For mobile
   }
 } 
 
+@media (max-width: 768px) {
+  .rocketryIcon{
+    width: 17rem;
+  }
+  .goodlabsIcon{
+    width: 12rem;
+  }
+  
+}
+
 @media (max-width: 576px) {
   .title{
     font-size: 0.9rem;
@@ -190,35 +203,39 @@ For mobile
     
   }
   .javaIcon{
-    width: 4.4rem;
+    width: 6.7rem;
   }
 
   .pythonIcon{
-    width: 3.7rem;
+    width: 5.7rem;
   }
   
   .jsonIcon{
-    width: 3rem;
+    width: 5rem;
   }
   
   .cppIcon{
-    width: 3rem;
+    width: 5rem;
   }
   
   .Applogo{
-    width: 5rem;
+    width: 8rem;
   }
 
   .rocketryIcon{
-    margin-top: 2rem;
     width: 9rem;
   }
   
   .uwaterlooIcon{
+    margin-top: 0.5rem;
     width: 6rem;
   }
   
   .frcIcon{
     width: 8rem;
   }
+  .goodlabsIcon{
+    width: 6rem;
+  }
+  
 }

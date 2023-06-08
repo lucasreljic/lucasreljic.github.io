@@ -14,14 +14,16 @@
     text-decoration: none;
     font-size: 100%;
     width: 100%;
-    background-color: #1e1e1e;
+    background-color: #000000;
     padding: 10%;
     margin: auto;
+    transition-duration: 500ms;
     
 }
 
 .text {
     margin: auto;
+    padding-top: 0rem;
     font-size: 300%;
 }
 
@@ -31,6 +33,7 @@
     padding: 5px;
 }
 .button:hover {
-    background: rgb(36, 36, 36);
+    font-size: 110%;
+    transition-duration: 500ms;
 
 }

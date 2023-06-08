@@ -18,9 +18,9 @@ root.render(
     <HashRouter>
       <Routes>
 
-        <Route index element={<Intro />} />
         <Route path="/" element={<Layout />}>
-          <Route path="home" element={<Home />} />
+        <Route index element={<Home />} />
+          <Route path="intro" element={<Intro />} />
           <Route path="roots2stem" element={<Roots2stem />} />
           <Route path="frc4627" element={<FRC4627 />} />
           <Route path="frc5078" element={<FRC5078 />} />

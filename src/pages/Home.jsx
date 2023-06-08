@@ -6,6 +6,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Blocks from "../components/Elements/Blocks/Blocks";
 import SkillBox from "../components/Elements/Skills/SkillBox";
 import IconBox from "../components/Elements/Icons/IconBox";
+import { useState, useEffect } from "react";
 import {
   Slide,
   Fade,
@@ -22,6 +23,7 @@ import frcPhoto from "./../icons/FRC-Vertical.png";
 import CppPhoto from "./../icons/C++_Logo.png";
 import rocketryPhoto from "./../icons/rocketry.png";
 import uwaterlooPhoto from "./../icons/University_of_Waterloo.svg.png";
+import goodlabsPhoto from "./../icons/goodlabs.png";
 
 //images
 import robot1a from "../components/Elements/Slide/photos/1AProject/20221201_192840.jpg";
@@ -38,6 +40,12 @@ import gokart from "../components/Elements/Slide/photos/gokart/IMG_1418.jpeg";
 import Appear from "../components/Intro/Appear";
 
 export default function Home() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   const handleClickScroll = () => {
     const element = document.getElementById("skills");
     if (element) {
@@ -49,15 +57,22 @@ export default function Home() {
     <Container fluid className={styles.container}>
       <Appear timeout={0.1} fillmode={"forwards"}>
         <h1 className={styles.mainHeader}>
-          <Fade cascade damping={1e-1} triggerOnce={true} duration={3000}>
+          <Fade cascade damping={1e-1} triggerOnce={true} duration={2000}>
             Who Am I?
           </Fade>
         </h1>
-        <Row md={3} sm={1} xs={1}>
-          <Fade triggerOnce={true} duration={1000} delay={5000}>
+        <Row xl={4} sm={2} xs={2}>
+          <Fade triggerOnce={true} duration={1000} delay={2000} style={{ opacity: isVisible ? 0 : 0 }}>
             <Col>
-              <br></br>
-              <AttentionSeeker effect="pulse" delay={6500} duration={1500}>
+              <AttentionSeeker effect="pulse" delay={2500} duration={1500}>
+                <IconBox
+                  className={styles.goodlabsIcon}
+                  url={goodlabsPhoto}
+                ></IconBox>
+              </AttentionSeeker>
+            </Col>
+            <Col>
+              <AttentionSeeker effect="pulse" delay={3500} duration={1500}>
                 <IconBox
                   className={styles.rocketryIcon}
                   url={rocketryPhoto}
@@ -65,7 +80,7 @@ export default function Home() {
               </AttentionSeeker>
             </Col>
             <Col>
-              <AttentionSeeker effect="pulse" delay={5500} duration={1500}>
+              <AttentionSeeker effect="pulse" delay={4500} duration={1500}>
                 <IconBox
                   className={styles.uwaterlooIcon}
                   url={uwaterlooPhoto}
@@ -73,13 +88,18 @@ export default function Home() {
               </AttentionSeeker>
             </Col>
             <Col>
-              <AttentionSeeker effect="pulse" delay={6500} duration={1500}>
+              <AttentionSeeker effect="pulse" delay={5500} duration={1500}>
                 <IconBox className={styles.frcIcon} url={frcPhoto}></IconBox>
               </AttentionSeeker>
             </Col>
           </Fade>
         </Row>
-        <Fade delay={4000} damping={1e-1} triggerOnce={true}>
+        <Fade
+          delay={4000}
+          damping={1e-1}
+          triggerOnce={true}
+          style={{ opacity: isVisible ? 0 : 1 }}
+        >
           <Text
             className={styles.title}
             style={{
@@ -89,7 +109,7 @@ export default function Home() {
           >
             My name is Lucas Reljic-Dumont, I am currently 19 years old and
             pursuing a BASc in Mechatronics Engineering at the University of
-            Waterloo. Currently in my first year. I have a passion for
+            Waterloo. Currently in my co-op term with GoodLabs Studio where I am designing, prototyping and programming a bipedal robot. I have a passion for
             mechanical and software projects as evident through the various
             projects I have accomplished over the years, some of which are
             visible on this website. Many of my experiences prior to university
@@ -97,7 +117,7 @@ export default function Home() {
           </Text>
         </Fade>
         <Slide delay={4500} duration={1000} direction="down" triggerOnce={true}>
-          <Fade delay={4000} duration={3000} triggerOnce={true}>
+          <Fade delay={4000} duration={3000} triggerOnce={true} style={{ opacity: isVisible ? 0 : 0 }}>
             <img
               onClick={handleClickScroll}
               className={styles.arrow}
@@ -107,9 +127,14 @@ export default function Home() {
           </Fade>
         </Slide>
       </Appear>
-      <Row md={2} sm={1} xs={1}>
+      <Row  id="skills"  md={2} sm={1} xs={1}>
         <Col>
-          <Fade fraction={0} delay={0} duration={2000}>
+          <Fade
+            fraction={0}
+            delay={0}
+            duration={2000}
+            style={{ opacity: isVisible ? 0 : 1 }}
+          >
             <Slide delay={500} duration={2000} triggerOnce={true}>
               <SkillBox
                 header="3 YEARS"
@@ -121,7 +146,12 @@ export default function Home() {
             </Slide>
           </Fade>
         </Col>
-        <Col id="skills" className={styles.skillText}>
+        <Col className={styles.skillText}>
+        <Fade
+            delay={0}
+            duration={2000}
+            style={{ opacity: isVisible ? 0 : 0 }}
+          >
           <Slide
             direction="right"
             delay={800}
@@ -137,9 +167,14 @@ export default function Home() {
               efficient, and reliable solutions to complex challenges.
             </Text>
           </Slide>
+          </Fade>
         </Col>
         <Col>
-          <Fade delay={0} duration={2000}>
+          <Fade
+            delay={0}
+            duration={2000}
+            style={{ opacity: isVisible ? 0 : 0 }}
+          >
             <Slide
               direction="left"
               delay={100}
@@ -159,6 +194,11 @@ export default function Home() {
           </Fade>
         </Col>
         <Col className={styles.skillText}>
+        <Fade
+            delay={0}
+            duration={2000}
+            style={{ opacity: isVisible ? 0 : 0 }}
+          >
           <Slide
             direction="right"
             delay={800}
@@ -175,9 +215,14 @@ export default function Home() {
               Toyota Challenge.
             </Text>
           </Slide>
+          </Fade>
         </Col>
         <Col>
-          <Fade delay={0} duration={2000}>
+          <Fade
+            delay={0}
+            duration={2000}
+            style={{ opacity: isVisible ? 0 : 1 }}
+          >
             <Slide delay={100} duration={2000} triggerOnce={true}>
               <SkillBox
                 header="2 YEARS"
@@ -190,6 +235,11 @@ export default function Home() {
           </Fade>
         </Col>
         <Col className={styles.skillText}>
+        <Fade
+            delay={0}
+            duration={2000}
+            style={{ opacity: isVisible ? 0 : 0 }}
+          >
           <Slide
             direction="right"
             delay={800}
@@ -206,9 +256,14 @@ export default function Home() {
               communication channels between separate codebases.
             </Text>
           </Slide>
+          </Fade>
         </Col>
         <Col>
-          <Fade delay={0} duration={2000}>
+          <Fade
+            delay={0}
+            duration={2000}
+            style={{ opacity: isVisible ? 0 : 1 }}
+          >
             <Slide
               direction="left"
               delay={100}
@@ -226,6 +281,11 @@ export default function Home() {
           </Fade>
         </Col>
         <Col className={styles.skillText}>
+        <Fade
+            delay={0}
+            duration={2000}
+            style={{ opacity: isVisible ? 0 : 0 }}
+          >
           <Slide
             direction="right"
             delay={800}
@@ -242,9 +302,14 @@ export default function Home() {
               hardware.
             </Text>
           </Slide>
+          </Fade>
         </Col>
         <Col>
-          <Fade delay={0} duration={2000}>
+          <Fade
+            delay={0}
+            duration={2000}
+            style={{ opacity: isVisible ? 0 : 1 }}
+          >
             <JackInTheBox delay={800} duration={2000} triggerOnce={true}>
               <SkillBox
                 className={styles.Applogo}
@@ -257,6 +322,11 @@ export default function Home() {
           </Fade>
         </Col>
         <Col className={styles.skillText}>
+        <Fade
+            delay={0}
+            duration={2000}
+            style={{ opacity: isVisible ? 0 : 0 }}
+          >
           <Bounce delay={800} duration={2000} triggerOnce={true}>
             <Text style={{ fontSize: "1.2rem" }}>
               Through my involvement in Waterloo Rocketry, I gained valuable
@@ -266,22 +336,31 @@ export default function Home() {
               and provided me with a solid foundation in React.
             </Text>
           </Bounce>
+          </Fade>
         </Col>
       </Row>
       <AttentionSeeker effect="pulse" duration={1000} delay={1000}>
         <h1 className={styles.gallery}>CLICK ON PROJECTS BELOW</h1>
       </AttentionSeeker>
       <Container className={styles.containerFluid} fluid>
-        <Row xxl={4} lg={3} md={2} sm={1} xs={1}>
+        <Row xxl={4} xl={3} lg={2} md={1} sm={1} xs={1}>
           <Col>
-            <Fade delay={0} duration={2000}>
+            <Fade
+              delay={0}
+              duration={2000}
+              style={{ opacity: isVisible ? 0 : 0 }}
+            >
               <Blocks link="/#/toyotainnovation2023" photo={toyota2023}>
                 Toyota Innovation Challenge 2023
               </Blocks>
             </Fade>
           </Col>
           <Col>
-            <Fade delay={0} duration={2000}>
+            <Fade
+              delay={0}
+              duration={2000}
+              style={{ opacity: isVisible ? 0 : 0 }}
+            >
               <Blocks
                 text="Autonomous cube collector."
                 link="/#/1afinalproject"
@@ -293,63 +372,99 @@ export default function Home() {
             </Fade>
           </Col>
           <Col>
-            <Fade delay={0} duration={2000}>
+            <Fade
+              delay={0}
+              duration={2000}
+              style={{ opacity: isVisible ? 0 : 0 }}
+            >
               <Blocks link="/#/openmv" photo={openmv}>
                 OpenMV Strategic Color Tracking
               </Blocks>
             </Fade>
           </Col>
           <Col>
-            <Fade delay={0} duration={2000}>
+            <Fade
+              delay={0}
+              duration={2000}
+              style={{ opacity: isVisible ? 0 : 0 }}
+            >
               <Blocks link="/#/toyotainnovation" photo={toyota}>
                 Toyota Innovation Challenge 2022
               </Blocks>
             </Fade>
           </Col>
           <Col>
-            <Fade delay={0} duration={2000}>
+            <Fade
+              delay={0}
+              duration={2000}
+              style={{ opacity: isVisible ? 0 : 0 }}
+            >
               <Blocks link="/#/UofTHacks" photo={uoftHacks}>
                 UofT Hackathon X
               </Blocks>
             </Fade>
           </Col>
           <Col>
-            <Fade delay={0} duration={2000}>
+            <Fade
+              delay={0}
+              duration={2000}
+              style={{ opacity: isVisible ? 0 : 0 }}
+            >
               <Blocks link="/#/frc4627" photo={frc4627}>
                 FRC 4627 2022 Competition Robot
               </Blocks>
             </Fade>
           </Col>
           <Col>
-            <Fade delay={0} duration={2000}>
+            <Fade
+              delay={0}
+              duration={2000}
+              style={{ opacity: isVisible ? 0 : 0 }}
+            >
               <Blocks link="/#/plant" photo={plant}>
                 Automatic Plant Watering
               </Blocks>
             </Fade>
           </Col>
           <Col>
-            <Fade delay={0} duration={2000}>
+            <Fade
+              delay={0}
+              duration={2000}
+              style={{ opacity: isVisible ? 0 : 0 }}
+            >
               <Blocks link="/#/sanitizer" photo={sanitizer}>
                 Hand Sanitizer
               </Blocks>
             </Fade>
           </Col>
           <Col>
-            <Fade delay={0} duration={2000}>
+            <Fade
+              delay={0}
+              duration={2000}
+              style={{ opacity: isVisible ? 0 : 0 }}
+            >
               <Blocks link="/#/RPilaptop" photo={piLaptop}>
                 Raspberry Pi Laptop
               </Blocks>
             </Fade>
           </Col>
           <Col>
-            <Fade delay={0} duration={2000}>
+            <Fade
+              delay={0}
+              duration={2000}
+              style={{ opacity: isVisible ? 0 : 0 }}
+            >
               <Blocks link="/#/gokart" photo={gokart}>
                 Electric Gokart
               </Blocks>
             </Fade>
           </Col>
           <Col>
-            <Fade delay={0} duration={2000}>
+            <Fade
+              delay={0}
+              duration={2000}
+              style={{ opacity: isVisible ? 0 : 0 }}
+            >
               <Blocks link="/#/rcplanes" photo={planes}>
                 RC Planes
               </Blocks>
