@@ -1,5 +1,6 @@
 body {
   scroll-behavior:smooth;
+  overflow-x: hidden;
   background-color: 004F71;  /* fallback for old browsers 
   background: -webkit-linear-gradient(to top,#845EC2, #2C73D2, #0081CF, #0089BA, #008E9B, #008F7A);  /* Chrome 10-25, Safari 5.1-6 */
   /*background: linear-gradient(to top, #845EC2, #2C73D2, #0081CF, #0089BA, #008E9B, #008F7A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
