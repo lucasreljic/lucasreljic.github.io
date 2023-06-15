@@ -127,7 +127,7 @@ export default function Home() {
           </Fade>
         </Slide>
       </Appear>
-      <Row  id="skills"  md={2} sm={1} xs={1}>
+      <Row  md={2} sm={1} xs={1}>
         <Col>
           <Fade
             fraction={0}
@@ -146,7 +146,7 @@ export default function Home() {
             </Slide>
           </Fade>
         </Col>
-        <Col className={styles.skillText}>
+        <Col id="skills" className={styles.skillText}>
         <Fade
             delay={0}
             duration={2000}

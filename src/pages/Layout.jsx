@@ -7,10 +7,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Layout.module.css";
 import mail from "./../components/NavSocials/gmail.png";
 import github from "./../components/NavSocials/github.png";
+import { JackInTheBox, Fade } from "react-awesome-reveal";
+
 import linkedIn from "./../components/NavSocials/official-linkedin-logo----17.png";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
 const Layout = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   var [text, setText] = useState("");
   return (
     <>
@@ -28,6 +36,7 @@ const Layout = () => {
               </a>
             </Navbar.Brand>
           </Nav>
+
           <Nav className="me-auto justify-content-center">
             <NavDropdown
               style={{ color: "white" }}
@@ -82,15 +91,22 @@ const Layout = () => {
                 className={styles.icon}
                 href="https://github.com/lucasreljic/"
               >
-                <img
-                  src={github}
-                  className={styles.navSocial}
-                  style={{
-                    backgroundColor: "grey",
-                    borderRadius: "1.5rem 1.5rem",
-                  }}
-                  alt="github logo"
-                />
+                <JackInTheBox
+                  delay={5000}
+                  duration={2000}
+                  triggerOnce={true}
+                  style={{ opacity: isVisible ? 0 : 1 }}
+                >
+                  <img
+                    src={github}
+                    className={styles.navSocial}
+                    style={{
+                      backgroundColor: "grey",
+                      borderRadius: "1.5rem 1.5rem",
+                    }}
+                    alt="github logo"
+                  />
+                </JackInTheBox>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -98,11 +114,19 @@ const Layout = () => {
                 className={styles.icon}
                 href="https://www.linkedin.com/in/lucas-reljic/"
               >
-                <img
-                  className={styles.navSocial}
-                  src={linkedIn}
-                  alt="linkedIn logo"
-                />
+                <Fade
+                  direction="down"
+                  delay={7000}
+                  duration={2000}
+                  triggerOnce={true}
+                  style={{ opacity: isVisible ? 0 : 1 }}
+                >
+                  <img
+                    className={styles.navSocial}
+                    src={linkedIn}
+                    alt="linkedIn logo"
+                  />
+                </Fade>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -110,11 +134,19 @@ const Layout = () => {
                 className={styles.icon}
                 href="mailto:lucas.reljic+Portfolio@gmail.com"
               >
-                <img
-                  className={styles.navSocialGmail}
-                  src={mail}
-                  alt="github logo"
-                />
+                <Fade
+                  direction="right"
+                  delay={9000}
+                  duration={2000}
+                  triggerOnce={true}
+                  style={{ opacity: isVisible ? 0 : 1 }}
+                >
+                  <img
+                    className={styles.navSocialGmail}
+                    src={mail}
+                    alt="mail logo"
+                  />
+                </Fade>
               </Nav.Link>
             </Nav.Item>
           </Nav>
