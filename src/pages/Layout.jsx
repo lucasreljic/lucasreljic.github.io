@@ -29,7 +29,7 @@ const Layout = () => {
         style={{ top: "0.5rem", display: "inline" }}
       >
         <Container fluid>
-          <Nav className="justify-content-center">
+          <Nav className="justify-content-center" >
             <Navbar.Brand className="mx-0">
               <a href={"/#/" + text} className={styles.title}>
                 Home
@@ -39,8 +39,8 @@ const Layout = () => {
 
           <Nav className="me-auto justify-content-center">
             <NavDropdown
-              style={{ color: "white" }}
-              title="Projects"
+              style={{ color: "black" }}
+              title={<span className={styles.dropdown}>Projects</span>}
               id="navbarScrollingDropdown"
             >
               <NavDropdown.Item href="/#/1afinalproject">
@@ -68,7 +68,7 @@ const Layout = () => {
                 RC Airplanes
               </NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Experiences" id="navbarScrollingDropdown">
+            <NavDropdown title={<span className={styles.dropdown}>Experiences</span>} id="navbarScrollingDropdown">
               <NavDropdown.Item href="/#/toyotainnovation2023">
                 Toyota Innovation Challenge 2023
               </NavDropdown.Item>

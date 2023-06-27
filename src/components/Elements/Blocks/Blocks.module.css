@@ -1,5 +1,5 @@
 .box_outer {
-    border-radius: 10px 10px;
+    border-radius: 2rem;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -25,7 +25,7 @@
 .caption {
     display: inline-flex;
     opacity: 0;
-    border-radius: 10px 10px;
+    border-radius: 2rem;
     color: #61c2ec;
     text-decoration: none;
     text-align: center;
@@ -56,9 +56,11 @@
     overflow: hidden;
     font-size: 1rem;
     text-align: center;
-    background-color: #050c13;
-    padding: 5rem;
-    padding-top: 8rem;
+    color: white;
+    background-color: #22769b;
+    padding: 2rem;
+    padding-top: 9rem;
+    
     font-family: "Helvetica Neue", sans-serif;
     backface-visibility: hidden;
     display: block;

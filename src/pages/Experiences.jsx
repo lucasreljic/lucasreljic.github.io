@@ -3,7 +3,7 @@ import { Slide } from "react-slideshow-image";
 import SlideBox from "../components/Elements/Slide/SlideBox";
 import Text from "../components/Elements/Text/Text";
 import styles from "./Experiences.module.css";
-
+import YoutubeEmbed from "../components/Elements/Other/YoutubeEmbed";
 const Toyota2023 = () => {
   return (
     <Container fluid>
@@ -14,17 +14,6 @@ const Toyota2023 = () => {
         <SlideBox photo="phototoyota4">Vision Outputs</SlideBox>
         <SlideBox photo="phototoyota5">Vision Outputs</SlideBox>
       </Slide>
-      <div className={styles.button}>
-        <Button href="https://github.com/mahir-mahota/Toyota-Innovation-Challenge-2">
-          GitHub
-        </Button>
-      </div>
-      <Text>
-        - Programmed in Python with OpenCV
-        <br></br>- Developed real-time tracking method that could detect a
-        misplaced sticker with up to 3mm of accuracy
-      </Text>
-      <br></br>
       <Text>
         During the summer, I took part in the Toyota Innovation Challenge, a
         weekend competition hosted by TMMC. It was my second time attending this
@@ -34,6 +23,24 @@ const Toyota2023 = () => {
         leveraged precise object tracking capabilities offered by OpenCV, which
         ultimately led to our victory and winning a prize in the competition.{" "}
       </Text>
+
+      <br></br>
+      <div style={{ width: '80rem', margin: 'auto'}}>
+      <YoutubeEmbed embedId="8XI78UiHIvk" />
+      </div>
+      <h1>Demo</h1>
+      <div className={styles.button}>
+        <Button href="https://github.com/mahir-mahota/Toyota-Innovation-Challenge-2">
+          GitHub
+        </Button>
+      </div>
+      <Text>
+        - Programmed in Python with OpenCV
+        <br></br>- Developed real-time tracking method that could detect a
+        misplaced sticker with up to 3mm of accuracy
+        <br></br>- Developed 6 unique optimized code for each station
+      </Text>
+      <br></br>
     </Container>
   );
 };

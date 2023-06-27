@@ -1,9 +1,42 @@
 .skillbox {
   display: block;
-  margin-bottom: 3rem;
-  margin-top: 16rem;
+  position: relative;
+  padding: 0.2rem;
+  border-radius: 1rem;
+  background-color: black;
+  margin: auto;
+  width: 99%;
+  align-items: center;
+  transition-duration: 200ms;
+  margin-top: 1rem;
 }
 
+.button{
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  width: 66%;
+  margin: auto;
+  padding: none;
+  align-items: center;
+  background: linear-gradient(0deg, #067a29 0%, #2626ff 35%, rgba(0, 212, 255, 1) 100%);
+  border: none;
+  border-radius: 1rem;
+  transition-duration: 1000ms;
+}
+
+
+.skillbox:hover{
+  transition-duration: 200ms;
+  background-color: rgb(31, 31, 31);
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+.img{
+  border-radius: 2rem;
+  opacity: 0.15;
+}
 .h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
@@ -25,11 +58,6 @@
     font-size: 250%;
   }
 
-  .skillbox {
-    display: block;
-    margin-bottom: 2rem;
-    margin-top: 10rem;
-  }
 }
 @media (max-width: 768px) {
   .skillbox {
@@ -48,9 +76,4 @@
     font-size: 100%;
   }
 
-  .skillbox {
-    display: block;
-    margin-bottom: 0rem;
-    margin-top: 4rem;
-  }
 }

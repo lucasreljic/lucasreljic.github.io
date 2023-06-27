@@ -3,7 +3,7 @@ import 'react-slideshow-image/dist/styles.css';
 import Type from '../components/Intro/Type';
 
 import Appear from '../components/Intro/Appear';
-import Button from '../components/Intro/Button';
+import Button2 from '../components/Intro/Button2';
 import styles from './Intro.module.css';
 import { TypeAnimation } from 'react-type-animation';
 
@@ -47,7 +47,7 @@ const Intro = () => {
             </Appear>
             <br></br><br></br>
             <Appear timeout={7} fillmode={"forwards"} duration={2}>
-                <Button></Button>
+                <Button2 link="/" text="Homepage"></Button2>
             </Appear>
 
         </div>

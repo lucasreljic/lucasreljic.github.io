@@ -6,6 +6,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import Blocks from "../components/Elements/Blocks/Blocks";
 import SkillBox from "../components/Elements/Skills/SkillBox";
 import IconBox from "../components/Elements/Icons/IconBox";
+import Button2 from "../components/Intro/Button2";
+import ReactCardFlip from "react-card-flip";
 import { useState, useEffect } from "react";
 import {
   Slide,
@@ -41,11 +43,10 @@ import Appear from "../components/Intro/Appear";
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
-
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
+  const [flip, setFlip] = useState(false);
   const handleClickScroll = () => {
     const element = document.getElementById("skills");
     if (element) {
@@ -62,7 +63,12 @@ export default function Home() {
           </Fade>
         </h1>
         <Row xl={4} sm={2} xs={2}>
-          <Fade triggerOnce={true} duration={1000} delay={2000} style={{ opacity: isVisible ? 0 : 0 }}>
+          <Fade
+            triggerOnce={true}
+            duration={1000}
+            delay={2000}
+            style={{ opacity: isVisible ? 0 : 0 }}
+          >
             <Col>
               <AttentionSeeker effect="pulse" delay={2500} duration={1500}>
                 <IconBox
@@ -109,15 +115,21 @@ export default function Home() {
           >
             My name is Lucas Reljic-Dumont, I am currently 19 years old and
             pursuing a BASc in Mechatronics Engineering at the University of
-            Waterloo. Currently in my co-op term with GoodLabs Studio where I am designing, prototyping and programming a bipedal robot. I have a passion for
-            mechanical and software projects as evident through the various
-            projects I have accomplished over the years, some of which are
-            visible on this website. Many of my experiences prior to university
-            guided me towards pursuing an Engineering degree.
+            Waterloo. Currently in my co-op term with GoodLabs Studio where I am
+            designing, prototyping and programming a bipedal robot. I have a
+            passion for mechanical and software projects as evident through the
+            various projects I have accomplished over the years, some of which
+            are visible on this website. Many of my experiences prior to
+            university guided me towards pursuing an Engineering degree.
           </Text>
         </Fade>
         <Slide delay={4500} duration={1000} direction="down" triggerOnce={true}>
-          <Fade delay={4000} duration={3000} triggerOnce={true} style={{ opacity: isVisible ? 0 : 0 }}>
+          <Fade
+            delay={4000}
+            duration={3000}
+            triggerOnce={true}
+            style={{ opacity: isVisible ? 0 : 0 }}
+          >
             <img
               onClick={handleClickScroll}
               className={styles.arrow}
@@ -127,57 +139,70 @@ export default function Home() {
           </Fade>
         </Slide>
       </Appear>
-      <Row  md={2} sm={1} xs={1}>
+      <Row md={2} sm={1} xs={1}>
         <Col>
           <Fade
             fraction={0}
             delay={0}
-            duration={2000}
+            duration={1000}
             style={{ opacity: isVisible ? 0 : 1 }}
           >
-            <Slide delay={500} duration={2000} triggerOnce={true}>
+            <Slide delay={0} duration={2000} triggerOnce={true}>
+              <ReactCardFlip isFlipped={flip}>
               <SkillBox
                 header="3 YEARS"
+                click={() => setFlip(!flip)}
                 className={styles.javaIcon}
                 url={"https://www.svgrepo.com/show/184143/java.svg"}
               >
                 Java
               </SkillBox>
+              <Button2 link={() => setFlip(!flip)} style={{ fontSize: "1.2rem" }}>
+                During my five-year involvement in FRC, Java was the language
+                for programming the robots. This extensive hands-on experience
+                enabled me to gain a deep understanding of Java's syntax,
+                features, and best practices. Applying Java in real-world FRC
+                scenarios enhanced my problem-solving skills and enabled me to
+                develop robust, efficient, and reliable solutions to complex
+                challenges.
+              </Button2>
+              </ReactCardFlip>
             </Slide>
           </Fade>
         </Col>
         <Col id="skills" className={styles.skillText}>
-        <Fade
+          <Fade
             delay={0}
-            duration={2000}
+            duration={1000}
             style={{ opacity: isVisible ? 0 : 0 }}
           >
-          <Slide
-            direction="right"
-            delay={800}
-            duration={3000}
-            triggerOnce={true}
-          >
-            <Text style={{ fontSize: "1.2rem" }}>
-              During my five-year involvement in FRC, Java was the language for
-              programming the robots. This extensive hands-on experience enabled
-              me to gain a deep understanding of Java's syntax, features, and
-              best practices. Applying Java in real-world FRC scenarios enhanced
-              my problem-solving skills and enabled me to develop robust,
-              efficient, and reliable solutions to complex challenges.
-            </Text>
-          </Slide>
+            <Slide
+              direction="right"
+              delay={100}
+              duration={2000}
+              triggerOnce={true}
+            >
+              <Text style={{ fontSize: "1.2rem" }}>
+                During my five-year involvement in FRC, Java was the language
+                for programming the robots. This extensive hands-on experience
+                enabled me to gain a deep understanding of Java's syntax,
+                features, and best practices. Applying Java in real-world FRC
+                scenarios enhanced my problem-solving skills and enabled me to
+                develop robust, efficient, and reliable solutions to complex
+                challenges.
+              </Text>
+            </Slide>
           </Fade>
         </Col>
         <Col>
           <Fade
             delay={0}
-            duration={2000}
+            duration={1000}
             style={{ opacity: isVisible ? 0 : 0 }}
           >
             <Slide
               direction="left"
-              delay={100}
+              delay={0}
               duration={2000}
               triggerOnce={true}
             >
@@ -194,33 +219,28 @@ export default function Home() {
           </Fade>
         </Col>
         <Col className={styles.skillText}>
-        <Fade
+          <Fade
             delay={0}
-            duration={2000}
+            duration={1000}
             style={{ opacity: isVisible ? 0 : 0 }}
           >
-          <Slide
-            direction="right"
-            delay={800}
-            duration={3000}
-            triggerOnce={true}
-          >
-            <Text style={{ fontSize: "1.2rem" }}>
-              As a part of FRC, I gained extensive experience in Python
-              programming, specifically in vision systems. Utilizing Python's
-              libraries and tools, I implemented efficient solutions for image
-              processing and analysis. This hands-on experience enhanced my
-              proficiency in Python's syntax, data structures, and built-in
-              functions, which I further expanded through experiences like the
-              Toyota Challenge.
-            </Text>
-          </Slide>
+            <Slide
+              direction="right"
+              delay={100}
+              duration={2500}
+              triggerOnce={true}
+            >
+              <Button2
+                style={{ width: "5rem" }}
+                text="MicroPython, OpenCV, OpenMV, and a lot of API's"
+              ></Button2>
+            </Slide>
           </Fade>
         </Col>
         <Col>
           <Fade
             delay={0}
-            duration={2000}
+            duration={1000}
             style={{ opacity: isVisible ? 0 : 1 }}
           >
             <Slide delay={100} duration={2000} triggerOnce={true}>
@@ -235,33 +255,33 @@ export default function Home() {
           </Fade>
         </Col>
         <Col className={styles.skillText}>
-        <Fade
+          <Fade
             delay={0}
-            duration={2000}
+            duration={1500}
             style={{ opacity: isVisible ? 0 : 0 }}
           >
-          <Slide
-            direction="right"
-            delay={800}
-            duration={3000}
-            triggerOnce={true}
-          >
-            <Text style={{ fontSize: "1.2rem" }}>
-              I gained valuable experience working with JSON as well during my
-              time in FRC, where I focused on creating a seamless pipeline
-              between Python and Java. It involved effectively handling and
-              manipulating JSON strings to facilitate data exchange between the
-              languages. Through this, I developed a strong understanding of
-              JSON syntax and best practices, enabling me to establish efficient
-              communication channels between separate codebases.
-            </Text>
-          </Slide>
+            <Slide
+              direction="right"
+              delay={100}
+              duration={2500}
+              triggerOnce={true}
+            >
+              <Text style={{ fontSize: "1.2rem" }}>
+                I gained valuable experience working with JSON as well during my
+                time in FRC, where I focused on creating a seamless pipeline
+                between Python and Java. It involved effectively handling and
+                manipulating JSON strings to facilitate data exchange between
+                the languages. Through this, I developed a strong understanding
+                of JSON syntax and best practices, enabling me to establish
+                efficient communication channels between separate codebases.
+              </Text>
+            </Slide>
           </Fade>
         </Col>
         <Col>
           <Fade
             delay={0}
-            duration={2000}
+            duration={1000}
             style={{ opacity: isVisible ? 0 : 1 }}
           >
             <Slide
@@ -281,36 +301,36 @@ export default function Home() {
           </Fade>
         </Col>
         <Col className={styles.skillText}>
-        <Fade
+          <Fade
             delay={0}
-            duration={2000}
+            duration={1000}
             style={{ opacity: isVisible ? 0 : 0 }}
           >
-          <Slide
-            direction="right"
-            delay={800}
-            duration={3000}
-            triggerOnce={true}
-          >
-            <Text style={{ fontSize: "1.2rem" }}>
-              In my engineering program, I gained extensive knowledge of the C++
-              programming language, achieving top marks in my programming
-              classes. I also have hands-on experience with Arduino boards,
-              utilizing C++ to program and control electronic systems. This
-              practical application of C++ through Arduino projects has
-              strengthened my proficiency in the language and working with
-              hardware.
-            </Text>
-          </Slide>
+            <Slide
+              direction="right"
+              delay={100}
+              duration={2500}
+              triggerOnce={true}
+            >
+              <Text style={{ fontSize: "1.2rem" }}>
+                In my engineering program, I gained extensive knowledge of the
+                C++ programming language, achieving top marks in my programming
+                classes. I also have hands-on experience with Arduino boards,
+                utilizing C++ to program and control electronic systems. This
+                practical application of C++ through Arduino projects has
+                strengthened my proficiency in the language and working with
+                hardware.
+              </Text>
+            </Slide>
           </Fade>
         </Col>
         <Col>
           <Fade
-            delay={0}
-            duration={2000}
+            delay={100}
+            duration={1000}
             style={{ opacity: isVisible ? 0 : 1 }}
           >
-            <JackInTheBox delay={800} duration={2000} triggerOnce={true}>
+            <JackInTheBox delay={0} duration={2000} triggerOnce={true}>
               <SkillBox
                 className={styles.Applogo}
                 header="3 MONTH"
@@ -322,20 +342,20 @@ export default function Home() {
           </Fade>
         </Col>
         <Col className={styles.skillText}>
-        <Fade
+          <Fade
             delay={0}
-            duration={2000}
+            duration={1000}
             style={{ opacity: isVisible ? 0 : 0 }}
           >
-          <Bounce delay={800} duration={2000} triggerOnce={true}>
-            <Text style={{ fontSize: "1.2rem" }}>
-              Through my involvement in Waterloo Rocketry, I gained valuable
-              experience in React, learning its syntax, styles, and various
-              components. Working on projects like the Rocketry website and this
-              current website has significantly enhanced my Javascript skills
-              and provided me with a solid foundation in React.
-            </Text>
-          </Bounce>
+            <Bounce delay={100} duration={2000} triggerOnce={true}>
+              <Text style={{ fontSize: "1.2rem" }}>
+                Through my involvement in Waterloo Rocketry, I gained valuable
+                experience in React, learning its syntax, styles, and various
+                components. Working on projects like the Rocketry website and
+                this current website has significantly enhanced my Javascript
+                skills and provided me with a solid foundation in React.
+              </Text>
+            </Bounce>
           </Fade>
         </Col>
       </Row>
@@ -347,7 +367,7 @@ export default function Home() {
           <Col>
             <Fade
               delay={0}
-              duration={2000}
+              duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
             >
               <Blocks link="/#/toyotainnovation2023" photo={toyota2023}>
@@ -358,7 +378,7 @@ export default function Home() {
           <Col>
             <Fade
               delay={0}
-              duration={2000}
+              duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
             >
               <Blocks
@@ -374,7 +394,7 @@ export default function Home() {
           <Col>
             <Fade
               delay={0}
-              duration={2000}
+              duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
             >
               <Blocks link="/#/openmv" photo={openmv}>
@@ -385,7 +405,7 @@ export default function Home() {
           <Col>
             <Fade
               delay={0}
-              duration={2000}
+              duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
             >
               <Blocks link="/#/toyotainnovation" photo={toyota}>
@@ -396,7 +416,7 @@ export default function Home() {
           <Col>
             <Fade
               delay={0}
-              duration={2000}
+              duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
             >
               <Blocks link="/#/UofTHacks" photo={uoftHacks}>
@@ -407,7 +427,7 @@ export default function Home() {
           <Col>
             <Fade
               delay={0}
-              duration={2000}
+              duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
             >
               <Blocks link="/#/frc4627" photo={frc4627}>
@@ -418,7 +438,7 @@ export default function Home() {
           <Col>
             <Fade
               delay={0}
-              duration={2000}
+              duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
             >
               <Blocks link="/#/plant" photo={plant}>
@@ -429,7 +449,7 @@ export default function Home() {
           <Col>
             <Fade
               delay={0}
-              duration={2000}
+              duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
             >
               <Blocks link="/#/sanitizer" photo={sanitizer}>
@@ -440,7 +460,7 @@ export default function Home() {
           <Col>
             <Fade
               delay={0}
-              duration={2000}
+              duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
             >
               <Blocks link="/#/RPilaptop" photo={piLaptop}>
@@ -451,7 +471,7 @@ export default function Home() {
           <Col>
             <Fade
               delay={0}
-              duration={2000}
+              duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
             >
               <Blocks link="/#/gokart" photo={gokart}>
@@ -462,7 +482,7 @@ export default function Home() {
           <Col>
             <Fade
               delay={0}
-              duration={2000}
+              duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
             >
               <Blocks link="/#/rcplanes" photo={planes}>

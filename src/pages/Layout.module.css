@@ -1,5 +1,5 @@
 .title{
-  color:  #a7a7a7;
+  color:  #61c2ec;
   margin-right: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -7,6 +7,15 @@
   text-decoration: none;
   transition: 250ms;
 }
+.dropdown{
+  transition-duration: 500ms;
+  color: #61c2ec;
+}
+.dropdown:hover{
+  transition-duration: 500ms;
+  color: white;
+}
+
 .title:hover{
   transition: 250ms;
   color: aliceblue;}

@@ -1,9 +1,12 @@
 .body {
-    display: inline-block;
+    display: block;
+    position: absolute;
     text-align: center;
     align-items: center;
     border-radius: 10px;
-    background: linear-gradient(0deg, #06257a 0%, #0054c2 35%, rgb(241, 58, 2) 100%);
+    width: 50rem;    
+    height: 20rem;
+    background: linear-gradient(0deg, #067a29 0%, #2626ff 35%, rgba(0, 212, 255, 1) 100%);
 }
 
 .button {
@@ -12,8 +15,9 @@
     color: white;
     border-radius: 10px;
     text-decoration: none;
-    font-size: 70%;
-    width: 66%;
+    font-size: 100%;
+    width: 100%;
+
     background-color: #000000;
     
     margin: auto;
@@ -23,6 +27,7 @@
 
 .text {
     margin: auto;
+    font-size: 300%;
     position: absolute;
     height: max-content;
     width: max-content;
@@ -42,7 +47,7 @@
     padding: 5px;
 }
 .button:hover {
-    font-size: 70%;
+    font-size: 110%;
     transition-duration: 500ms;
 
 }

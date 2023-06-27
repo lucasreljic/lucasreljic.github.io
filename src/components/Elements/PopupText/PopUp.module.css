@@ -1,0 +1,36 @@
+.popup {
+    position: relative;
+}
+
+.Text {
+  opacity: 0;
+  background-color: aliceblue;
+  transition-duration: 200ms;
+  font-size: small;
+}
+
+.Text:hover {
+  transition-duration: 200ms;
+  font-size: 2rem;
+  opacity: 1;
+  z-index: 1;
+  .overlay{
+    z-index: -1;
+    opacity: 0;
+}
+}
+
+.overlay {
+    opacity: 1;
+    position: absolute;
+    height: max-content;
+    width: max-content;
+    left:0;
+    right:0;
+    top: 0;
+    bottom: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left:auto;
+    margin-right:auto;
+}
