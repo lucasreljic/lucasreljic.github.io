@@ -1,27 +1,29 @@
 .skillbox {
   display: block;
   position: relative;
-  padding: 0.2rem;
-  border-radius: 1rem;
+  padding: 0rem;
+  border-radius: 1.5rem;
   background-color: black;
   margin: auto;
-  width: 99%;
+  min-width: 18rem;
   align-items: center;
   transition-duration: 200ms;
-  margin-top: 1rem;
 }
 
 .button{
-  display: inline-block;
+  display: flex;
+  position: relative;
+  vertical-align: middle;
   text-align: center;
   align-items: center;
-  width: 66%;
+  max-width: 20rem;
   margin: auto;
+  margin-bottom: 2.5rem;
+  margin-top: 4.5rem;
   padding: none;
   align-items: center;
-  background: linear-gradient(0deg, #067a29 0%, #2626ff 35%, rgba(0, 212, 255, 1) 100%);
   border: none;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   transition-duration: 1000ms;
 }
 

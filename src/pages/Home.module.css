@@ -62,7 +62,23 @@ li{
 
 @media (prefers-reduced-motion: no-preference) {
   .Applogo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 6s linear;
+  }
+
+  .javaIcon{
+    animation: App-logo-spin infinite 3s alternate;
+  }
+  
+  .pythonIcon{
+    animation: App-logo-spin infinite 2s backwards;
+  }
+  
+  .jsonIcon{
+    animation: App-logo-spin infinite 6s alternate-reverse;
+  }
+  
+  .cppIcon{
+    animation: App-logo-move infinite 0.3s alternate;
   }
 }
 
@@ -74,6 +90,19 @@ li{
     transform: rotate(360deg);
   }
 }
+
+@keyframes App-logo-move {
+
+  from {
+    transform: translateY(1rem); 
+  }
+  to {
+    transform: translateY(-1rem);
+    
+  }
+
+}
+
 .skills {
   font-weight: 550;
   border-radius: 5px 5px;
@@ -82,9 +111,6 @@ li{
   color: #ffffff;
 }
 
-.skillText{
-  
-}
 
 .mainHeader{
   color:   #61c2ec;

@@ -7,7 +7,7 @@ const Button2 = (props) => {
     return (
         <Wrapper className={styles.body}>
             <div className={styles.border}>
-            <Button className={styles.button} onClick={props.link}>{props.text}<p className={styles.text}>{props.children}</p></Button>
+            <Button size="sm" className={styles.button} onClick={props.link}>{props.text}<p className={styles.text}>{props.children}</p></Button>
             </div>
         </Wrapper>
     )

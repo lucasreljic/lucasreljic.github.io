@@ -1,28 +1,39 @@
 .body {
-    display: inline-block;
+    display: block;
+    position: relative;
+    min-width: 25rem;
+    max-width: 30rem;
+    min-height: 20rem;
     text-align: center;
     align-items: center;
     border-radius: 10px;
+    transition-duration: 500ms;
+    margin: auto;
     background: linear-gradient(0deg, #06257a 0%, #0054c2 35%, rgb(241, 58, 2) 100%);
 }
 
 .button {
-    display: flex;
-    position: relative;
+    display: flexbox;
+    position: absolute;
     color: white;
     border-radius: 10px;
     text-decoration: none;
-    font-size: 70%;
-    width: 66%;
+    max-width: 25rem;
+    min-height: 10rem;
+    font-size: x-small;
     background-color: #000000;
-    
+    left:0;
+    right: 0;
+    top: 5rem;
     margin: auto;
+    max-height: 20rem;
     transition-duration: 500ms;
-    
+    vertical-align: middle;
 }
 
 .text {
     margin: auto;
+    font-size: larger;
     position: absolute;
     height: max-content;
     width: max-content;
@@ -42,7 +53,7 @@
     padding: 5px;
 }
 .button:hover {
-    font-size: 70%;
     transition-duration: 500ms;
+    background-color: #242424;
 
 }

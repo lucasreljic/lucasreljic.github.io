@@ -2,15 +2,15 @@ import { Button } from "react-bootstrap";
 import styles from "./SkillBox.module.css";
 const SkillBox = (props) => {
   return (
-      <Button onClick={props.click} size="sm" className={styles.button}>
-        <div style={{ height: `${props.height}` }} className={styles.skillbox}>
+      <Button onClick={props.click} size="sm" className={styles.button} style={{  background: `linear-gradient(${props.color})` }}>
+        <div className={styles.skillbox}>
           <div
             className={styles.img}
             style={{ backgroundImage: "url(" + props.background + ")" }}
           ></div>
           <img
             className={`${props.className}`}
-            style={{ paddingTop: "1.2rem" }}
+            style={{ paddingBottom: "1.0rem", paddingTop: "1.0rem" }}
             alt="somethings missing"
             src={props.url}
           ></img>

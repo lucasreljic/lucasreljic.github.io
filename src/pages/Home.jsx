@@ -13,7 +13,6 @@ import {
   Slide,
   Fade,
   JackInTheBox,
-  Bounce,
   AttentionSeeker,
 } from "react-awesome-reveal";
 
@@ -139,8 +138,8 @@ export default function Home() {
           </Fade>
         </Slide>
       </Appear>
-      <Row md={2} sm={1} xs={1}>
-        <Col>
+      <Row lg={2} md={1} sm={1} xs={1}>
+        <Col id="skills">
           <Fade
             fraction={0}
             delay={0}
@@ -148,49 +147,26 @@ export default function Home() {
             style={{ opacity: isVisible ? 0 : 1 }}
           >
             <Slide delay={0} duration={2000} triggerOnce={true}>
-              <ReactCardFlip isFlipped={flip}>
-              <SkillBox
-                header="3 YEARS"
-                click={() => setFlip(!flip)}
-                className={styles.javaIcon}
-                url={"https://www.svgrepo.com/show/184143/java.svg"}
-              >
-                Java
-              </SkillBox>
-              <Button2 link={() => setFlip(!flip)} style={{ fontSize: "1.2rem" }}>
-                During my five-year involvement in FRC, Java was the language
-                for programming the robots. This extensive hands-on experience
-                enabled me to gain a deep understanding of Java's syntax,
-                features, and best practices. Applying Java in real-world FRC
-                scenarios enhanced my problem-solving skills and enabled me to
-                develop robust, efficient, and reliable solutions to complex
-                challenges.
-              </Button2>
+              <ReactCardFlip isFlipped={flip} flipDirection="vertical">
+                <SkillBox
+                  header="3 YEARS"
+                  click={() => setFlip(!flip)}
+                  color={"-25deg, #06257a 0%, #0054c2 35%, rgb(241, 58, 2) 100%"}
+                  className={styles.javaIcon}
+                  url={"https://www.svgrepo.com/show/184143/java.svg"}
+                >
+                  Java
+                </SkillBox>
+                <Button2 left="10rem" link={() => setFlip(!flip)}>
+                  During my five-year involvement in FRC, Java was the language
+                  for programming the robots. This extensive hands-on experience
+                  enabled me to gain a deep understanding of Java's syntax,
+                  features, and best practices. Applying Java in real-world FRC
+                  scenarios enhanced my problem-solving skills and enabled me to
+                  develop robust, efficient, and reliable solutions to complex
+                  challenges.
+                </Button2>
               </ReactCardFlip>
-            </Slide>
-          </Fade>
-        </Col>
-        <Col id="skills" className={styles.skillText}>
-          <Fade
-            delay={0}
-            duration={1000}
-            style={{ opacity: isVisible ? 0 : 0 }}
-          >
-            <Slide
-              direction="right"
-              delay={100}
-              duration={2000}
-              triggerOnce={true}
-            >
-              <Text style={{ fontSize: "1.2rem" }}>
-                During my five-year involvement in FRC, Java was the language
-                for programming the robots. This extensive hands-on experience
-                enabled me to gain a deep understanding of Java's syntax,
-                features, and best practices. Applying Java in real-world FRC
-                scenarios enhanced my problem-solving skills and enabled me to
-                develop robust, efficient, and reliable solutions to complex
-                challenges.
-              </Text>
             </Slide>
           </Fade>
         </Col>
@@ -208,6 +184,7 @@ export default function Home() {
             >
               <SkillBox
                 header="2 YEARS"
+                color={"155deg, #06257a 0%, #0054c2 35%, rgb(255, 222, 76) 100%"}
                 className={styles.pythonIcon}
                 url={
                   "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
@@ -218,63 +195,34 @@ export default function Home() {
             </Slide>
           </Fade>
         </Col>
-        <Col className={styles.skillText}>
-          <Fade
-            delay={0}
-            duration={1000}
-            style={{ opacity: isVisible ? 0 : 0 }}
-          >
-            <Slide
-              direction="right"
-              delay={100}
-              duration={2500}
-              triggerOnce={true}
-            >
-              <Button2
-                style={{ width: "5rem" }}
-                text="MicroPython, OpenCV, OpenMV, and a lot of API's"
-              ></Button2>
-            </Slide>
-          </Fade>
-        </Col>
-        <Col>
+        <Col xs lg='11'>
           <Fade
             delay={0}
             duration={1000}
             style={{ opacity: isVisible ? 0 : 1 }}
           >
             <Slide delay={100} duration={2000} triggerOnce={true}>
-              <SkillBox
-                header="2 YEARS"
-                className={styles.jsonIcon}
-                url={jsonPhoto}
-              >
-                JSON
-              </SkillBox>
-            </Slide>
-          </Fade>
-        </Col>
-        <Col className={styles.skillText}>
-          <Fade
-            delay={0}
-            duration={1500}
-            style={{ opacity: isVisible ? 0 : 0 }}
-          >
-            <Slide
-              direction="right"
-              delay={100}
-              duration={2500}
-              triggerOnce={true}
-            >
-              <Text style={{ fontSize: "1.2rem" }}>
-                I gained valuable experience working with JSON as well during my
-                time in FRC, where I focused on creating a seamless pipeline
-                between Python and Java. It involved effectively handling and
-                manipulating JSON strings to facilitate data exchange between
-                the languages. Through this, I developed a strong understanding
-                of JSON syntax and best practices, enabling me to establish
-                efficient communication channels between separate codebases.
-              </Text>
+              <ReactCardFlip isFlipped={flip} flipDirection="vertical">
+                <SkillBox
+                  header="2 YEARS"
+                  click={() => setFlip(!flip)}
+                  color={"25deg, #09090a 0%, #e7e7e7 35%, rgb(73, 73, 73) 100%"}
+                  className={styles.jsonIcon}
+                  url={jsonPhoto}
+                >
+                  JSON
+                </SkillBox>
+                <Button2 link={() => setFlip(!flip)}>
+                  I gained valuable experience working with JSON as well during
+                  my time in FRC, where I focused on creating a seamless
+                  pipeline between Python and Java. It involved effectively
+                  handling and manipulating JSON strings to facilitate data
+                  exchange between the languages. Through this, I developed a
+                  strong understanding of JSON syntax and best practices,
+                  enabling me to establish efficient communication channels
+                  between separate codebases.
+                </Button2>
+              </ReactCardFlip>
             </Slide>
           </Fade>
         </Col>
@@ -290,54 +238,51 @@ export default function Home() {
               duration={2000}
               triggerOnce={true}
             >
-              <SkillBox
-                header="6 MONTHS"
-                className={styles.cppIcon}
-                url={CppPhoto}
-              >
-                C++
-              </SkillBox>
+              <ReactCardFlip isFlipped={flip} flipDirection="vertical">
+                <SkillBox
+                  header="6 MONTHS"
+                  className={styles.cppIcon}
+                  color={"-10deg, #06557a 0%, #2626ff 35%, rgba(0, 212, 255, 1) 100%"}
+                  url={CppPhoto}
+                >
+                  C++
+                </SkillBox>
+                <Button2>
+                  In my engineering program, I gained extensive knowledge of the
+                  C++ programming language, achieving top marks in my
+                  programming classes. I also have hands-on experience with
+                  Arduino boards, utilizing C++ to program and control
+                  electronic systems. This practical application of C++ through
+                  Arduino projects has strengthened my proficiency in the
+                  language and working with hardware.
+                </Button2>
+              </ReactCardFlip>
             </Slide>
           </Fade>
         </Col>
-        <Col className={styles.skillText}>
-          <Fade
-            delay={0}
-            duration={1000}
-            style={{ opacity: isVisible ? 0 : 0 }}
-          >
-            <Slide
-              direction="right"
-              delay={100}
-              duration={2500}
-              triggerOnce={true}
-            >
-              <Text style={{ fontSize: "1.2rem" }}>
-                In my engineering program, I gained extensive knowledge of the
-                C++ programming language, achieving top marks in my programming
-                classes. I also have hands-on experience with Arduino boards,
-                utilizing C++ to program and control electronic systems. This
-                practical application of C++ through Arduino projects has
-                strengthened my proficiency in the language and working with
-                hardware.
-              </Text>
-            </Slide>
-          </Fade>
-        </Col>
-        <Col>
+        <Col xs lg='6'>
           <Fade
             delay={100}
             duration={1000}
             style={{ opacity: isVisible ? 0 : 1 }}
           >
             <JackInTheBox delay={0} duration={2000} triggerOnce={true}>
-              <SkillBox
-                className={styles.Applogo}
-                header="3 MONTH"
-                url={ReactSVG}
-              >
-                React JS
-              </SkillBox>
+              <ReactCardFlip isFlipped={flip} flipDirection="vertical">
+                <SkillBox
+                  className={styles.Applogo}
+                  header="3 MONTH"
+                  url={ReactSVG}
+                >
+                  React JS
+                </SkillBox>
+                <Button2>
+                  Through my involvement in Waterloo Rocketry, I gained valuable
+                  experience in React, learning its syntax, styles, and various
+                  components. Working on projects like the Rocketry website and
+                  this current website has significantly enhanced my Javascript
+                  skills and provided me with a solid foundation in React.
+                </Button2>
+              </ReactCardFlip>
             </JackInTheBox>
           </Fade>
         </Col>
@@ -346,17 +291,7 @@ export default function Home() {
             delay={0}
             duration={1000}
             style={{ opacity: isVisible ? 0 : 0 }}
-          >
-            <Bounce delay={100} duration={2000} triggerOnce={true}>
-              <Text style={{ fontSize: "1.2rem" }}>
-                Through my involvement in Waterloo Rocketry, I gained valuable
-                experience in React, learning its syntax, styles, and various
-                components. Working on projects like the Rocketry website and
-                this current website has significantly enhanced my Javascript
-                skills and provided me with a solid foundation in React.
-              </Text>
-            </Bounce>
-          </Fade>
+          ></Fade>
         </Col>
       </Row>
       <AttentionSeeker effect="pulse" duration={1000} delay={1000}>
