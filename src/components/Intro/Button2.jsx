@@ -5,7 +5,7 @@ import { Button } from "react-bootstrap";
 import styles from './Button.module.css'
 const Button2 = (props) => {
     return (
-        <Wrapper className={styles.body}>
+        <Wrapper className={styles.body} style={{  background: `linear-gradient(${props.color})` }}>
             <div className={styles.border}>
             <Button size="sm" className={styles.button} onClick={props.link}>{props.text}<p className={styles.text}>{props.children}</p></Button>
             </div>

@@ -1,15 +1,17 @@
 .body {
     display: block;
     position: relative;
-    min-width: 25rem;
-    max-width: 30rem;
-    min-height: 20rem;
+    min-width: 15rem;
+    max-width: 28rem;
+    min-height: 21rem;
+    max-height: 25rem;
     text-align: center;
     align-items: center;
     border-radius: 10px;
     transition-duration: 500ms;
     margin: auto;
-    background: linear-gradient(0deg, #06257a 0%, #0054c2 35%, rgb(241, 58, 2) 100%);
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
 }
 
 .button {
@@ -17,18 +19,33 @@
     position: absolute;
     color: white;
     border-radius: 10px;
+    padding: 0.9rem;
     text-decoration: none;
-    max-width: 25rem;
-    min-height: 10rem;
+    width: 100%;
+    height: fit-content;
     font-size: x-small;
     background-color: #000000;
     left:0;
     right: 0;
-    top: 5rem;
+    top: 0;
+    bottom: 0;
     margin: auto;
-    max-height: 20rem;
     transition-duration: 500ms;
     vertical-align: middle;
+}
+
+@media (max-width: 1200px) {
+    .button {
+        max-width:25rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .button {
+        max-width:18rem;
+    }
+
 }
 
 .text {

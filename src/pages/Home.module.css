@@ -66,19 +66,19 @@ li{
   }
 
   .javaIcon{
-    animation: App-logo-spin infinite 3s alternate;
+    animation: App-logo-spin 20 4s alternate;
   }
   
   .pythonIcon{
-    animation: App-logo-spin infinite 2s backwards;
+    animation: App-logo-spin 15 2s backwards;
   }
   
   .jsonIcon{
-    animation: App-logo-spin infinite 6s alternate-reverse;
+    animation: App-logo-spin 3 6s alternate-reverse;
   }
   
   .cppIcon{
-    animation: App-logo-move infinite 0.3s alternate;
+    animation: App-logo-move 60 0.3s alternate;
   }
 }
 

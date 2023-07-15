@@ -46,6 +46,10 @@ export default function Home() {
     setIsVisible(true);
   }, []);
   const [flip, setFlip] = useState(false);
+  const [flip0, setFlip0] = useState(false);
+  const [flip1, setFlip1] = useState(false);
+  const [flip2, setFlip2] = useState(false);
+  const [flip3, setFlip3] = useState(false);
   const handleClickScroll = () => {
     const element = document.getElementById("skills");
     if (element) {
@@ -151,13 +155,20 @@ export default function Home() {
                 <SkillBox
                   header="3 YEARS"
                   click={() => setFlip(!flip)}
-                  color={"-25deg, #06257a 0%, #0054c2 35%, rgb(241, 58, 2) 100%"}
+                  color={
+                    "-25deg, #06257a 0%, #0054c2 35%, rgb(241, 58, 2) 100%"
+                  }
                   className={styles.javaIcon}
                   url={"https://www.svgrepo.com/show/184143/java.svg"}
                 >
                   Java
                 </SkillBox>
-                <Button2 left="10rem" link={() => setFlip(!flip)}>
+                <Button2 
+                left="10rem" link={() => setFlip(!flip)}
+                color={
+                  "-145deg, #06257a 0%, #0054c2 35%, rgb(241, 58, 2) 100%"
+                }
+                >
                   During my five-year involvement in FRC, Java was the language
                   for programming the robots. This extensive hands-on experience
                   enabled me to gain a deep understanding of Java's syntax,
@@ -181,10 +192,13 @@ export default function Home() {
               delay={0}
               duration={2000}
               triggerOnce={true}
-            >
+            > <ReactCardFlip isFlipped={flip0} flipDirection="vertical">
               <SkillBox
                 header="2 YEARS"
-                color={"155deg, #06257a 0%, #0054c2 35%, rgb(255, 222, 76) 100%"}
+                click={() => setFlip0(!flip0)}
+                color={
+                  "155deg, #06257a 0%, #0054c2 35%, rgb(255, 222, 76) 100%"
+                }
                 className={styles.pythonIcon}
                 url={
                   "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
@@ -192,27 +206,44 @@ export default function Home() {
               >
                 Python
               </SkillBox>
+
+              <Button2 
+              color={
+                "35deg, #06257a 0%, #0054c2 35%, rgb(255, 222, 76) 100%"
+              }
+              link={() => setFlip0(!flip0)}>
+              As a part of FRC, I gained extensive experience in Python
+              programming, specifically in vision systems. Utilizing Python's
+              libraries and tools, I implemented efficient solutions for image
+              processing and analysis. This hands-on experience enhanced my
+              proficiency in Python's syntax, data structures, and built-in
+              functions, which I further expanded through experiences like the
+              Toyota Challenge.
+              </Button2>
+              </ReactCardFlip>
             </Slide>
           </Fade>
         </Col>
-        <Col xs lg='11'>
+        <Col xs lg="11">
           <Fade
             delay={0}
             duration={1000}
             style={{ opacity: isVisible ? 0 : 1 }}
           >
             <Slide delay={100} duration={2000} triggerOnce={true}>
-              <ReactCardFlip isFlipped={flip} flipDirection="vertical">
+              <ReactCardFlip isFlipped={flip1} flipDirection="vertical">
                 <SkillBox
                   header="2 YEARS"
-                  click={() => setFlip(!flip)}
+                  click={() => setFlip1(!flip1)}
                   color={"25deg, #09090a 0%, #e7e7e7 35%, rgb(73, 73, 73) 100%"}
                   className={styles.jsonIcon}
                   url={jsonPhoto}
                 >
                   JSON
                 </SkillBox>
-                <Button2 link={() => setFlip(!flip)}>
+                <Button2 
+                 color={"-25deg, #09090a 0%, #e7e7e7 35%, rgb(73, 73, 73) 100%"}
+                link={() => setFlip1(!flip1)}>
                   I gained valuable experience working with JSON as well during
                   my time in FRC, where I focused on creating a seamless
                   pipeline between Python and Java. It involved effectively
@@ -238,16 +269,23 @@ export default function Home() {
               duration={2000}
               triggerOnce={true}
             >
-              <ReactCardFlip isFlipped={flip} flipDirection="vertical">
+              <ReactCardFlip isFlipped={flip2} flipDirection="vertical">
                 <SkillBox
                   header="6 MONTHS"
                   className={styles.cppIcon}
-                  color={"-10deg, #06557a 0%, #2626ff 35%, rgba(0, 212, 255, 1) 100%"}
+                  click={() => setFlip2(!flip2)}
+                  color={
+                    "-10deg, #06557a 0%, #2626ff 35%, rgba(0, 212, 255, 1) 100%"
+                  }
                   url={CppPhoto}
                 >
                   C++
                 </SkillBox>
-                <Button2>
+                <Button2 
+                 color={
+                  "-140deg, #06557a 0%, #2626ff 35%, rgba(0, 212, 255, 1) 100%"
+                }
+                link={() => setFlip2(!flip2)}>
                   In my engineering program, I gained extensive knowledge of the
                   C++ programming language, achieving top marks in my
                   programming classes. I also have hands-on experience with
@@ -260,22 +298,23 @@ export default function Home() {
             </Slide>
           </Fade>
         </Col>
-        <Col xs lg='6'>
+        <Col xs lg="6">
           <Fade
             delay={100}
             duration={1000}
             style={{ opacity: isVisible ? 0 : 1 }}
           >
             <JackInTheBox delay={0} duration={2000} triggerOnce={true}>
-              <ReactCardFlip isFlipped={flip} flipDirection="vertical">
+              <ReactCardFlip isFlipped={flip3} flipDirection="vertical">
                 <SkillBox
                   className={styles.Applogo}
                   header="3 MONTH"
                   url={ReactSVG}
+                  click={() => setFlip3(!flip3)}
                 >
                   React JS
                 </SkillBox>
-                <Button2>
+                <Button2 link={() => setFlip3(!flip3)}>
                   Through my involvement in Waterloo Rocketry, I gained valuable
                   experience in React, learning its syntax, styles, and various
                   components. Working on projects like the Rocketry website and
