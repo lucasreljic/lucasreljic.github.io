@@ -11,7 +11,7 @@ const Intro = () => {
   return (
     <div className={styles.body}>
       <div className={styles.start}>
-        C:\Users\Lucas\Portfolio&gt;
+        C:\Easter\Egg\Portfolio&gt;
         <Type
           cursor={false}
           speed={1}
