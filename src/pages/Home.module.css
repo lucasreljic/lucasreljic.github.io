@@ -207,6 +207,25 @@ For mobile
     margin-top: 0rem;
     
   }
+  .Applogo {
+    animation: App-logo-spin none;
+  }
+
+  .javaIcon{
+    animation: App-logo-spin none;
+  }
+  
+  .pythonIcon{
+    animation: App-logo-spin none;
+  }
+  
+  .jsonIcon{
+    animation: App-logo-spin none;
+  }
+  
+  .cppIcon{
+    animation: App-logo-move none;
+  }
 } 
 
 @media (max-width: 768px) {
