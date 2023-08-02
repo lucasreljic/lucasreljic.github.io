@@ -4,7 +4,7 @@
   overflow-y: hidden;
 }
 .title{
-  font-size: 1.8rem;
+  font-size: 1.0rem;
 }
 
 img {
@@ -66,11 +66,11 @@ li{
   }
 
   .javaIcon{
-    animation: App-logo-spin 20 4s alternate;
+    animation: App-logo-spin 10 4s alternate;
   }
   
   .pythonIcon{
-    animation: App-logo-spin 15 2s backwards;
+    animation: App-logo-spin 11 3s backwards;
   }
   
   .jsonIcon{
@@ -78,7 +78,7 @@ li{
   }
   
   .cppIcon{
-    animation: App-logo-move 60 0.3s alternate;
+    animation: App-logo-move 69 0.3s alternate;
   }
 }
 
@@ -171,7 +171,7 @@ li{
 
 .frcIcon{
   width: 13rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
 }
 
 /*
@@ -216,23 +216,25 @@ For mobile
   .goodlabsIcon{
     width: 12rem;
   }
-  
+  .frcIcon{
+    padding-top: 1rem;
+  }
 }
 
 @media (max-width: 576px) {
   .title{
-    font-size: 0.9rem;
+    font-size: smaller;
   }
   .skillText{
     margin-top: 0rem;
     
   }
   .javaIcon{
-    width: 6.7rem;
+    width: 5.5rem;
   }
 
   .pythonIcon{
-    width: 5.7rem;
+    width: 5.0rem;
   }
   
   .jsonIcon{
@@ -240,7 +242,7 @@ For mobile
   }
   
   .cppIcon{
-    width: 5rem;
+    width: 4.8rem;
   }
   
   .Applogo{

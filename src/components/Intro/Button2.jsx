@@ -1,6 +1,5 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import { Link } from 'react-router-dom';
 import { Button } from "react-bootstrap";
 import styles from './Button.module.css'
 const Button2 = (props) => {

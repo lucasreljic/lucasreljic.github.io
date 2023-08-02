@@ -53,7 +53,7 @@ export default function Home() {
   const handleClickScroll = () => {
     const element = document.getElementById("skills");
     if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
+      // Will scroll smoothly to the top of the next section
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
@@ -61,8 +61,8 @@ export default function Home() {
     <Container fluid className={styles.container}>
       <Appear timeout={0.1} fillmode={"forwards"}>
         <h1 className={styles.mainHeader}>
-          <Fade cascade damping={1e-1} triggerOnce={true} duration={2000}>
-            Who Am I?
+          <Fade cascade damping={1e-1} triggerOnce={true} duration={3000}>
+            LUCAS RELJIC-DUMONT
           </Fade>
         </h1>
         <Row xl={4} sm={2} xs={2}>
@@ -116,14 +116,14 @@ export default function Home() {
                 "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black",
             }}
           >
-            My name is Lucas Reljic-Dumont, I am currently 19 years old and
+            I am a 19 years old
             pursuing a BASc in Mechatronics Engineering at the University of
             Waterloo. Currently in my co-op term with GoodLabs Studio where I am
             designing, prototyping and programming a bipedal robot. I have a
             passion for mechanical and software projects as evident through the
             various projects I have accomplished over the years, some of which
             are visible on this website. Many of my experiences prior to
-            university guided me towards pursuing an Engineering degree.
+            university guided me towards pursuing an engineering degree.
           </Text>
         </Fade>
         <Slide delay={4500} duration={1000} direction="down" triggerOnce={true}>
@@ -149,6 +149,7 @@ export default function Home() {
             delay={0}
             duration={1000}
             style={{ opacity: isVisible ? 0 : 1 }}
+            triggerOnce={true}
           >
             <Slide delay={0} duration={2000} triggerOnce={true}>
               <ReactCardFlip isFlipped={flip} flipDirection="vertical">
@@ -186,9 +187,10 @@ export default function Home() {
             delay={0}
             duration={1000}
             style={{ opacity: isVisible ? 0 : 0 }}
+            triggerOnce={true}
           >
             <Slide
-              direction="left"
+              direction="right"
               delay={0}
               duration={2000}
               triggerOnce={true}
@@ -224,11 +226,12 @@ export default function Home() {
             </Slide>
           </Fade>
         </Col>
-        <Col xs lg="11">
+        <Col xs >
           <Fade
             delay={0}
             duration={1000}
             style={{ opacity: isVisible ? 0 : 1 }}
+            triggerOnce={true}
           >
             <Slide delay={100} duration={2000} triggerOnce={true}>
               <ReactCardFlip isFlipped={flip1} flipDirection="vertical">
@@ -262,9 +265,10 @@ export default function Home() {
             delay={0}
             duration={1000}
             style={{ opacity: isVisible ? 0 : 1 }}
+            triggerOnce={true}
           >
             <Slide
-              direction="left"
+              direction="right"
               delay={100}
               duration={2000}
               triggerOnce={true}
@@ -303,6 +307,7 @@ export default function Home() {
             delay={100}
             duration={1000}
             style={{ opacity: isVisible ? 0 : 1 }}
+            triggerOnce={true}
           >
             <JackInTheBox delay={0} duration={2000} triggerOnce={true}>
               <ReactCardFlip isFlipped={flip3} flipDirection="vertical">
@@ -330,6 +335,7 @@ export default function Home() {
             delay={0}
             duration={1000}
             style={{ opacity: isVisible ? 0 : 0 }}
+            triggerOnce={true}
           ></Fade>
         </Col>
       </Row>
@@ -337,12 +343,13 @@ export default function Home() {
         <h1 className={styles.gallery}>CLICK ON PROJECTS BELOW</h1>
       </AttentionSeeker>
       <Container className={styles.containerFluid} fluid>
-        <Row xxl={4} xl={3} lg={2} md={1} sm={1} xs={1}>
+        <Row xxl={4} xl={3} lg={2} md={2} sm={1} xs={1}>
           <Col>
             <Fade
               delay={0}
               duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
+              triggerOnce={true}
             >
               <Blocks link="/#/toyotainnovation2023" photo={toyota2023}>
                 Toyota Innovation Challenge 2023
@@ -354,6 +361,7 @@ export default function Home() {
               delay={0}
               duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
+              triggerOnce={true}
             >
               <Blocks
                 text="Autonomous cube collector."
@@ -370,6 +378,7 @@ export default function Home() {
               delay={0}
               duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
+              triggerOnce={true}
             >
               <Blocks link="/#/openmv" photo={openmv}>
                 OpenMV Strategic Color Tracking
@@ -381,6 +390,7 @@ export default function Home() {
               delay={0}
               duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
+              triggerOnce={true}
             >
               <Blocks link="/#/toyotainnovation" photo={toyota}>
                 Toyota Innovation Challenge 2022
@@ -392,6 +402,7 @@ export default function Home() {
               delay={0}
               duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
+              triggerOnce={true}
             >
               <Blocks link="/#/UofTHacks" photo={uoftHacks}>
                 UofT Hackathon X
@@ -403,6 +414,7 @@ export default function Home() {
               delay={0}
               duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
+              triggerOnce={true}
             >
               <Blocks link="/#/frc4627" photo={frc4627}>
                 FRC 4627 2022 Competition Robot
@@ -414,6 +426,7 @@ export default function Home() {
               delay={0}
               duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
+              triggerOnce={true}
             >
               <Blocks link="/#/plant" photo={plant}>
                 Automatic Plant Watering
@@ -425,6 +438,7 @@ export default function Home() {
               delay={0}
               duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
+              triggerOnce={true}
             >
               <Blocks link="/#/sanitizer" photo={sanitizer}>
                 Hand Sanitizer
@@ -436,6 +450,7 @@ export default function Home() {
               delay={0}
               duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
+              triggerOnce={true}
             >
               <Blocks link="/#/RPilaptop" photo={piLaptop}>
                 Raspberry Pi Laptop
@@ -447,6 +462,7 @@ export default function Home() {
               delay={0}
               duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
+              triggerOnce={true}
             >
               <Blocks link="/#/gokart" photo={gokart}>
                 Electric Gokart
@@ -458,6 +474,7 @@ export default function Home() {
               delay={0}
               duration={1000}
               style={{ opacity: isVisible ? 0 : 0 }}
+              triggerOnce={true}
             >
               <Blocks link="/#/rcplanes" photo={planes}>
                 RC Planes

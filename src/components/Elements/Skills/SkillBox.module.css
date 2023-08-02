@@ -6,8 +6,9 @@
   background-color: black;
   margin: auto;
   min-width: 18rem;
+  
   align-items: center;
-  transition-duration: 200ms;
+  transition-duration: 1000ms;
 }
 
 .button{
@@ -16,10 +17,13 @@
   vertical-align: middle;
   text-align: center;
   align-items: center;
-  max-width: 20rem;
+    min-width: 15rem;
+    max-width: 28rem;
+    min-height: 11rem;
+    max-height: 15rem;
   margin: auto;
   margin-bottom: 2.5rem;
-  margin-top: 4.5rem;
+  margin-top: 5.5rem;
   padding: none;
   align-items: center;
   border: none;
@@ -70,6 +74,9 @@
 
 }
 @media (max-width: 576px) {
+  .skillbox {
+    min-width: 14rem;
+  }
   .h2 {
     font-size: 200%;
     margin-top: 0.6rem;

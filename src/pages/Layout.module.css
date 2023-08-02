@@ -1,4 +1,5 @@
 .title{
+  display: inline-block;
   color:  #61c2ec;
   margin-right: 10px;
   font-family: Arial, Helvetica, sans-serif;
@@ -18,7 +19,8 @@
 
 .title:hover{
   transition: 250ms;
-  color: aliceblue;}
+  color: aliceblue;
+}
 
 .navSocial{
   width: 35px;
@@ -35,9 +37,7 @@
     margin-right: 0px;
     
   }
-  .title:hover{
-    font-size: 97%;
-  }
+
 
   .navSocial{
     width: 28px;
@@ -45,6 +45,32 @@
   .navSocialGmail{
     width: 28px;
     padding-top: 8px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .title{
+    font-size: 1.0rem;
+    padding-right: 0rem;
+    margin-right: 0px;
+    padding-top: 0;
+    padding-bottom: 3px;
+  }
+
+  .dropdown{
+    font-size: 90%;
+  }
+
+  .tab{
+    font-size: 75%;
+  }
+  .navSocial{
+    width: 18px;
+  }
+  .navSocialGmail{
+    width: 18px;
+    padding-top: 4px;
   }
 
 }
