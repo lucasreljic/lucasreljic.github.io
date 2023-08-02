@@ -219,6 +219,10 @@ For mobile
   .frcIcon{
     padding-top: 1rem;
   }
+  .mainHeader{
+    font-weight: 550;
+    font-size: 300%;
+  }
 }
 
 @media (max-width: 576px) {

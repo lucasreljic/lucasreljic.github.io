@@ -102,10 +102,10 @@ const Openmv = () => {
       <h2>2021</h2>
       <Slide>
         <SlideBox photo='photofrc3'>
-          The OpenMV Camera Mounted on a custom PCB Board
+          The OpenMV Camera
         </SlideBox>
         <SlideBox photo='photoopenmv'>
-          The Robot using the OpenMV to get the object
+          Robot using the OpenMV to get the object
         </SlideBox>
         <SlideBox photo='photoopenmv3'>
           Early Implementation of the Code
