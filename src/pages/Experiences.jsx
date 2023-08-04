@@ -25,7 +25,7 @@ const Toyota2023 = () => {
       </Text>
 
       <br></br>
-      <div style={{ width: '80rem', margin: 'auto'}}>
+      <div>
       <YoutubeEmbed embedId="8XI78UiHIvk" />
       </div>
       <h1>Demo</h1>

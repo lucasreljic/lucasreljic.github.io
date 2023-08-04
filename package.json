@@ -27,6 +27,7 @@
     "react-slideshow-image": "^4.1.1",
     "react-type-animation": "^2.1.2",
     "styled-components": "^5.3.6",
+    "update-browserslist-db": "^1.0.11",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

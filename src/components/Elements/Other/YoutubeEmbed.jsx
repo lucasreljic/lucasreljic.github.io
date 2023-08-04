@@ -4,8 +4,7 @@ import styles from "./YoutubeEmbed.module.css";
 const YoutubeEmbed = ({ embedId }) => (
   <div className={styles.video_responsive}>
     <iframe
-      width="640"
-      height="480"
+
       src={`https://www.youtube.com/embed/${embedId}`}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
