@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import { Container } from "react-bootstrap/";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -32,8 +32,7 @@ const Layout = () => {
         <Container fluid>
           <Nav className="justify-content-center">
             <Navbar.Brand className="mx-0">
-              <Appear timeout={0.1} fillmode={"forwards"}>
-                <a href={"/#/" + text} className={styles.title}>
+                <Link to={"/" + text}  className={styles.title}>
                   <Fade
                     cascade
                     damping={1e-1}
@@ -42,8 +41,7 @@ const Layout = () => {
                   >
                     Home
                   </Fade>
-                </a>
-              </Appear>
+                </Link>
             </Navbar.Brand>
           </Nav>
           <Nav className="me-auto justify-content-center bar">
@@ -52,14 +50,7 @@ const Layout = () => {
                 style={{ color: "black" }}
                 title={
                   <span className={styles.dropdown}>
-                    <Fade
-                      cascade
-                      damping={1e-1}
-                      triggerOnce={true}
-                      duration={1000}
-                    >
                       Projects
-                    </Fade>
                   </span>
                 }
                 id="navbarScrollingDropdown"
@@ -103,12 +94,7 @@ const Layout = () => {
               </NavDropdown>
               <NavDropdown
                 title={<span className={styles.dropdown}>
-                   <Fade
-                      cascade
-                      damping={1e-1}
-                      triggerOnce={true}
-                      duration={1000}
-                    >Experiences</Fade>
+                    Experiences
                   </span>}
                 id="navbarScrollingDropdown"
               >
@@ -125,7 +111,7 @@ const Layout = () => {
                 <NavDropdown.Item href="/toyotainnovation">
                   {" "}
                   <span className={styles.tab}>
-                    Toyota Innovation Challenge
+                    Toyota Innovation Challenge 2022
                   </span>{" "}
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/frc4627">
