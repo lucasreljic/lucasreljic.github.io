@@ -1,4 +1,5 @@
 import { Button, Container } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 import { Slide } from "react-slideshow-image";
 import SlideBox from "../components/Elements/Slide/SlideBox";
 import Text from "../components/Elements/Text/Text";
@@ -125,7 +126,7 @@ const FRC4627 = () => {
         - Developed Team Leadership and organizational skills
         <br></br>- Taught new members Java and Python
         <br></br>- Programmed in Java for the robot and MicroPython for{" "}
-        <a href="/#/openmv">vision system</a>
+        <Link to="/openmv">vision system</Link>
         <br></br>- Developed PID controls loops for all systems on the robot
       </Text>
       <br></br>
@@ -202,17 +203,10 @@ const Roots2stem = () => {
         inventing. The club gave me access to all the supplies and machines a
         10-year-old junior engineer could want, from 3d printers to arc welders.
         Using all the supplies I had access to, I made rovers,{" "}
-        <a href="/#/rcplanes">RC airplanes</a>, and eventually an{" "}
-        <a href="/#/gokart">electric go-kart.</a>
+        <Link to="/rcplanes">RC airplanes</Link>, and eventually an{" "}
+        <Link to="/gokart">electric go-kart.</Link>
       </Text>
       <br></br>
-      <Text>
-        {" "}
-        An article was even written about my time there.<br></br>
-        <a href="https://careers-in-calgary.squarespace.com/news-blog/2018/4/30/from-building-a-go-kart-to-an-airplane-that-actually-flies-steam-fuels-future-career-passions">
-          https://careers-in-calgary.squarespace.com/news-blog/2018/4/30/from-building-a-go-kart-to-an-airplane-that-actually-flies-steam-fuels-future-career-passions
-        </a>
-      </Text>
     </Container>
   );
 };

@@ -1,4 +1,5 @@
 import { Slide } from 'react-slideshow-image';
+import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import SlideBox from '../components/Elements/Slide/SlideBox';
 import Text from '../components/Elements/Text/Text';
@@ -161,7 +162,7 @@ const Gokart = () => {
         of mechanical knowledge. Everything including designing the project, welding the frame, soldering the circuitry,
         was all from scratch. It took around eight months
         to complete and it is one of my proudest achievements. I was only able to build such a large project because I
-        was a part of <a href="/#/roots2stem">Roots 2 Stem</a>.
+        was a part of <Link to="/roots2stem">Roots 2 Stem</Link>.
       </Text>
     </Container>
   )
@@ -316,7 +317,7 @@ const RCplanes = () => {
 
       </Slide>
       <Text>
-        I discovered my passion for Aerospace when I built my first Delta wing RC plane in <a href="/#/roots2stem">Roots 2 Stem</a>
+        I discovered my passion for Aerospace when I built my first Delta wing RC plane in <Link to="/roots2stem">Roots 2 Stem</Link>
         . I have made around 5 iterations of my initial Delta wing RC Plane, flying whenever I have free time. My most recent RC Plane
         deviates from the Delta wing design and is a top fixed wing amphibious plane. The wings are constructed with standard foamboard,
         while the fuselage is a 3D printed custom design.

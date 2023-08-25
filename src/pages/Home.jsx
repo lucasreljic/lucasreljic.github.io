@@ -361,7 +361,7 @@ export default function Home() {
               style={{ opacity: isVisible ? 0 : 0 }}
               triggerOnce={true}
             >
-              <Blocks link="/#/toyotainnovation2023" photo={toyota2023}>
+              <Blocks link="/toyotainnovation2023" photo={toyota2023}>
                 Toyota Innovation Challenge 2023
               </Blocks>
             </Fade>
@@ -375,7 +375,7 @@ export default function Home() {
             >
               <Blocks
                 text="Autonomous cube collector."
-                link="/#/1afinalproject"
+                link="/1afinalproject"
                 disabled={true}
                 photo={robot1a}
               >
@@ -390,7 +390,7 @@ export default function Home() {
               style={{ opacity: isVisible ? 0 : 0 }}
               triggerOnce={true}
             >
-              <Blocks link="/#/openmv" photo={openmv}>
+              <Blocks link="/openmv" photo={openmv}>
                 OpenMV Strategic Color Tracking
               </Blocks>
             </Fade>
@@ -402,7 +402,7 @@ export default function Home() {
               style={{ opacity: isVisible ? 0 : 0 }}
               triggerOnce={true}
             >
-              <Blocks link="/#/toyotainnovation" photo={toyota}>
+              <Blocks link="/toyotainnovation" photo={toyota}>
                 Toyota Innovation Challenge 2022
               </Blocks>
             </Fade>
@@ -414,7 +414,7 @@ export default function Home() {
               style={{ opacity: isVisible ? 0 : 0 }}
               triggerOnce={true}
             >
-              <Blocks link="/#/UofTHacks" photo={uoftHacks}>
+              <Blocks link="/UofTHacks" photo={uoftHacks}>
                 UofT Hackathon X
               </Blocks>
             </Fade>
@@ -426,7 +426,7 @@ export default function Home() {
               style={{ opacity: isVisible ? 0 : 0 }}
               triggerOnce={true}
             >
-              <Blocks link="/#/frc4627" photo={frc4627}>
+              <Blocks link="/frc4627" photo={frc4627}>
                 FRC 4627 2022 Competition Robot
               </Blocks>
             </Fade>
@@ -438,7 +438,7 @@ export default function Home() {
               style={{ opacity: isVisible ? 0 : 0 }}
               triggerOnce={true}
             >
-              <Blocks link="/#/plant" photo={plant}>
+              <Blocks link="/plant" photo={plant}>
                 Automatic Plant Watering
               </Blocks>
             </Fade>
@@ -450,7 +450,7 @@ export default function Home() {
               style={{ opacity: isVisible ? 0 : 0 }}
               triggerOnce={true}
             >
-              <Blocks link="/#/sanitizer" photo={sanitizer}>
+              <Blocks link="/sanitizer" photo={sanitizer}>
                 Hand Sanitizer
               </Blocks>
             </Fade>
@@ -462,7 +462,7 @@ export default function Home() {
               style={{ opacity: isVisible ? 0 : 0 }}
               triggerOnce={true}
             >
-              <Blocks link="/#/RPilaptop" photo={piLaptop}>
+              <Blocks link="/RPilaptop" photo={piLaptop}>
                 Raspberry Pi Laptop
               </Blocks>
             </Fade>
@@ -474,7 +474,7 @@ export default function Home() {
               style={{ opacity: isVisible ? 0 : 0 }}
               triggerOnce={true}
             >
-              <Blocks link="/#/gokart" photo={gokart}>
+              <Blocks link="/gokart" photo={gokart}>
                 Electric Gokart
               </Blocks>
             </Fade>
@@ -486,7 +486,7 @@ export default function Home() {
               style={{ opacity: isVisible ? 0 : 0 }}
               triggerOnce={true}
             >
-              <Blocks link="/#/rcplanes" photo={planes}>
+              <Blocks link="/rcplanes" photo={planes}>
                 RC Planes
               </Blocks>
             </Fade>

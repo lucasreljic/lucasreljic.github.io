@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { Routes, Route, HashRouter} from "react-router-dom";
+import { Routes, Route, BrowserRouter} from "react-router-dom";
 import NoPage from "./pages/NoPage";
 import Layout from "./pages/Layout";
 import Home from './pages/Home';
@@ -15,7 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter basename="lucasreljic.github.io">
       <Routes>
 
         <Route path="/" element={<Layout />}>
@@ -38,7 +38,7 @@ root.render(
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

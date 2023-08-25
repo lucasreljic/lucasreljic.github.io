@@ -65,38 +65,38 @@ const Layout = () => {
                 id="navbarScrollingDropdown"
               >
                   
-                <NavDropdown.Item href="/#/1afinalproject">
+                <NavDropdown.Item href="/1afinalproject">
                   <span className={styles.tab}>1A Final Project</span>
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/#/marketAlarm">
+                <NavDropdown.Item href="/marketAlarm">
                   {" "}
                   <span className={styles.tab}>Market Alarm</span>{" "}
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/#/RPilaptop">
+                <NavDropdown.Item href="/RPilaptop">
                   {" "}
                   <span className={styles.tab}>Raspberry Pi Laptop</span>{" "}
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/#/openmv">
+                <NavDropdown.Item href="/openmv">
                   {" "}
                   <span className={styles.tab}>
                     OpenMV Strategic Color Tracking
                   </span>{" "}
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/#/plant">
+                <NavDropdown.Item href="/plant">
                   {" "}
                   <span className={styles.tab}>
                     Automatic Plant Watering
                   </span>{" "}
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/#/sanitizer">
+                <NavDropdown.Item href="/sanitizer">
                   {" "}
                   <span className={styles.tab}>Hand Sanitizer</span>{" "}
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/#/gokart">
+                <NavDropdown.Item href="/gokart">
                   {" "}
                   <span className={styles.tab}>Electric Gokart</span>{" "}
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/#/rcplanes">
+                <NavDropdown.Item href="/rcplanes">
                   {" "}
                   <span className={styles.tab}>RC Airplanes</span>{" "}
                 </NavDropdown.Item>
@@ -112,31 +112,31 @@ const Layout = () => {
                   </span>}
                 id="navbarScrollingDropdown"
               >
-                <NavDropdown.Item href="/#/toyotainnovation2023">
+                <NavDropdown.Item href="/toyotainnovation2023">
                   {" "}
                   <span className={styles.tab}>
                     Toyota Innovation Challenge 2023
                   </span>{" "}
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/#/uofthacks">
+                <NavDropdown.Item href="/uofthacks">
                   {" "}
                   <span className={styles.tab}>UofT Hacks</span>{" "}
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/#/toyotainnovation">
+                <NavDropdown.Item href="/toyotainnovation">
                   {" "}
                   <span className={styles.tab}>
                     Toyota Innovation Challenge
                   </span>{" "}
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/#/frc4627">
+                <NavDropdown.Item href="/frc4627">
                   {" "}
                   <span className={styles.tab}>FRC 4627</span>{" "}
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/#/frc5078">
+                <NavDropdown.Item href="/frc5078">
                   {" "}
                   <span className={styles.tab}>FRC 5078</span>{" "}
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/#/roots2stem">
+                <NavDropdown.Item href="/roots2stem">
                   {" "}
                   <span className={styles.tab}>Roots2Stem</span>{" "}
                 </NavDropdown.Item>
