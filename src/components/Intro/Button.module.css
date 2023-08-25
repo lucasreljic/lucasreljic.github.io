@@ -1,28 +1,53 @@
 .body {
     display: block;
+    position: relative;
+    min-width: 15rem;
+    max-width: 28rem;
+    min-height: 21rem;
+    max-height: 25rem;
     text-align: center;
     align-items: center;
-    margin: auto;
     border-radius: 10px;
-    background: linear-gradient(0deg, #067a29 0%, #2626ff 35%, rgba(0, 212, 255, 1) 100%);
+    transition-duration: 500ms;
+    margin: auto;
+    margin-bottom: 0.2rem;
+    margin-top: 1rem;
 }
 
 .button {
-    display: flex;
+    display: flexbox;
+    position: absolute;
     color: white;
     border-radius: 10px;
+    padding: 0.9rem;
     text-decoration: none;
-    font-size: 100%;
     width: 100%;
-    background-color: #1e1e1e;
-    padding: 10%;
+    height: fit-content;
+    font-size: x-small;
+    background-color: #000000;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     margin: auto;
-    
+    transition-duration: 500ms;
+    vertical-align: middle;
 }
 
 .text {
     margin: auto;
-    font-size: 300%;
+    font-size: larger;
+    position: absolute;
+    height: max-content;
+    width: max-content;
+    left:0;
+    right:0;
+    top: 0;
+    bottom: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .border{
@@ -31,6 +56,43 @@
     padding: 5px;
 }
 .button:hover {
-    background: rgb(36, 36, 36);
+    transition-duration: 500ms;
+    background-color: #242424;
+
+}
+
+@media (max-width: 1200px) {
+    .button {
+        max-width:25rem;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .button {
+        max-width:25rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .button {
+        max-width:25rem;
+    }
+
+    .text{
+        font-size: small;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .button {
+        max-width:15rem;
+    }
+
+    .text{
+        font-size: 0.7rem;
+    }
 
 }

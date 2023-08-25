@@ -1,24 +1,88 @@
-.skillbox{
-    display: block;
+.skillbox {
+  display: block;
+  position: relative;
+  padding: 0rem;
+  border-radius: 1.5rem;
+  background-color: black;
+  margin: auto;
+  min-width: 18rem;
+  
+  align-items: center;
+  transition-duration: 1000ms;
 }
 
+.button{
+  display: flex;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  align-items: center;
+    min-width: 15rem;
+    max-width: 28rem;
+    min-height: 11rem;
+    max-height: 15rem;
+  margin: auto;
+  margin-bottom: 2.5rem;
+  margin-top: 5.5rem;
+  padding: none;
+  align-items: center;
+  border: none;
+  border-radius: 1.5rem;
+  transition-duration: 1000ms;
+}
+
+
+.skillbox:hover{
+  transition-duration: 200ms;
+  background-color: rgb(31, 31, 31);
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
 .img{
-    width: 90px;
+  border-radius: 2rem;
+  opacity: 0.15;
+}
+.h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 250%;
 }
 
-.h1{
-    font-family: Cascadia Code;
+.h2 {
+  font-size: 400%;
+  color: #eefbfb;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+@media (max-width: 1200px) {
+  .h2 {
+    font-size: 400%;
+  }
+  .h1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
-}
+    font-size: 250%;
+  }
 
-.h2{
-    font-size: 500%;
-    color: #EEFBFB;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-@media (max-width: 992px) {
-.h2{
+@media (max-width: 768px) {
+  .skillbox {
+    display: block;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+  }
+
+}
+@media (max-width: 576px) {
+  .skillbox {
+    min-width: 14rem;
+  }
+  .h2 {
     font-size: 200%;
-}
-}
+    margin-top: 0.6rem;
+  }
+  .h1 {
+    font-size: 100%;
+  }
 
+}

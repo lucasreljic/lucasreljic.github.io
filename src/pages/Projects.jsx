@@ -102,10 +102,10 @@ const Openmv = () => {
       <h2>2021</h2>
       <Slide>
         <SlideBox photo='photofrc3'>
-          The OpenMV Camera Mounted on a custom PCB Board
+          The OpenMV Camera
         </SlideBox>
         <SlideBox photo='photoopenmv'>
-          The Robot using the OpenMV to get the object
+          Robot using the OpenMV to get the object
         </SlideBox>
         <SlideBox photo='photoopenmv3'>
           Early Implementation of the Code
@@ -185,7 +185,7 @@ const Plant = () => {
           Wiring
         </SlideBox>
       </Slide>
-      <br></br>
+      <Text>Code is on GitHub <a href="https://github.com/lucasreljic/RPi-Plant-watering">here</a></Text>
       <Text>
         - Programmed in Python which ran on a Raspberry Pi Zero
         <br></br>
@@ -248,7 +248,7 @@ const Sanitizer = () => {
           Initial Design
         </SlideBox>
       </Slide>
-      <br></br>
+      <Text>Code is on GitHub <a href="https://github.com/lucasreljic/Hand-Sanitizer">here</a></Text>
       <Text>
         - Programmed in C++ on an Arduino Nano
         <br></br>

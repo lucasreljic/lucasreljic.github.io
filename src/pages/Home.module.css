@@ -1,13 +1,25 @@
-
 /**/
-
+.container{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.title{
+  font-size: 1.0rem;
+}
 
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
+.containerFluid {
+  display:flex;
+	clear: both;
+  flex-wrap: wrap;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin: 0;
+}
 .each-slide-effect>div {
   display: flex;
   border-radius: 10px 10px;
@@ -50,7 +62,23 @@ li{
 
 @media (prefers-reduced-motion: no-preference) {
   .Applogo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 6s linear;
+  }
+
+  .javaIcon{
+    animation: App-logo-spin 10 4s alternate;
+  }
+  
+  .pythonIcon{
+    animation: App-logo-spin 11 3s backwards;
+  }
+  
+  .jsonIcon{
+    animation: App-logo-spin 3 6s alternate-reverse;
+  }
+  
+  .cppIcon{
+    animation: App-logo-move 69 0.3s alternate;
   }
 }
 
@@ -62,8 +90,20 @@ li{
     transform: rotate(360deg);
   }
 }
+
+@keyframes App-logo-move {
+
+  from {
+    transform: translateY(1rem); 
+  }
+  to {
+    transform: translateY(-1rem);
+    
+  }
+
+}
+
 .skills {
-  background-color: #0F2557;
   font-weight: 550;
   border-radius: 5px 5px;
   padding: 10px;
@@ -71,37 +111,76 @@ li{
   color: #ffffff;
 }
 
-.profile{
-  display: block;
-  width: 300px;
-  margin: auto;
-  margin-top: 25px;
-  border-radius: 10px 10px;
-}
 
 .mainHeader{
   color:   #61c2ec;
   font-weight: 550;
-  margin-top: 20px;
   font-size: 600%;
 }
 
 .gallery{
   font-weight: 600;
   font-size: 200%;
+  margin-top: 15rem;
+  margin-bottom: 4rem;
 }
 .galleryClick{
+  width: 15rem;
+  height: 15rem;
   opacity: 1;
 }
 
 .arrow {
   width: 100px;
+  color: #e9dcdc;
+  padding-bottom: 15rem;
+}
+
+.javaIcon{
+  width: 6rem;
+}
+
+.pythonIcon{
+  width: 6rem;
+}
+
+.jsonIcon{
+  width: 5.7rem;
+}
+
+.cppIcon{
+  width: 5rem;
+}
+
+.Applogo{
+  width: 8.5rem;
+}
+
+.rocketryIcon{
+  width: 18rem;
+}
+
+.uwaterlooIcon{
+  width: 13rem;
+  padding-bottom: 1rem;
+}
+
+.goodlabsIcon{
+  width: 13rem;
+}
+
+.frcIcon{
+  width: 13rem;
+  padding-top: 2rem;
 }
 
 /*
 For mobile
 */
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
+  .title{
+    font-size: 1rem;
+  }
   .profile{
     margin-top: 0px;
     margin-bottom: 11px;
@@ -120,9 +199,93 @@ For mobile
     font-size: 150%;
   }
   .skills {
-    background-color: #0F2557;
     font-weight: 400;
     padding: 2px;
     font-size: 25px;
   }
+  .skillText{
+    margin-top: 0rem;
+    
+  }
+  .Applogo {
+    animation: App-logo-spin none;
+  }
+
+  .javaIcon{
+    animation: App-logo-spin none;
+  }
+  
+  .pythonIcon{
+    animation: App-logo-spin none;
+  }
+  
+  .jsonIcon{
+    animation: App-logo-spin none;
+  }
+  
+  .cppIcon{
+    animation: App-logo-move none;
+  }
 } 
+
+@media (max-width: 768px) {
+  .rocketryIcon{
+    width: 17rem;
+  }
+  .goodlabsIcon{
+    width: 12rem;
+  }
+  .frcIcon{
+    padding-top: 1rem;
+  }
+  .mainHeader{
+    font-weight: 550;
+    font-size: 300%;
+  }
+}
+
+@media (max-width: 576px) {
+  .title{
+    font-size: smaller;
+  }
+  .skillText{
+    margin-top: 0rem;
+    
+  }
+  .javaIcon{
+    width: 5.5rem;
+  }
+
+  .pythonIcon{
+    width: 5.0rem;
+  }
+  
+  .jsonIcon{
+    width: 5rem;
+  }
+  
+  .cppIcon{
+    width: 4.8rem;
+  }
+  
+  .Applogo{
+    width: 8rem;
+  }
+
+  .rocketryIcon{
+    width: 9rem;
+  }
+  
+  .uwaterlooIcon{
+    margin-top: 0.5rem;
+    width: 6rem;
+  }
+  
+  .frcIcon{
+    width: 8rem;
+  }
+  .goodlabsIcon{
+    width: 6rem;
+  }
+  
+}

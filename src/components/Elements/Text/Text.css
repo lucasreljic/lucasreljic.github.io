@@ -1,6 +1,6 @@
-p{
+.text{
     color:#eff7ff;
-    font-size: 130%;
+    font-size: 120%;
     font-family: "Helvetica Neue", sans-serif;
     line-height: 2;
 }
@@ -9,12 +9,40 @@ p{
     display: block;
     width: fit-content;
     max-width: 80%;
+    min-width: 15rem;
     margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
+    p{
+        font-size: 130%;
+        line-height: 2;
+    }
     .textBox{
-        max-width: 100%;
+        max-width: 80%;
+        min-width: 15rem;
+        margin: auto;
+        margin-top: 0rem;
+        margin-bottom: 5rem;
+        
+    }
+    
+
+}
+@media (max-width: 576px) {
+    p{
+        line-height: 1.2;
+        font-size: 100%;
+    }
+    .text{
+        font-size: 100%;
+    }
+    .textBox{
+        max-width: 95%;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
         
     }
     

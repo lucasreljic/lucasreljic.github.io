@@ -1,4 +1,6 @@
 body {
+  scroll-behavior:smooth;
+  overflow-x: hidden;
   background-color: 004F71;  /* fallback for old browsers 
   background: -webkit-linear-gradient(to top,#845EC2, #2C73D2, #0081CF, #0089BA, #008E9B, #008F7A);  /* Chrome 10-25, Safari 5.1-6 */
   /*background: linear-gradient(to top, #845EC2, #2C73D2, #0081CF, #0089BA, #008E9B, #008F7A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -54,10 +56,10 @@ body {
 }
 
 h1 {
-  margin: 0%;
+  margin-top: 1.5rem;
   color:  #EEFBFB;
   font-size: 200%;
-  padding: 0%;
+  padding-top: 0.9rem;
   font-family: 'Bebas Neue', sans-serif;
   font-weight: bold;
   font-style: normal;
@@ -111,7 +113,6 @@ p {
   text-align: left;
   color: white;
 }
-
 
 
 

@@ -4,7 +4,7 @@ const Text = (props) => {
     return (
         <Container fluid>
             <div className="textBox">
-            <p className={props.className} style={props.style}>
+            <p className="text" style={props.style}>
                 {props.children}
             </p>
             </div>

@@ -7,7 +7,7 @@ import NoPage from "./pages/NoPage";
 import Layout from "./pages/Layout";
 import Home from './pages/Home';
 import Intro from "./pages/Intro";
-import { Roots2stem, FRC4627, FRC5078, Toyota, UofTHacks } from "./pages/Experiences";
+import { Roots2stem, FRC4627, FRC5078, Toyota, UofTHacks, Toyota2023 } from "./pages/Experiences";
 import { Gokart, Plant, Sanitizer, Project1a, PiLaptop, Marketalarm, RCplanes, Openmv } from "./pages/Projects";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -18,9 +18,9 @@ root.render(
     <HashRouter>
       <Routes>
 
-        <Route index element={<Intro />} />
         <Route path="/" element={<Layout />}>
-          <Route path="home" element={<Home />} />
+        <Route index element={<Home />} />
+          <Route path="intro" element={<Intro />} />
           <Route path="roots2stem" element={<Roots2stem />} />
           <Route path="frc4627" element={<FRC4627 />} />
           <Route path="frc5078" element={<FRC5078 />} />
@@ -33,6 +33,7 @@ root.render(
           <Route path="rcplanes" element={<RCplanes />} />
           <Route path="sanitizer" element={<Sanitizer />} />
           <Route path="toyotainnovation" element={<Toyota />} />
+          <Route path="toyotainnovation2023" element={<Toyota2023 />} />
           <Route path="uofthacks" element={<UofTHacks />} />
           <Route path="*" element={<NoPage />} />
         </Route>

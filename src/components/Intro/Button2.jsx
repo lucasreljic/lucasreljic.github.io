@@ -1,12 +1,12 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import { Link } from 'react-router-dom';
+import { Button } from "react-bootstrap";
 import styles from './Button.module.css'
-const Button = () => {
+const Button2 = (props) => {
     return (
-        <Wrapper className={styles.body}>
+        <Wrapper className={styles.body} style={{  background: `linear-gradient(${props.color})` }}>
             <div className={styles.border}>
-            <Link className={styles.button} to="home"><h1 className={styles.text}>HomePage</h1></Link>
+            <Button size="sm" className={styles.button} onClick={props.link}>{props.text}<p className={styles.text}>{props.children}</p></Button>
             </div>
         </Wrapper>
     )
@@ -14,15 +14,15 @@ const Button = () => {
 }
 // explains how to do transform https://github.com/ueeieiie/styled-transition-transform/blob/master/src/index.js
 const animation = keyframes`
-0% { opacity: 1; width: 50%; margin-top: 30px; margin-bottom: 30px;}
-50% { opacity: 0.7; width: 45%; margin-top: 10px; margin-bottom: 10px;}
-100% { opacity: 1; width: 50%; margin-top: 30px; margin-bottom: 30px;}
+0% { opacity: 1; width: 100%;}
+50% { opacity: 0.7; width: 90%;}
+100% { opacity: 1; width: 100%;}
 `
 const Wrapper = styled.div`
     animation-name: ${animation};
     animation-delay: 1s;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 0;
 `
-export default Button;
+export default Button2;
