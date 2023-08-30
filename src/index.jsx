@@ -16,10 +16,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <Layout />
       <Routes>
-
-        <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="intro" element={<Intro />} />
           <Route path="roots2stem" element={<Roots2stem />} />
           <Route path="frc4627" element={<FRC4627 />} />
@@ -36,7 +35,6 @@ root.render(
           <Route path="toyotainnovation2023" element={<Toyota2023 />} />
           <Route path="uofthacks" element={<UofTHacks />} />
           <Route path="*" element={<NoPage />} />
-        </Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

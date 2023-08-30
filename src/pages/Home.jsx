@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, startTransition } from "react";
 import styles from "./Home.module.css";
 import Text from "../components/Elements/Text/Text";
 import "react-slideshow-image/dist/styles.css";
@@ -7,7 +7,6 @@ import Blocks from "../components/Elements/Blocks/Blocks";
 import IconBox from "../components/Elements/Icons/IconBox";
 import Button2 from "../components/Intro/Button2";
 import ReactCardFlip from "react-card-flip";
-import Appear from "../components/Intro/Appear";
 import { useState, useEffect } from "react";
 import {
   Slide,
@@ -15,7 +14,6 @@ import {
   JackInTheBox,
   AttentionSeeker,
 } from "react-awesome-reveal";
-
 // Photos/logos
 import arrow from "../icons/arrow-down-3101.svg";
 import jsonPhoto from "./../icons/json1.png";
@@ -62,7 +60,6 @@ export default function Home() {
   };
   return (
     <Container fluid className={styles.container}>
-      <Appear timeout={0.1} fillmode={"forwards"}>
         <h1 className={styles.mainHeader}>
           <Fade cascade damping={1e-1} triggerOnce={true} duration={2500}>
             LUCAS RELJIC-DUMONT
@@ -141,22 +138,13 @@ export default function Home() {
             ></img>
           </Fade>
         </Slide>
-      </Appear>
       <Row lg={2} md={1} sm={1} xs={1}>
         <Col id="skills">
-          <Fade
-            fraction={0}
-            delay={0}
-            duration={1000}
-            style={{ opacity: isVisible ? 0 : 1 }}
-            triggerOnce={true}
-          >
-            <Slide delay={0} duration={2000} triggerOnce={true}>
               <ReactCardFlip isFlipped={flip} flipDirection="vertical">
                 <Suspense fallback={<div>Loading...</div>}>
                   <SkillBox
                     header="3 YEARS"
-                    click={() => setFlip(!flip)}
+                    click={() => {startTransition(() => setFlip(!flip))}}
                     color={
                       "-25deg, #06257a 0%, #0054c2 35%, rgb(241, 58, 2) 100%"
                     }
@@ -168,7 +156,7 @@ export default function Home() {
                 </Suspense>
                 <Button2
                   left="10rem"
-                  link={() => setFlip(!flip)}
+                  link={() => {startTransition(() => setFlip(!flip))}}
                   color={
                     "-145deg, #06257a 0%, #0054c2 35%, rgb(241, 58, 2) 100%"
                   }
@@ -182,172 +170,8 @@ export default function Home() {
                   challenges.
                 </Button2>
               </ReactCardFlip>
-            </Slide>
-          </Fade>
         </Col>
-        <Col>
-          <Fade
-            delay={0}
-            duration={1000}
-            style={{ opacity: isVisible ? 0 : 0 }}
-            triggerOnce={true}
-          >
-            <Slide
-              direction="right"
-              delay={0}
-              duration={2000}
-              triggerOnce={true}
-            >
-              {" "}
-              <ReactCardFlip isFlipped={flip0} flipDirection="vertical">
-                <SkillBox
-                  header="2 YEARS"
-                  click={() => setFlip0(!flip0)}
-                  color={
-                    "155deg, #06257a 0%, #0054c2 35%, rgb(255, 222, 76) 100%"
-                  }
-                  className={styles.pythonIcon}
-                  url={
-                    "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-                  }
-                >
-                  Python
-                </SkillBox>
-
-                <Button2
-                  color={
-                    "35deg, #06257a 0%, #0054c2 35%, rgb(255, 222, 76) 100%"
-                  }
-                  link={() => setFlip0(!flip0)}
-                >
-                  As a part of FRC, I gained extensive experience in Python
-                  programming, specifically in vision systems. Utilizing
-                  Python's libraries and tools, I implemented efficient
-                  solutions for image processing and analysis. This hands-on
-                  experience enhanced my proficiency in Python's syntax, data
-                  structures, and built-in functions, which I further expanded
-                  through experiences like the Toyota Challenge.
-                </Button2>
-              </ReactCardFlip>
-            </Slide>
-          </Fade>
-        </Col>
-        <Col xs>
-          <Fade
-            delay={0}
-            duration={1000}
-            style={{ opacity: isVisible ? 0 : 1 }}
-            triggerOnce={true}
-          >
-            <Slide delay={100} duration={2000} triggerOnce={true}>
-              <ReactCardFlip isFlipped={flip1} flipDirection="vertical">
-                <SkillBox
-                  header="2 YEARS"
-                  click={() => setFlip1(!flip1)}
-                  color={"25deg, #09090a 0%, #e7e7e7 35%, rgb(73, 73, 73) 100%"}
-                  className={styles.jsonIcon}
-                  url={jsonPhoto}
-                >
-                  JSON
-                </SkillBox>
-                <Button2
-                  color={
-                    "-25deg, #09090a 0%, #e7e7e7 35%, rgb(73, 73, 73) 100%"
-                  }
-                  link={() => setFlip1(!flip1)}
-                >
-                  I gained valuable experience working with JSON as well during
-                  my time in FRC, where I focused on creating a seamless
-                  pipeline between Python and Java. It involved effectively
-                  handling and manipulating JSON strings to facilitate data
-                  exchange between the languages. Through this, I developed a
-                  strong understanding of JSON syntax and best practices,
-                  enabling me to establish efficient communication channels
-                  between separate codebases.
-                </Button2>
-              </ReactCardFlip>
-            </Slide>
-          </Fade>
-        </Col>
-        <Col>
-          <Fade
-            delay={0}
-            duration={1000}
-            style={{ opacity: isVisible ? 0 : 1 }}
-            triggerOnce={true}
-          >
-            <Slide
-              direction="right"
-              delay={100}
-              duration={2000}
-              triggerOnce={true}
-            >
-              <ReactCardFlip isFlipped={flip2} flipDirection="vertical">
-                <SkillBox
-                  header="6 MONTHS"
-                  className={styles.cppIcon}
-                  click={() => setFlip2(!flip2)}
-                  color={
-                    "-10deg, #06557a 0%, #2626ff 35%, rgba(0, 212, 255, 1) 100%"
-                  }
-                  url={CppPhoto}
-                >
-                  C++
-                </SkillBox>
-                <Button2
-                  color={
-                    "-140deg, #06557a 0%, #2626ff 35%, rgba(0, 212, 255, 1) 100%"
-                  }
-                  link={() => setFlip2(!flip2)}
-                >
-                  In my engineering program, I gained extensive knowledge of the
-                  C++ programming language, achieving top marks in my
-                  programming classes. I also have hands-on experience with
-                  Arduino boards, utilizing C++ to program and control
-                  electronic systems. This practical application of C++ through
-                  Arduino projects has strengthened my proficiency in the
-                  language and working with hardware.
-                </Button2>
-              </ReactCardFlip>
-            </Slide>
-          </Fade>
-        </Col>
-        <Col xs lg="6">
-          <Fade
-            delay={100}
-            duration={1000}
-            style={{ opacity: isVisible ? 0 : 1 }}
-            triggerOnce={true}
-          >
-            <JackInTheBox delay={0} duration={2000} triggerOnce={true}>
-              <ReactCardFlip isFlipped={flip3} flipDirection="vertical">
-                <SkillBox
-                  className={styles.Applogo}
-                  header="3 MONTH"
-                  url={ReactSVG}
-                  click={() => setFlip3(!flip3)}
-                >
-                  React JS
-                </SkillBox>
-                <Button2 link={() => setFlip3(!flip3)}>
-                  Through my involvement in Waterloo Rocketry, I gained valuable
-                  experience in React, learning its syntax, styles, and various
-                  components. Working on projects like the Rocketry website and
-                  this current website has significantly enhanced my Javascript
-                  skills and provided me with a solid foundation in React.
-                </Button2>
-              </ReactCardFlip>
-            </JackInTheBox>
-          </Fade>
-        </Col>
-        <Col className={styles.skillText}>
-          <Fade
-            delay={0}
-            duration={1000}
-            style={{ opacity: isVisible ? 0 : 0 }}
-            triggerOnce={true}
-          ></Fade>
-        </Col>
+       
       </Row>
       <AttentionSeeker effect="pulse" duration={1000} delay={1000}>
         <h1 className={styles.gallery}>CLICK ON PROJECTS BELOW</h1>

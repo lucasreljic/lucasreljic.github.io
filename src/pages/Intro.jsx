@@ -58,9 +58,7 @@ const Intro = () => {
       <br></br>
       <br></br>
       <Appear timeout={7} fillmode={"forwards"} duration={2}>
-        <a href="/">
           <Button2 link="/" text="Homepage"></Button2>
-        </a>
       </Appear>
     </div>
   );

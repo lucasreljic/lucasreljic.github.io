@@ -1,12 +1,13 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { Button } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 import styles from './Button.module.css'
 const Button2 = (props) => {
     return (
         <Wrapper className={styles.body} style={{  background: `linear-gradient(${props.color})` }}>
             <div className={styles.border}>
-            <Button size="sm" className={styles.button} onClick={props.link}>{props.text}<p className={styles.text}>{props.children}</p></Button>
+            <Button size="sm" className={styles.button} as={Link} to={props.link}>{props.text}<p className={styles.text}>{props.children}</p></Button>
             </div>
         </Wrapper>
     )

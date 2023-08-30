@@ -8,7 +8,6 @@ import styles from "./Layout.module.css";
 import mail from "./../components/NavSocials/gmail.png";
 import github from "./../components/NavSocials/github.png";
 import { JackInTheBox, Fade } from "react-awesome-reveal";
-import Appear from "../components/Intro/Appear";
 
 import linkedIn from "./../components/NavSocials/official-linkedin-logo----17.png";
 import { useState, useEffect } from "react";
@@ -31,17 +30,8 @@ const Layout = () => {
       >
         <Container fluid>
           <Nav className="justify-content-center">
-            <Navbar.Brand className="mx-0">
-                <Link to={"/" + text}  className={styles.title}>
-                  <Fade
-                    cascade
-                    damping={1e-1}
-                    triggerOnce={true}
-                    duration={1000}
-                  >
+            <Navbar.Brand as={Link} to ={"/" + text} className={styles.title}>
                     Home
-                  </Fade>
-                </Link>
             </Navbar.Brand>
           </Nav>
           <Nav className="me-auto justify-content-center bar">
@@ -135,7 +125,7 @@ const Layout = () => {
                 href="https://github.com/lucasreljic/"
               >
                 <JackInTheBox
-                  delay={5000}
+                  delay={2000}
                   duration={2000}
                   triggerOnce={true}
                   style={{ opacity: isVisible ? 0 : 1 }}
@@ -159,7 +149,7 @@ const Layout = () => {
               >
                 <Fade
                   direction="down"
-                  delay={7000}
+                  delay={4000}
                   duration={2000}
                   triggerOnce={true}
                   style={{ opacity: isVisible ? 0 : 1 }}
@@ -179,7 +169,7 @@ const Layout = () => {
               >
                 <Fade
                   direction="right"
-                  delay={9000}
+                  delay={6000}
                   duration={2000}
                   triggerOnce={true}
                   style={{ opacity: isVisible ? 0 : 1 }}
