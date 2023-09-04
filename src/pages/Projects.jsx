@@ -41,6 +41,41 @@ const Project1a = () => {
   );
 }
 
+const GoodLabsRobot = () => {
+  return (
+    <Container fluid>
+      <h1 id="GoodLabsRobbie">GoodLabs Bipedal Robot</h1>
+      <h2>2022</h2>
+      <Slide>
+        <SlideBox photo='photorobot1a2'>
+          Robot With Green Cube
+        </SlideBox>
+        <SlideBox photo='photorobot1a'>
+          Side View
+        </SlideBox>
+        <SlideBox photo='photorobot1a3'>
+          Top View
+        </SlideBox>
+      </Slide>
+      <br></br>
+      <Text>
+        - Designed over 15 parts in Fusion 360 and put under rigourous 
+      </Text>
+      <br></br>
+      <Text>The final project for term 1A consisted of a Robot that picks up a cube in a 1m X 1m
+        area.
+        The purpose of this project was to create a robot that solved a specific problem. The problem chosen
+        was to collect objects that are scattered around in a set area. To do this, the robot will have to be able
+        to find these objects and travel the appropriate distance to collect them with its collection mechanism, in
+        this case a claw. The objects are also of different types, in this problem each object is a different colour.
+        The robot must identify what colour the object is after it has collected it and transport it to a specific location
+        corresponding to the colour of the object. The system used was an EV3 robot with modifications to the standard
+        mechanical configuration.
+      </Text>
+    </Container>
+  );
+}
+
 const Marketalarm = () => {
   return (
     <Container fluid>

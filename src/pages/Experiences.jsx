@@ -4,6 +4,46 @@ import SlideBox from "../components/Elements/Slide/SlideBox";
 import Text from "../components/Elements/Text/Text";
 import styles from "./Experiences.module.css";
 import YoutubeEmbed from "../components/Elements/Other/YoutubeEmbed";
+
+const Hackthe6ix = () => {
+  return (
+    <Container fluid>
+      <h1 id="Hackthe6ix">Hack the 6ix</h1>
+      <h2>2023</h2>
+      <Slide>
+        <SlideBox photo="photohackthe6ix">Professor Puddles</SlideBox>
+        <SlideBox photo="photohackthe6ix1">Professor Puddles</SlideBox>
+        <SlideBox photo="photohackthe6ix2">Professor Puddles</SlideBox>
+        <SlideBox photo="photohackthe6ix3">The Winner</SlideBox>
+      </Slide>
+      <div className={styles.button}>
+        <Button href="https://github.com/lucasreljic/Professor-Puddles">
+          GitHub
+        </Button>
+      </div>
+      <Text>
+        - Won 1st place in the hackathon with 218 total participants
+        <br></br>- Programmed in Python, utilizing OpenCV and Mediapipe for
+        posture detection
+        <br></br>- Developed a simple UI with Tkinter
+        <br></br>- Mcguivered a duck that sprays water and warns user to correct
+        posture
+      </Text>
+      <br></br>
+      <Text>
+        Hack the 6ix was 36 hours of non-stop hacking that challenged my ability
+        to stay awake at 5am. I led my team to victory by delegating tasks,
+        organizing our codebase, and ensuring everyone got over the hurdles they
+        faced. In the end it was worth the 7 hours of sleep the entire weekend
+        cause I enjoyed every hour of it, the cherry on top was winning the
+        whole competition. Check out the{" "}
+        <a href="https://devpost.com/software/professor-puddles">Devpost</a> for
+        yourself!
+      </Text>
+    </Container>
+  );
+};
+
 const Toyota2023 = () => {
   return (
     <Container fluid>
@@ -26,7 +66,7 @@ const Toyota2023 = () => {
 
       <br></br>
       <div>
-      <YoutubeEmbed embedId="8XI78UiHIvk" />
+        <YoutubeEmbed embedId="8XI78UiHIvk" />
       </div>
       <h1>Demo</h1>
       <div className={styles.button}>
@@ -217,4 +257,12 @@ const Roots2stem = () => {
   );
 };
 
-export { Roots2stem, FRC4627, FRC5078, Toyota, UofTHacks, Toyota2023 };
+export {
+  Roots2stem,
+  FRC4627,
+  FRC5078,
+  Toyota,
+  UofTHacks,
+  Toyota2023,
+  Hackthe6ix,
+};

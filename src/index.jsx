@@ -7,7 +7,7 @@ import NoPage from "./pages/NoPage";
 import Layout from "./pages/Layout";
 import Home from './pages/Home';
 import Intro from "./pages/Intro";
-import { Roots2stem, FRC4627, FRC5078, Toyota, UofTHacks, Toyota2023 } from "./pages/Experiences";
+import { Roots2stem, FRC4627, FRC5078, Toyota, UofTHacks, Toyota2023, Hackthe6ix } from "./pages/Experiences";
 import { Gokart, Plant, Sanitizer, Project1a, PiLaptop, Marketalarm, RCplanes, Openmv } from "./pages/Projects";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -35,6 +35,7 @@ root.render(
           <Route path="toyotainnovation" element={<Toyota />} />
           <Route path="toyotainnovation2023" element={<Toyota2023 />} />
           <Route path="uofthacks" element={<UofTHacks />} />
+          <Route path="hackthe6ix" element={<Hackthe6ix />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
