@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.642b2e92.css",
-    "main.js": "/static/js/main.718e351b.js",
+    "main.css": "/static/css/main.0e0eb723.css",
+    "main.js": "/static/js/main.2ddda774.js",
     "static/css/873.7b203403.chunk.css": "/static/css/873.7b203403.chunk.css",
     "static/js/873.91b89af9.chunk.js": "/static/js/873.91b89af9.chunk.js",
     "static/js/787.aeca62f9.chunk.js": "/static/js/787.aeca62f9.chunk.js",
@@ -20,7 +20,10 @@
     "static/media/IMG_5826.PNG": "/static/media/IMG_5826.588a69fb95906156f7d8.PNG",
     "static/media/1stplane.JPG": "/static/media/1stplane.c428189c08468abf40dc.JPG",
     "static/media/IMG_0197.JPG": "/static/media/IMG_0197.4b4ef05cb6b2498df22d.JPG",
+    "static/media/IMG_0072.jpg": "/static/media/IMG_0072.7cbc80cc010ec2985b42.jpg",
+    "static/media/Collage.png": "/static/media/Collage.e63607f02fe9e6a826aa.png",
     "static/media/welding.JPG": "/static/media/welding.51034717dd19bb30f637.JPG",
+    "static/media/IMG_8108.jpeg": "/static/media/IMG_8108.bc72deb8154da52236ea.jpeg",
     "static/media/output2.png": "/static/media/output2.3c90cdf2c50586f339e8.png",
     "static/media/IMG_3518.jpeg": "/static/media/IMG_3518.17d415bc943a4f664596.jpeg",
     "static/media/IMG_6924.jpeg": "/static/media/IMG_6924.311e5531ada4c4a135c3.jpeg",
@@ -31,6 +34,7 @@
     "static/media/IMG_3428.jpeg": "/static/media/IMG_3428.fef55236c39e52588979.jpeg",
     "static/media/IMG_2781.jpeg": "/static/media/IMG_2781.8b10d22febf1d335e66e.jpeg",
     "static/media/IMG_1424.jpeg": "/static/media/IMG_1424.9d1a6a0aaac13f7b3ec8.jpeg",
+    "static/media/IMG_8106.jpeg": "/static/media/IMG_8106.fa04aefbe88744c66748.jpeg",
     "static/media/IMG_3525.jpeg": "/static/media/IMG_3525.e0c48a9f18f3156bbdb8.jpeg",
     "static/media/IMG_1418.jpeg": "/static/media/IMG_1418.f21236f8c66487f43548.jpeg",
     "static/media/OpenMV Cam on Robot.jpeg": "/static/media/OpenMV Cam on Robot.f0cc531fa6d21d8f0205.jpeg",
@@ -48,6 +52,7 @@
     "static/media/University_of_Waterloo.svg.png": "/static/media/University_of_Waterloo.svg.4f899ab4e8198a3ba480.png",
     "static/media/rocketry.png": "/static/media/rocketry.5260a1d8d73d33fede94.png",
     "static/media/2019RobotTesting.jpg": "/static/media/2019RobotTesting.2028a072dce0f3b9a61f.jpg",
+    "static/media/WhatsApp Image 2023-08-26 at 12.57.50 AM.jpeg": "/static/media/WhatsApp Image 2023-08-26 at 12.57.50 AM.4e945f6cf4fff70259e6.jpeg",
     "static/media/2018Comp.jpg": "/static/media/2018Comp.099717daa610634f8ece.jpg",
     "static/media/2022_Practice.jpg": "/static/media/2022_Practice.8b12d6d2662da3cf5dc7.jpg",
     "static/media/gmail.png": "/static/media/gmail.df4fdc0d13e2c249872f.png",
@@ -65,15 +70,15 @@
     "static/media/profile.jpeg": "/static/media/profile.74f57c1a5026ecee3cee.jpeg",
     "static/media/react.svg": "/static/media/react.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "static/media/arrow-down-3101.svg": "/static/media/arrow-down-3101.d36ade42531520d19d1029bc6a0698a5.svg",
-    "main.642b2e92.css.map": "/static/css/main.642b2e92.css.map",
-    "main.718e351b.js.map": "/static/js/main.718e351b.js.map",
+    "static/media/arrow-down-3101.svg": "/static/media/arrow-down-3101.3f57bb853dc5f24d974ee30f34e87d3b.svg",
+    "main.0e0eb723.css.map": "/static/css/main.0e0eb723.css.map",
+    "main.2ddda774.js.map": "/static/js/main.2ddda774.js.map",
     "873.7b203403.chunk.css.map": "/static/css/873.7b203403.chunk.css.map",
     "873.91b89af9.chunk.js.map": "/static/js/873.91b89af9.chunk.js.map",
     "787.aeca62f9.chunk.js.map": "/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.642b2e92.css",
-    "static/js/main.718e351b.js"
+    "static/css/main.0e0eb723.css",
+    "static/js/main.2ddda774.js"
   ]
 }
