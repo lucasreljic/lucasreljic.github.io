@@ -28,7 +28,7 @@ import uwaterlooPhoto from "./../icons/University_of_Waterloo.svg.png";
 import goodlabsPhoto from "./../icons/goodlabs.png";
 
 //images
-import hackthe6ix  from "../components/Elements/Slide/photos/Hackthe6ix/IMG_0072.jpg";
+import hackthe6ix from "../components/Elements/Slide/photos/Hackthe6ix/IMG_0072.jpg";
 import robot1a from "../components/Elements/Slide/photos/1AProject/20221201_192840.jpg";
 import openmv from "../components/Elements/Slide/photos/FRC/IMG_3426.JPG";
 import toyota from "../components/Elements/Slide/photos/ToyotaChallenge/Capture1.PNG";
@@ -67,53 +67,50 @@ export default function Home() {
           </Fade>
         </h1>
         <Row xl={4} sm={2} xs={2}>
-            <Col>
-              <AttentionSeeker effect="pulse" delay={2500} duration={1500}>
-                <IconBox
-                  className={styles.goodlabsIcon}
-                  url={goodlabsPhoto}
-                ></IconBox>
-              </AttentionSeeker>
-            </Col>
-            <Col>
-              <AttentionSeeker effect="pulse" delay={3500} duration={1500}>
-                <IconBox
-                  className={styles.rocketryIcon}
-                  url={rocketryPhoto}
-                ></IconBox>
-              </AttentionSeeker>
-            </Col>
-            <Col>
-              <AttentionSeeker effect="pulse" delay={4500} duration={1500}>
-                <IconBox
-                  className={styles.uwaterlooIcon}
-                  url={uwaterlooPhoto}
-                ></IconBox>
-              </AttentionSeeker>
-            </Col>
-            <Col>
-              <AttentionSeeker effect="pulse" delay={5500} duration={1500}>
-                <IconBox className={styles.frcIcon} url={frcPhoto}></IconBox>
-              </AttentionSeeker>
-            </Col>
+          <Col>
+            <AttentionSeeker effect="pulse" delay={2500} duration={1500}>
+              <IconBox
+                className={styles.goodlabsIcon}
+                url={goodlabsPhoto}
+              ></IconBox>
+            </AttentionSeeker>
+          </Col>
+          <Col>
+            <AttentionSeeker effect="pulse" delay={3500} duration={1500}>
+              <IconBox
+                className={styles.rocketryIcon}
+                url={rocketryPhoto}
+              ></IconBox>
+            </AttentionSeeker>
+          </Col>
+          <Col>
+            <AttentionSeeker effect="pulse" delay={4500} duration={1500}>
+              <IconBox
+                className={styles.uwaterlooIcon}
+                url={uwaterlooPhoto}
+              ></IconBox>
+            </AttentionSeeker>
+          </Col>
+          <Col>
+            <AttentionSeeker effect="pulse" delay={5500} duration={1500}>
+              <IconBox className={styles.frcIcon} url={frcPhoto}></IconBox>
+            </AttentionSeeker>
+          </Col>
         </Row>
-        
-          <Text
-            className={styles.title}
-            style={{
-              textShadow:
-                "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black",
-            }}
-          >
-            I am a 19 year old pursuing a BASc in Mechatronics Engineering at
-            the University of Waterloo. Currently in my co-op term with GoodLabs
-            Studio where I am designing, prototyping and programming a bipedal
-            robot. I have a passion for mechanical and software projects as
-            evident through the various projects I have accomplished over the
-            years, some of which are visible on this website. Many of my
-            experiences prior to university guided me towards pursuing an
-            engineering degree.
-          </Text>
+
+        <Text
+          className={styles.title}
+          style={{
+            textShadow: "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black",
+          }}
+        >
+          I am a 19 year old pursuing a BASc in Mechatronics Engineering at the
+          University of Waterloo. Currently in my 2nd year. I have a passion for
+          mechanical and software projects as evident through the various
+          projects I have accomplished over the years, some of which are visible
+          on this website. Many of my experiences prior to university guided me
+          towards pursuing an engineering degree.
+        </Text>
         <Slide delay={4500} duration={1000} direction="down" triggerOnce={true}>
           <Fade delay={4000} duration={3000} triggerOnce={true}>
             <img
@@ -126,7 +123,9 @@ export default function Home() {
         </Slide>
       </Appear>
       <AttentionSeeker effect="pulse" duration={1000} delay={1000}>
-        <h1  id="skills" className={styles.skills}>Programming Languages I know</h1>
+        <h1 id="skills" className={styles.skills}>
+          Programming Languages I know
+        </h1>
       </AttentionSeeker>
       <Row lg={2} md={1} sm={1} xs={1}>
         <Col>
@@ -173,7 +172,6 @@ export default function Home() {
               duration={2000}
               triggerOnce={true}
             >
-              
               <ReactCardFlip isFlipped={flip0} flipDirection="vertical">
                 <SkillBox
                   header="2 YEARS"
@@ -307,7 +305,7 @@ export default function Home() {
       </AttentionSeeker>
       <Container className={styles.containerFluid} fluid>
         <Row xxl={4} xl={3} lg={2} md={2} sm={1} xs={1}>
-        <Col>
+          <Col>
             <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
               <Fade delay={0} duration={1000} triggerOnce={true}>
                 <Blocks link="/#/hackthe6ix" photo={hackthe6ix}>

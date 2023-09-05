@@ -21,6 +21,10 @@ const Hackthe6ix = () => {
           GitHub
         </Button>
       </div>
+      <div>
+        <YoutubeEmbed embedId="pyZHgDcofTw" />
+      </div>
+      <h1>Demo</h1>
       <Text>
         - Won 1st place in the hackathon with 218 total participants
         <br></br>- Programmed in Python, utilizing OpenCV and Mediapipe for
