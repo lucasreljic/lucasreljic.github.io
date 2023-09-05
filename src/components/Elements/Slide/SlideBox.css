@@ -46,6 +46,8 @@
 button {
     margin-left: 20px;
     margin-right: 20px;
+    padding-right: 0;
+    padding-left: 0;
     resize: both;
     scale: 150%;
 }
@@ -406,5 +408,39 @@ UofT hacks
     background-position: 30% 50%;
     width: 59%;
     max-width: 400px;
+    margin: auto;
+}
+
+/*
+hack the 6ix
+*/
+.photohackthe6ix {
+    background-image: url('./photos/Hackthe6ix/IMG_0072.jpg');
+    background-position: 30% 50%;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.photohackthe6ix1 {
+    background-image: url('./photos/Hackthe6ix/IMG_8106.jpeg');
+    background-position: 30% 50%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.photohackthe6ix2 {
+    background-image: url('./photos/Hackthe6ix/IMG_8108.jpeg');
+    background-position: 30% 50%;
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+}
+
+.photohackthe6ix3 {
+    background-image: url('./photos/Hackthe6ix/WhatsApp\ Image\ 2023-08-26\ at\ 12.57.50\ AM.jpeg');
+    background-position: 30% 50%;
+    width: 79%;
+    max-width: 800px;
     margin: auto;
 }
