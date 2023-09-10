@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bff4bf86.css",
-    "main.js": "/static/js/main.3af2fa03.js",
+    "main.js": "/static/js/main.6f447032.js",
     "static/css/873.7b203403.chunk.css": "/static/css/873.7b203403.chunk.css",
     "static/js/873.91b89af9.chunk.js": "/static/js/873.91b89af9.chunk.js",
     "static/js/787.aeca62f9.chunk.js": "/static/js/787.aeca62f9.chunk.js",
@@ -65,20 +65,19 @@
     "static/media/Programming.jpg": "/static/media/Programming.127e20402bfa298a4eac.jpg",
     "static/media/file.jpg": "/static/media/file.4ec383095a7d3cfef773.jpg",
     "static/media/marketalarm.PNG": "/static/media/marketalarm.4394e14aef7dc13839af.PNG",
-    "static/media/json1.png": "/static/media/json1.c58c05a55154f792f6ab.png",
     "static/media/goodlabs.png": "/static/media/goodlabs.d58d2b00ff0ccb5c81ce.png",
     "static/media/profile.jpeg": "/static/media/profile.74f57c1a5026ecee3cee.jpeg",
     "static/media/react.svg": "/static/media/react.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "static/media/arrow-down-3101.svg": "/static/media/arrow-down-3101.3f57bb853dc5f24d974ee30f34e87d3b.svg",
     "main.bff4bf86.css.map": "/static/css/main.bff4bf86.css.map",
-    "main.3af2fa03.js.map": "/static/js/main.3af2fa03.js.map",
+    "main.6f447032.js.map": "/static/js/main.6f447032.js.map",
     "873.7b203403.chunk.css.map": "/static/css/873.7b203403.chunk.css.map",
     "873.91b89af9.chunk.js.map": "/static/js/873.91b89af9.chunk.js.map",
     "787.aeca62f9.chunk.js.map": "/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bff4bf86.css",
-    "static/js/main.3af2fa03.js"
+    "static/js/main.6f447032.js"
   ]
 }
