@@ -26,7 +26,7 @@ const Hackthe6ix = () => {
       </div>
       <h1>Demo</h1>
       <Text>
-        - Won 1st place in the hackathon with 218 total participants
+        - Won 1st place in the hackathon with 219 total participants
         <br></br>- Programmed in Python, utilizing OpenCV and Mediapipe for
         posture detection
         <br></br>- Developed a simple UI with Tkinter

@@ -8,7 +8,7 @@ import IconBox from "../components/Elements/Icons/IconBox";
 import Button2 from "../components/Intro/Button2";
 import ReactCardFlip from "react-card-flip";
 import Appear from "../components/Intro/Appear";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   Slide,
   Fade,
@@ -19,7 +19,6 @@ import {
 
 // Photos/logos
 import arrow from "../icons/arrow-down-3101.svg";
-import jsonPhoto from "./../icons/json1.png";
 import ReactSVG from "./../icons/react.svg";
 import frcPhoto from "./../icons/FRC-Vertical.png";
 import CppPhoto from "./../icons/C++_Logo.png";
@@ -35,7 +34,7 @@ import toyota from "../components/Elements/Slide/photos/ToyotaChallenge/Capture1
 import toyota2023 from "../components/Elements/Slide/photos/ToyotaChallenge/output2crop.png";
 import uoftHacks from "../components/Elements/Slide/photos/UofTHacks/original.jpg";
 import frc4627 from "../components/Elements/Slide/photos/FRC/2022_Practice.jpg";
-import plant from "../components/Elements/Slide/photos/plantWaterer/IMG_3518.jpeg";
+import plant from "../components/Elements/Slide/photos/plantWaterer/IMG_3645.JPG";
 import sanitizer from "../components/Elements/Slide/photos/handSanitizer/IMG_2949.jpeg";
 import piLaptop from "../components/Elements/Slide/photos/RPiLaptop/IMG_6924.jpeg";
 import planes from "../components/Elements/Slide/photos/RCplanes/latest1.jpeg";
@@ -48,7 +47,6 @@ const SkillBox = React.lazy(() =>
 export default function Home() {
   const [flip, setFlip] = useState(false);
   const [flip0, setFlip0] = useState(false);
-  const [flip1, setFlip1] = useState(false);
   const [flip2, setFlip2] = useState(false);
   const [flip3, setFlip3] = useState(false);
   const handleClickScroll = () => {
@@ -200,38 +198,6 @@ export default function Home() {
                   experience enhanced my proficiency in Python's syntax, data
                   structures, and built-in functions, which I further expanded
                   through experiences like the Toyota Challenge.
-                </Button2>
-              </ReactCardFlip>
-            </Slide>
-          </Reveal>
-        </Col>
-        <Col xs>
-          <Reveal delay={100} triggerOnce={true} style={{ opacity: "0" }}>
-            <Slide delay={100} duration={2000} triggerOnce={true}>
-              <ReactCardFlip isFlipped={flip1} flipDirection="vertical">
-                <SkillBox
-                  header="2 YEARS"
-                  click={() => setFlip1(!flip1)}
-                  color={"25deg, #09090a 0%, #e7e7e7 35%, rgb(73, 73, 73) 100%"}
-                  className={styles.jsonIcon}
-                  url={jsonPhoto}
-                >
-                  JSON
-                </SkillBox>
-                <Button2
-                  color={
-                    "-25deg, #09090a 0%, #e7e7e7 35%, rgb(73, 73, 73) 100%"
-                  }
-                  link={() => setFlip1(!flip1)}
-                >
-                  I gained valuable experience working with JSON as well during
-                  my time in FRC, where I focused on creating a seamless
-                  pipeline between Python and Java. It involved effectively
-                  handling and manipulating JSON strings to facilitate data
-                  exchange between the languages. Through this, I developed a
-                  strong understanding of JSON syntax and best practices,
-                  enabling me to establish efficient communication channels
-                  between separate codebases.
                 </Button2>
               </ReactCardFlip>
             </Slide>

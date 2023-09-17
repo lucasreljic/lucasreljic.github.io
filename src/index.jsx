@@ -6,6 +6,7 @@ import { Routes, Route, HashRouter} from "react-router-dom";
 import NoPage from "./pages/NoPage";
 import Layout from "./pages/Layout";
 import Home from './pages/Home';
+import ScrollToTop from './ScrollToTop';
 import Intro from "./pages/Intro";
 import { Roots2stem, FRC4627, FRC5078, Toyota, UofTHacks, Toyota2023, Hackthe6ix } from "./pages/Experiences";
 import { Gokart, Plant, Sanitizer, Project1a, PiLaptop, Marketalarm, RCplanes, Openmv } from "./pages/Projects";
@@ -16,6 +17,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <HashRouter>
+      <ScrollToTop />
       <Routes>
 
         <Route path="/" element={<Layout />}>
