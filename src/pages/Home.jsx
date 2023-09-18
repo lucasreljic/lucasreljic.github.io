@@ -133,7 +133,7 @@ export default function Home() {
                 <Suspense fallback={<div>Loading...</div>}>
                   <SkillBox
                     header="3 YEARS"
-                    click={() => setFlip(flip)}
+                    click={() => setFlip(!flip)}
                     color={
                       "-25deg, #06257a 0%, #0054c2 35%, rgb(241, 58, 2) 100%"
                     }
@@ -145,7 +145,7 @@ export default function Home() {
                 </Suspense>
                 <Button2
                   left="10rem"
-                  link={() => setFlip(flip)}
+                  link={() => setFlip(!flip)}
                   color={
                     "-145deg, #06257a 0%, #0054c2 35%, rgb(241, 58, 2) 100%"
                   }
