@@ -129,11 +129,11 @@ export default function Home() {
         <Col>
           <Reveal delay={100} triggerOnce={true} style={{ opacity: "0" }}>
             <Slide delay={0} duration={2000} triggerOnce={true}>
-              <ReactCardFlip isFlipped={flip} flipDirection="vertical">
+              <ReactCardFlip isFlipped={!flip} flipDirection="vertical">
                 <Suspense fallback={<div>Loading...</div>}>
                   <SkillBox
                     header="3 YEARS"
-                    click={() => setFlip(!flip)}
+                    click={() => setFlip(flip)}
                     color={
                       "-25deg, #06257a 0%, #0054c2 35%, rgb(241, 58, 2) 100%"
                     }
@@ -145,7 +145,7 @@ export default function Home() {
                 </Suspense>
                 <Button2
                   left="10rem"
-                  link={() => setFlip(!flip)}
+                  link={() => setFlip(flip)}
                   color={
                     "-145deg, #06257a 0%, #0054c2 35%, rgb(241, 58, 2) 100%"
                   }

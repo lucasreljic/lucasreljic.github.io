@@ -250,13 +250,6 @@ const Roots2stem = () => {
         <a href="/#/gokart">electric go-kart.</a>
       </Text>
       <br></br>
-      <Text>
-        {" "}
-        An article was even written about my time there.<br></br>
-        <a href="https://careers-in-calgary.squarespace.com/news-blog/2018/4/30/from-building-a-go-kart-to-an-airplane-that-actually-flies-steam-fuels-future-career-passions">
-          https://careers-in-calgary.squarespace.com/news-blog/2018/4/30/from-building-a-go-kart-to-an-airplane-that-actually-flies-steam-fuels-future-career-passions
-        </a>
-      </Text>
     </Container>
   );
 };
