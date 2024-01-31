@@ -102,7 +102,7 @@ export default function Home() {
             textShadow: "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black",
           }}
         >
-          I am a 19 year old pursuing a BASc in Mechatronics Engineering at the
+          I am a 20 year old pursuing a BASc in Mechatronics Engineering at the
           University of Waterloo. Currently in my 2nd year. I have a passion for
           mechanical and software projects as evident through the various
           projects I have accomplished over the years, some of which are visible

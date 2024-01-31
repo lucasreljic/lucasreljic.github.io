@@ -444,3 +444,26 @@ hack the 6ix
     max-width: 800px;
     margin: auto;
 }
+
+.photouofthacksXI {
+    background-image: url('./photos/UoftHacksXI/Screenshot 2024-01-29 132515.png');
+    background-position: 90% 0%;
+    background-size: contain;
+    margin: auto;
+}
+
+.photouofthacksXI2 {
+    background-image: url('./photos/UoftHacksXI/Screenshot 2024-01-29 133055.png');
+    background-position: 90% 0%;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.photouofthacksXI3 {
+    background-image: url('./photos/UoftHacksXI/Screenshot 2024-01-29 133339.png');
+    background-position: 50% 0%;
+
+    margin: auto;
+}

@@ -72,6 +72,9 @@ const Layout = () => {
               title={<span className={styles.dropdown}>Experiences</span>}
               id="navbarScrollingDropdown"
             >
+              <NavDropdown.Item href="/#/uofthacksXI">
+                <span className={styles.tab}>UofTHacksXI</span>
+              </NavDropdown.Item>
               <NavDropdown.Item href="/#/hackthe6ix">
                 <span className={styles.tab}>Hack the 6ix</span>
               </NavDropdown.Item>
@@ -80,8 +83,8 @@ const Layout = () => {
                   Toyota Innovation Challenge 2023
                 </span>
               </NavDropdown.Item>
-              <NavDropdown.Item href="/#/uofthacks">
-                <span className={styles.tab}>UofT Hacks</span>
+              <NavDropdown.Item href="/#/uofthacksX">
+                <span className={styles.tab}>UofTHacksX</span>
               </NavDropdown.Item>
               <NavDropdown.Item href="/#/toyotainnovation">
                 <span className={styles.tab}>Toyota Innovation Challenge</span>

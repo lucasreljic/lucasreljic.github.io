@@ -5,6 +5,46 @@ import Text from "../components/Elements/Text/Text";
 import styles from "./Experiences.module.css";
 import YoutubeEmbed from "../components/Elements/Other/YoutubeEmbed";
 
+const UofTHacksXI = () => {
+  return (
+    <Container fluid>
+      <h1 id="uofthacksXI">UofTHacks XI</h1>
+      <h2>2024</h2>
+      <Slide>
+        <SlideBox photo="photouofthacksXI">Strict Parent Chatbot</SlideBox>
+        <SlideBox photo="photouofthacksXI2">Supportive Parent Chatbot</SlideBox>
+        <SlideBox photo="photouofthacksXI3">Record Lectures!</SlideBox>
+      </Slide>
+      <div className={styles.button}>
+        <Button href="https://github.com/lucasreljic/StuDining">GitHub</Button>
+      </div>
+      <div>
+        <YoutubeEmbed embedId="1BEd1fdXLIU" />
+      </div>
+      <h1>Demo</h1>
+      <Text>
+        - Programmed FrontEnd in NextJS and BackEnd with DJango
+        <br></br>- Developed custom microphone API for recording lectures and
+        created transcripts through Google Cloud API
+        <br></br>- Utilized Cohere generative model and prompt engineering for
+        an interactive chatbot that could answer questions in a parental
+        advisory manner
+        <br></br>- Created customizable chatbot that could be tailored to the user's nostalgia preference.
+      </Text>
+      <br></br>
+      <Text>
+        UofT Hackathon XI was an great weekend experience. As a skilled member
+        in React I took on the FrontEnd and challenged myself to use NextJS. I
+        also developed FrontEnd endpoints for the DJango BackEnd. Towards the
+        end of the hackathon we encountered issues with the generative AI so I
+        switched to prompt engineering and developed prompts that made my team able to demo in time! I was a member of a team of
+        4, for more information here is the{" "}
+        <a href="https://devpost.com/software/we-dont-know-yet">Devpost</a>.
+      </Text>
+    </Container>
+  );
+};
+
 const Hackthe6ix = () => {
   return (
     <Container fluid>
@@ -92,7 +132,7 @@ const Toyota2023 = () => {
 const UofTHacks = () => {
   return (
     <Container fluid>
-      <h1 id="uofthacks">UofT Hackathon X</h1>
+      <h1 id="uofthacks">UofTHacks X</h1>
       <h2>2023</h2>
       <Slide>
         <SlideBox photo="photouofthacks">BeRealocated Project</SlideBox>
@@ -262,4 +302,5 @@ export {
   UofTHacks,
   Toyota2023,
   Hackthe6ix,
+  UofTHacksXI,
 };
