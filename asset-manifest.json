@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.3477fe3d.css",
-    "main.js": "/static/js/main.ce505d93.js",
-    "static/css/873.7b203403.chunk.css": "/static/css/873.7b203403.chunk.css",
-    "static/js/873.91b89af9.chunk.js": "/static/js/873.91b89af9.chunk.js",
+    "main.css": "/static/css/main.d2903f61.css",
+    "main.js": "/static/js/main.c1fbe527.js",
+    "static/css/873.c5cc1d0a.chunk.css": "/static/css/873.c5cc1d0a.chunk.css",
+    "static/js/873.c98ec412.chunk.js": "/static/js/873.c98ec412.chunk.js",
     "static/js/787.aeca62f9.chunk.js": "/static/js/787.aeca62f9.chunk.js",
     "static/media/20221201_192840.jpg": "/static/media/20221201_192840.d5ac9f6aa0654ebc79eb.jpg",
     "static/media/20221201_193342.jpg": "/static/media/20221201_193342.d962a0288164a2f624e1.jpg",
@@ -72,15 +72,15 @@
     "static/media/profile.jpeg": "/static/media/profile.74f57c1a5026ecee3cee.jpeg",
     "static/media/react.svg": "/static/media/react.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "static/media/arrow-down-3101.svg": "/static/media/arrow-down-3101.3f57bb853dc5f24d974ee30f34e87d3b.svg",
-    "main.3477fe3d.css.map": "/static/css/main.3477fe3d.css.map",
-    "main.ce505d93.js.map": "/static/js/main.ce505d93.js.map",
-    "873.7b203403.chunk.css.map": "/static/css/873.7b203403.chunk.css.map",
-    "873.91b89af9.chunk.js.map": "/static/js/873.91b89af9.chunk.js.map",
+    "static/media/arrow-down-3101.svg": "/static/media/arrow-down-3101.4b2577ebb5ea8980a3f447c04e523cf5.svg",
+    "main.d2903f61.css.map": "/static/css/main.d2903f61.css.map",
+    "main.c1fbe527.js.map": "/static/js/main.c1fbe527.js.map",
+    "873.c5cc1d0a.chunk.css.map": "/static/css/873.c5cc1d0a.chunk.css.map",
+    "873.c98ec412.chunk.js.map": "/static/js/873.c98ec412.chunk.js.map",
     "787.aeca62f9.chunk.js.map": "/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3477fe3d.css",
-    "static/js/main.ce505d93.js"
+    "static/css/main.d2903f61.css",
+    "static/js/main.c1fbe527.js"
   ]
 }
