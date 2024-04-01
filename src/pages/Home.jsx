@@ -25,6 +25,8 @@ import CppPhoto from "./../icons/C++_Logo.png";
 import rocketryPhoto from "./../icons/rocketry.png";
 import uwaterlooPhoto from "./../icons/University_of_Waterloo.svg.png";
 import goodlabsPhoto from "./../icons/goodlabs.png";
+import watoPhoto from "./../icons/wato_icon.jpeg";
+
 
 //images
 import hackthe6ix from "../components/Elements/Slide/photos/Hackthe6ix/IMG_0072.jpg";
@@ -60,11 +62,19 @@ export default function Home() {
     <Container fluid className={styles.container}>
       <Appear timeout={0.1} fillmode={"forwards"}>
         <h1 className={styles.mainHeader}>
-          <Fade cascade damping={1e-1} triggerOnce={true} duration={2500}>
+          <Fade cascade damping={1e-1} triggerOnce={true} duration={2000}>
             LUCAS RELJIC-DUMONT
           </Fade>
         </h1>
-        <Row xl={4} sm={2} xs={2}>
+        <Row xl={5} lg={2} sm={2} xs={2}>
+        <Col>
+            <AttentionSeeker effect="pulse" delay={1500} duration={1500}>
+              <IconBox
+                className={styles.watoIcon}
+                url={watoPhoto}
+              ></IconBox>
+            </AttentionSeeker>
+          </Col>
           <Col>
             <AttentionSeeker effect="pulse" delay={2500} duration={1500}>
               <IconBox
@@ -129,7 +139,7 @@ export default function Home() {
         <Col>
           <Reveal delay={100} triggerOnce={true} style={{ opacity: "0" }}>
             <Slide delay={0} duration={2000} triggerOnce={true}>
-              <ReactCardFlip isFlipped={!flip} flipDirection="vertical">
+              <ReactCardFlip isFlipped={flip} flipDirection="vertical">
                 <Suspense fallback={<div>Loading...</div>}>
                   <SkillBox
                     header="3 YEARS"

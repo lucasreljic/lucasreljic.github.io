@@ -190,6 +190,10 @@ li{
   width: 13rem;
 }
 
+.watoIcon{
+  width: 12.5rem;
+  border-radius: 1.5rem;
+}
 .frcIcon{
   width: 13rem;
   padding-top: 2rem;
@@ -259,6 +263,9 @@ For mobile
   .goodlabsIcon{
     width: 12rem;
   }
+  .watoIcon{
+    width: 12rem;
+  }
   .frcIcon{
     padding-top: 1rem;
   }
@@ -298,6 +305,7 @@ For mobile
 
   .rocketryIcon{
     width: 9rem;
+    padding: 0rem;
   }
   
   .uwaterlooIcon{
@@ -307,8 +315,12 @@ For mobile
   
   .frcIcon{
     width: 8rem;
+    padding-top: 0rem;
   }
   .goodlabsIcon{
+    width: 6rem;
+  }
+  .watoIcon{
     width: 6rem;
   }
   
