@@ -1,5 +1,5 @@
-import { NavLink, Outlet } from "react-router-dom";
-import { Container, NavItem } from "react-bootstrap/";
+import { Link, Outlet } from "react-router-dom";
+import { Container } from "react-bootstrap/";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
@@ -7,35 +7,28 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Layout.module.css";
 import mail from "./../components/NavSocials/gmail.png";
 import github from "./../components/NavSocials/github.png";
-import { JackInTheBox, Fade } from "react-awesome-reveal";
-import Appear from "../components/Intro/Appear";
 
 import linkedIn from "./../components/NavSocials/official-linkedin-logo----17.png";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 
 const Layout = () => {
-  const [isVisible, setIsVisible] = useState(true);
+  // const [isVisible, setIsVisible] = useState(true);
 
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
+  // useEffect(() => {
+  //   setIsVisible(true);
+  // }, []);
 
-  var [text, setText] = useState("");
+  // var [text, setText] = useState("");
   return (
     <>
       <Navbar
-        onPointerEnter={() => setText(Math.random() > 0.2 ? "" : "intro")}
-        bg="dark"
-        variant="dark"
+        bg="black"
+        variant="black"
         style={{ top: "0.5rem", display: "inline" }}
       >
         <Container fluid>
+        <Navbar.Brand as={Link} to="/"><span className={styles.title}>Home</span></Navbar.Brand>
           <Nav className="me-auto justify-content-center bar">
-            <NavItem className="my-auto px-auto">
-              <NavLink to=" " style={{ textDecoration: "none" }}>
-                <span className={styles.title}>Home</span>
-              </NavLink>
-            </NavItem>
             <NavDropdown
               style={{ color: "black" }}
               title={<span className={styles.dropdown}>Projects</span>}

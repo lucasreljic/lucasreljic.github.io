@@ -119,14 +119,6 @@ li{
 
 }
 
-.skills {
-  font-weight: 550;
-  border-radius: 5px 5px;
-  padding: 10px;
-  opacity: 0.9;
-  color: #ffffff;
-}
-
 .mainHeader{
  
   color:   #61c2ec;
@@ -134,15 +126,9 @@ li{
   font-size: 600%;
 }
 
-.skills{
-  font-weight: 600;
-  font-size: 200%;
-  margin-bottom: 1rem;
-}
 .gallery{
   font-weight: 600;
   font-size: 200%;
-  margin-top: 15rem;
   margin-bottom: 4rem;
 }
 .galleryClick{
@@ -157,30 +143,18 @@ li{
   padding-bottom: 15rem;
 }
 
-.javaIcon{
-  width: 6rem;
-}
-
-.pythonIcon{
-  width: 6rem;
-}
-
-.jsonIcon{
-  width: 5.7rem;
-}
-
-.cppIcon{
-  width: 5rem;
-}
-
-.Applogo{
-  width: 8.5rem;
-}
 
 .rocketryIcon{
   width: 18rem;
+  padding: auto;
+  transition: transform 0.5s; /* Apply transition to the transform property */
 }
 
+.rocketryIcon:hover{
+  transition-duration: 500ms;
+  color: aliceblue;
+  transform: scale(0.9); /* Scale down the image on hover */
+}
 .uwaterlooIcon{
   width: 13rem;
   padding-bottom: 1rem;

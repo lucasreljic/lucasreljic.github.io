@@ -1,45 +1,49 @@
 .title{
   color:  #61c2ec;
   text-decoration: none;
-  transition: 250ms;
+  transition-duration: 500ms;
   font-size: large;
-  padding-right: 0.5rem;
+  padding-left: 1rem;
 }
 .dropdown{
   transition-duration: 500ms;
+  text-decoration: none;
+  font-size: large;
   color: #61c2ec;
 }
 .dropdown:hover{
   transition-duration: 500ms;
-  color: white;
+  color: aliceblue;
+  font-size:larger;
 }
 
 .title:hover{
-  transition: 250ms;
+  transition-duration: 500ms;
+  font-size:larger;
   color: aliceblue;
 }
 
-.navSocial{
+.navSocial {
   width: 35px;
+  animation-timing-function: ease-in-out;
 }
-.navSocialGmail{
+
+.navSocialGmail {
   width: 35px;
-  transition-duration: 500ms;
+  transition: animation 0.5s; /* Apply transition to the transform property */
   padding-top: 9px;
 }
+
 .navSocialGmail:hover {
-  transition-duration: 500ms;
+  animation: logo-jump 2s linear forwards; /* Apply keyframe animation */
+  animation-timing-function: ease-in-out;
 }
+
 @media (prefers-reduced-motion: no-preference) {
-  .navSocialGmail:hover {
-    transition-duration: 500ms;
-    animation: logo-jump 1 2s linear;
-  }
   .navSocial:hover {
-    transition-duration: 500ms;
-    animation: logo-spin 1 2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: logo-spin 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards; /* Apply keyframe animation */
+    animation-timing-function: ease-in-out;
   }
-  
 }
 
 @keyframes logo-jump {
@@ -47,13 +51,13 @@
     transform: translateY(0rem); 
   }
   25%{
-    transform: translateY(-0.1rem);
+    transform: translateY(-0.5rem);
   }
   50% {
-    transform: translateY(-0.4rem);
+    transform: translateY(-0.01rem);
    }
    75%{
-    transform: translateY(-0.1rem);
+    transform: translateY(-0.00001rem);
   }
   100% {
     transform: translateY(0rem);
@@ -74,7 +78,6 @@
 
 }
 
-
 @media (max-width: 800px) {
   .title{
     font-size: 1.2rem;
@@ -90,6 +93,18 @@
   .navSocialGmail{
     width: 28px;
     padding-top: 8px;
+  }
+
+  .dropdown:hover{
+    transition-duration: 500ms;
+    color: aliceblue;
+    font-size:small;
+  }
+  
+  .title:hover{
+    transition-duration: 500ms;
+    font-size:small;
+    color: aliceblue;
   }
 
 }
