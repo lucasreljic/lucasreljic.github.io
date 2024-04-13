@@ -5,10 +5,10 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Layout.module.css";
-import mail from "./../components/NavSocials/gmail.png";
-import github from "./../components/NavSocials/github.png";
+import mail from "./../icons/NavSocials/gmail.png";
+import github from "./../icons/NavSocials/github.png";
 
-import linkedIn from "./../components/NavSocials/official-linkedin-logo----17.png";
+import linkedIn from "./../icons/NavSocials/official-linkedin-logo----17.png";
 // import { useState, useEffect } from "react";
 
 const Layout = () => {

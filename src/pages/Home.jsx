@@ -5,7 +5,7 @@ import "react-slideshow-image/dist/styles.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Blocks from "../components/Elements/Blocks/Blocks";
 import IconBox from "../components/Elements/Icons/IconBox";
-import Appear from "../components/Intro/Appear";
+import Appear from "../components/Utils/Appear";
 import {
   Slide,
   Fade,
@@ -24,6 +24,7 @@ import watoPhoto from "./../icons/wato_icon.jpeg";
 
 //images
 import hackthe6ix from "../components/Elements/Slide/photos/Hackthe6ix/IMG_0072.jpg";
+import uoftHacksXI from "../components/Elements/Blocks/photos/UoftHacksXI/Screenshot3.png";
 import robot1a from "../components/Elements/Slide/photos/1AProject/20221201_192840.jpg";
 import openmv from "../components/Elements/Slide/photos/FRC/IMG_3426.JPG";
 import toyota from "../components/Elements/Slide/photos/ToyotaChallenge/Capture1.PNG";
@@ -124,6 +125,15 @@ export default function Home() {
           <Col>
             <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
               <Fade delay={0} duration={1000} triggerOnce={true}>
+                <Blocks link="/#/uofthacksXI" photo={uoftHacksXI}>
+                  UofTHacks XI
+                </Blocks>
+              </Fade>
+            </Reveal>
+          </Col>
+          <Col>
+            <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
+              <Fade delay={0} duration={1000} triggerOnce={true}>
                 <Blocks link="/#/hackthe6ix" photo={hackthe6ix}>
                   Hack the 6ix 2023
                 </Blocks>
@@ -175,7 +185,7 @@ export default function Home() {
             <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
               <Fade delay={0} duration={1000} triggerOnce={true}>
                 <Blocks link="/#/UofTHacks" photo={uoftHacks}>
-                  UofT Hackathon X
+                UofTHacks X
                 </Blocks>
               </Fade>
             </Reveal>

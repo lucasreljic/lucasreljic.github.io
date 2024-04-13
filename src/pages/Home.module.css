@@ -158,19 +158,47 @@ li{
 .uwaterlooIcon{
   width: 13rem;
   padding-bottom: 1rem;
+  transition: transform 0.5s; /* Apply transition to the transform property */
+}
+
+.uwaterlooIcon:hover{
+  transition-duration: 500ms;
+  color: aliceblue;
+  transform: scale(0.9); /* Scale down the image on hover */
 }
 
 .goodlabsIcon{
   width: 13rem;
+  transition: transform 0.5s; /* Apply transition to the transform property */
+}
+
+.goodlabsIcon:hover{
+  transition-duration: 500ms;
+  color: aliceblue;
+  transform: scale(0.9); /* Scale down the image on hover */
 }
 
 .watoIcon{
   width: 12.5rem;
   border-radius: 1.5rem;
+  transition: transform 0.5s; /* Apply transition to the transform property */
+}
+
+.watoIcon:hover{
+  transition-duration: 500ms;
+  color: aliceblue;
+  transform: scale(0.9); /* Scale down the image on hover */
 }
 .frcIcon{
   width: 13rem;
   padding-top: 2rem;
+  transition: transform 0.5s; /* Apply transition to the transform property */
+}
+
+.frcIcon:hover{
+  transition-duration: 500ms;
+  color: aliceblue;
+  transform: scale(0.9); /* Scale down the image on hover */
 }
 
 /*
