@@ -1,16 +1,27 @@
 .title{
-  color:  #61c2ec;
+  /* font-family: "Andale Mono", monospace;
+  font-weight: bolder;
+    letter-spacing: 2px; */
   text-decoration: none;
   transition-duration: 500ms;
   font-size: large;
+  color:  #61c2ec;
   padding-left: 1rem;
 }
 .dropdown{
+  /* font-family: "Andale Mono", monospace;
+  font-weight:bolder; */
   transition-duration: 500ms;
   text-decoration: none;
   font-size: large;
   color: #61c2ec;
 }
+
+/* .tab{
+  font-family: "Andale Mono", monospace;
+  font-weight:bolder;
+} */
+
 .dropdown:hover{
   transition-duration: 500ms;
   color: aliceblue;
@@ -23,60 +34,49 @@
   color: aliceblue;
 }
 
-.navSocial {
+.navSocial{
   width: 35px;
-  animation-timing-function: ease-in-out;
+  transition: transform 1.2s; /* Apply transition to the transform property */
 }
 
-.navSocialGmail {
+.navSocialLinkedin{
   width: 35px;
-  transition: animation 0.5s; /* Apply transition to the transform property */
+  transition: transform 1s; /* Apply transition to the transform property */
+}
+
+
+.navSocialGmail{
+  width: 35px;
   padding-top: 9px;
+  transition: transform 0.5s; /* Apply transition to the transform property */
 }
-
 .navSocialGmail:hover {
-  animation: logo-jump 2s linear forwards; /* Apply keyframe animation */
-  animation-timing-function: ease-in-out;
+  transform: translateY(-0.2rem);
+  
+}
+.navSocialLinkedin:hover {
+  transform:scale(1.2);
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
+.navSocial:hover {
+  transform:rotateZ(360deg);
+}
+@media (prefers-reduced-motion: prefer-reduced-motion) {
+  .navSocialGmail:hover {
+    transform: none;
+  }
+
+  .navSocialLinkedin:hover {
+    transform: none;
+  }
+
   .navSocial:hover {
-    animation: logo-spin 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards; /* Apply keyframe animation */
-    animation-timing-function: ease-in-out;
+    transform: none;
   }
+  
 }
 
-@keyframes logo-jump {
-0% {
-    transform: translateY(0rem); 
-  }
-  25%{
-    transform: translateY(-0.5rem);
-  }
-  50% {
-    transform: translateY(-0.01rem);
-   }
-   75%{
-    transform: translateY(-0.00001rem);
-  }
-  100% {
-    transform: translateY(0rem);
-    
-  }
-}
-
-@keyframes logo-spin {
-  0% {
-    transform: rotate(0deg); 
-  }
-  30% {
-    transform: rotate(-30deg);
-    }
-  60% {
-    transform: rotate(30deg);
-    }
-
-}
 
 @media (max-width: 800px) {
   .title{
@@ -88,6 +88,10 @@
 
 
   .navSocial{
+    width: 28px;
+  }
+
+  .navSocialLinkedin{
     width: 28px;
   }
   .navSocialGmail{
@@ -128,13 +132,14 @@
   .navSocial{
     width: 18px;
   }
+
+  .navSocialLinkedin{
+    width: 18px;
+  }
   .navSocialGmail{
     width: 18px;
     padding-top: 4px;
   }
 
-}
-.parallax{
-  background-image: '../components/Elements/Slide/photos/misc/IMG_6832.jpeg';
 }
 

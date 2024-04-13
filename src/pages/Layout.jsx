@@ -27,7 +27,7 @@ const Layout = () => {
         style={{ top: "0.5rem", display: "inline" }}
       >
         <Container fluid>
-        <Navbar.Brand as={Link} to="/"><span className={styles.title}>Home</span></Navbar.Brand>
+        <Navbar.Brand as={Link} className=" pb-2" to="/"><span className={styles.title}>Home</span></Navbar.Brand>
           <Nav className="me-auto justify-content-center bar">
             <NavDropdown
               style={{ color: "black" }}
@@ -116,7 +116,7 @@ const Layout = () => {
                 href="https://www.linkedin.com/in/lucas-reljic/"
               >
                 <img
-                  className={styles.navSocial}
+                  className={styles.navSocialLinkedin}
                   src={linkedIn}
                   alt="linkedIn logo"
                 />
