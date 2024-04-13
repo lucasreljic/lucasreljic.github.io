@@ -1,6 +1,6 @@
 .button{
     padding: 0.8rem;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "DejaVu Sans Mono", monospace;
     text-align: center;
     margin: auto;
     align-self: center;
@@ -10,7 +10,7 @@
     margin-top: 1.5rem;
     color:  #EEFBFB;
     font-size: 300%;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "DejaVu Sans Mono", monospace;
     font-weight: bold;
     font-style: normal;
     text-align: center;

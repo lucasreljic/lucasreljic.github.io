@@ -54,10 +54,10 @@
     font-size: 0.5rem;
     color: #61c2ec;
     overflow: hidden;
-    font-size: 100%;
     text-align: center;
     margin: auto;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Andale Mono", monospace;
+    font-weight: bolder;
     background-color: #050c13;
     backface-visibility: hidden;
     display: block;
@@ -72,15 +72,15 @@
     background-color: #22769b;
     padding: 2rem;
     padding-top: 9rem;
-    
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Andale Mono", monospace;
+    font-weight: bolder;
     backface-visibility: hidden;
     display: block;
     opacity: 1;
 }
 
 .caption a:hover {
-    font-size: 1.2rem;
+    transform: scale(1.05);
     color: white;
 }
 

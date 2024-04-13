@@ -120,10 +120,10 @@ li{
 }
 
 .mainHeader{
- 
-  color:   #61c2ec;
+  font-family: "DejaVu Sans Mono", monospace;
+  color:   #eff7ff;
   font-weight: 550;
-  font-size: 600%;
+  font-size: 500%;
 }
 
 .gallery{
@@ -139,7 +139,7 @@ li{
 
 .arrow {
   width: 100px;
-  color: #e9dcdc;
+  color: rgb(95, 95, 95);
   padding-bottom: 10rem;
 }
 
@@ -153,7 +153,7 @@ li{
 .rocketryIcon:hover{
   transition-duration: 500ms;
   color: aliceblue;
-  /* transform: scale(0.9); Scale down the image on hover */
+  transform: scale(0.9); /* Scale down the image on hover */
 }
 .uwaterlooIcon{
   width: 13rem;
@@ -187,7 +187,7 @@ For mobile
   }
   .mainHeader{
     font-weight: 550;
-    font-size: 450%;
+    font-size: 400%;
   }
   .arrow {
     width: 90px;
@@ -245,7 +245,7 @@ For mobile
   }
   .mainHeader{
     font-weight: 550;
-    font-size: 300%;
+    font-size: 200%;
   }
 }
 
