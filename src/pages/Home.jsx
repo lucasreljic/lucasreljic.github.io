@@ -17,7 +17,7 @@ import {
 import arrow from "../icons/arrow-down-3101.svg";
 import frcPhoto from "./../icons/FRC-Vertical.png";
 import rocketryPhoto from "./../icons/rocketry.png";
-import uwaterlooPhoto from "./../icons/University_of_Waterloo.svg.png";
+// import uwaterlooPhoto from "./../icons/University_of_Waterloo.svg.png";
 import goodlabsPhoto from "./../icons/goodlabs.png";
 import watoPhoto from "./../icons/wato_icon.jpeg";
 
@@ -184,7 +184,7 @@ export default function Home() {
           <Col>
             <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
               <Fade delay={0} duration={1000} triggerOnce={true}>
-                <Blocks link="/UofTHacks" photo={uoftHacks}>
+                <Blocks link="/uofthacksX" photo={uoftHacks}>
                 UofTHacks X
                 </Blocks>
               </Fade>
