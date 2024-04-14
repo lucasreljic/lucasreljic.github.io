@@ -106,12 +106,13 @@ a {
 
 p {
   display:contents;
-  background-color: white;
-  margin: 5%;
-  font-family: "Helvetica Neue", sans-serif;
+  font-size: 120%;
+  font-family: "Andale Mono", monospace;
+  font-weight:bolder;
+  line-height: 2;
   align-items: left;
   text-align: left;
-  color: white;
+  color:#eff7ff;
 }
 
 

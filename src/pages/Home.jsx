@@ -53,7 +53,7 @@ export default function Home() {
             LUCAS RELJIC-DUMONT
           </Fade>
         </h1>
-        <Row xl={5} lg={2} sm={2} xs={2}>
+        <Row xl={4} lg={2} sm={2} xs={2}>
         <Col>
             <AttentionSeeker effect="pulse" delay={1500} duration={1500}>
               <IconBox
@@ -79,6 +79,13 @@ export default function Home() {
             </AttentionSeeker>
           </Col>
           <Col>
+            <AttentionSeeker effect="pulse" delay={5500} duration={1500}>
+              <IconBox className={styles.frcIcon} url={frcPhoto}></IconBox>
+            </AttentionSeeker>
+          </Col>
+        </Row>
+        {/*
+        <Col xs="auto">
             <AttentionSeeker effect="pulse" delay={4500} duration={1500}>
               <IconBox
                 className={styles.uwaterlooIcon}
@@ -86,15 +93,8 @@ export default function Home() {
               ></IconBox>
             </AttentionSeeker>
           </Col>
-          <Col>
-            <AttentionSeeker effect="pulse" delay={5500} duration={1500}>
-              <IconBox className={styles.frcIcon} url={frcPhoto}></IconBox>
-            </AttentionSeeker>
-          </Col>
-        </Row>
-
+       <Col> */}
         <Text
-          className={styles.title}
           style={{
             textShadow: "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black",
           }}
@@ -125,7 +125,7 @@ export default function Home() {
           <Col>
             <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
               <Fade delay={0} duration={1000} triggerOnce={true}>
-                <Blocks link="/#/uofthacksXI" photo={uoftHacksXI}>
+                <Blocks link="/uofthacksXI" photo={uoftHacksXI}>
                   UofTHacks XI
                 </Blocks>
               </Fade>
@@ -134,7 +134,7 @@ export default function Home() {
           <Col>
             <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
               <Fade delay={0} duration={1000} triggerOnce={true}>
-                <Blocks link="/#/hackthe6ix" photo={hackthe6ix}>
+                <Blocks link="/hackthe6ix" photo={hackthe6ix}>
                   Hack the 6ix 2023
                 </Blocks>
               </Fade>
@@ -143,7 +143,7 @@ export default function Home() {
           <Col>
             <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
               <Fade delay={0} duration={1000} triggerOnce={true}>
-                <Blocks link="/#/toyotainnovation2023" photo={toyota2023}>
+                <Blocks link="/toyotainnovation2023" photo={toyota2023}>
                   Toyota Innovation Challenge 2023
                 </Blocks>
               </Fade>
@@ -154,7 +154,7 @@ export default function Home() {
               <Fade delay={0} duration={1000} triggerOnce={true}>
                 <Blocks
                   text="Autonomous cube collector."
-                  link="/#/1afinalproject"
+                  link="/1afinalproject"
                   disabled={true}
                   photo={robot1a}
                 >
@@ -166,7 +166,7 @@ export default function Home() {
           <Col>
             <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
               <Fade delay={0} duration={1000} triggerOnce={true}>
-                <Blocks link="/#/openmv" photo={openmv}>
+                <Blocks link="/openmv" photo={openmv}>
                   OpenMV Strategic Color Tracking
                 </Blocks>
               </Fade>
@@ -175,7 +175,7 @@ export default function Home() {
           <Col>
             <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
               <Fade delay={0} duration={1000} triggerOnce={true}>
-                <Blocks link="/#/toyotainnovation" photo={toyota}>
+                <Blocks link="/toyotainnovation" photo={toyota}>
                   Toyota Innovation Challenge 2022
                 </Blocks>
               </Fade>
@@ -184,7 +184,7 @@ export default function Home() {
           <Col>
             <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
               <Fade delay={0} duration={1000} triggerOnce={true}>
-                <Blocks link="/#/UofTHacks" photo={uoftHacks}>
+                <Blocks link="/UofTHacks" photo={uoftHacks}>
                 UofTHacks X
                 </Blocks>
               </Fade>
@@ -193,7 +193,7 @@ export default function Home() {
           <Col>
             <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
               <Fade delay={0} duration={1000} triggerOnce={true}>
-                <Blocks link="/#/frc4627" photo={frc4627}>
+                <Blocks link="/frc4627" photo={frc4627}>
                   FRC 4627 2022 Competition Robot
                 </Blocks>
               </Fade>
@@ -202,7 +202,7 @@ export default function Home() {
           <Col>
             <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
               <Fade delay={0} duration={1000} triggerOnce={true}>
-                <Blocks link="/#/plant" photo={plant}>
+                <Blocks link="/plant" photo={plant}>
                   Automatic Plant Watering
                 </Blocks>
               </Fade>
@@ -211,7 +211,7 @@ export default function Home() {
           <Col>
             <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
               <Fade delay={0} duration={1000} triggerOnce={true}>
-                <Blocks link="/#/sanitizer" photo={sanitizer}>
+                <Blocks link="/sanitizer" photo={sanitizer}>
                   Hand Sanitizer
                 </Blocks>
               </Fade>
@@ -220,7 +220,7 @@ export default function Home() {
           <Col>
             <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
               <Fade delay={0} duration={1000} triggerOnce={true}>
-                <Blocks link="/#/RPilaptop" photo={piLaptop}>
+                <Blocks link="/RPilaptop" photo={piLaptop}>
                   Raspberry Pi Laptop
                 </Blocks>
               </Fade>
@@ -229,7 +229,7 @@ export default function Home() {
           <Col>
             <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
               <Fade delay={0} duration={1000} triggerOnce={true}>
-                <Blocks link="/#/gokart" photo={gokart}>
+                <Blocks link="/gokart" photo={gokart}>
                   Electric Gokart
                 </Blocks>
               </Fade>
@@ -238,7 +238,7 @@ export default function Home() {
           <Col>
             <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
               <Fade delay={0} duration={1000} triggerOnce={true}>
-                <Blocks link="/#/rcplanes" photo={planes}>
+                <Blocks link="/rcplanes" photo={planes}>
                   RC Planes
                 </Blocks>
               </Fade>
