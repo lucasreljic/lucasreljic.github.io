@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Blocks.module.css";
 // A link consisting of an image, with a title below it, and a description
 const Blocks = ({ photo, link, children}) => {
@@ -8,9 +9,11 @@ const Blocks = ({ photo, link, children}) => {
       style={{ backgroundImage: "url(" + photo + ")" }}
     >
       <div className={styles.caption}>
-        <a href={link} className={styles.caption}>
+        <Link to={link} className={styles.subcaption}>
+        <p>
           {children}
-        </a>
+        </p>
+        </Link>
       </div>
     </div>
   );

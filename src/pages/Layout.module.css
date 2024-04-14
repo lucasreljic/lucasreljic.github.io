@@ -1,90 +1,98 @@
 .title{
-  color:  #61c2ec;
+  font-family: "Andale Mono", monospace;
+  font-weight: bolder;
   text-decoration: none;
-  transition: 250ms;
-  font-size: large;
-  padding-right: 0.5rem;
-}
-.dropdown{
   transition-duration: 500ms;
-  color: #61c2ec;
+  font-size: large;
+  letter-spacing: 2px;
+  color:  aliceblue;
+  box-shadow:inset 0 -0.4em 0 #5f5f5f;
+  margin-left: 1rem;
+  padding-left: 0rem;
 }
+
+.dropdown{
+  font-family: "Andale Mono", monospace;
+  font-weight:bolder;
+  transition-duration: 500ms;
+  text-decoration: none;
+  font-size: large;
+  color: aliceblue;
+  box-shadow: inset 0 -0.4em 0 #5f5f5f;
+}
+
+.tab{
+  font-family: "Andale Mono", monospace;
+  font-weight:bolder;
+}
+
 .dropdown:hover{
   transition-duration: 500ms;
-  color: white;
+  color: aliceblue;
+  font-size:larger;
 }
 
 .title:hover{
-  transition: 250ms;
+  transition-duration: 500ms;
+  font-size:larger;
   color: aliceblue;
 }
 
 .navSocial{
   width: 35px;
+  transition: transform 1.2s; /* Apply transition to the transform property */
 }
+
+.navSocialLinkedin{
+  width: 35px;
+  transition: transform 1s; /* Apply transition to the transform property */
+}
+
+
 .navSocialGmail{
   width: 35px;
-  transition-duration: 500ms;
   padding-top: 9px;
+  transition: transform 0.5s; /* Apply transition to the transform property */
 }
 .navSocialGmail:hover {
-  transition-duration: 500ms;
+  transform: translateY(-0.2rem);
+  
 }
-@media (prefers-reduced-motion: no-preference) {
-  .navSocialGmail:hover {
-    transition-duration: 500ms;
-    animation: logo-jump 1 2s linear;
-  }
-  .navSocial:hover {
-    transition-duration: 500ms;
-    animation: logo-spin 1 2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  }
+.navSocialLinkedin:hover {
+  transform:scale(1.2);
   
 }
 
-@keyframes logo-jump {
-0% {
-    transform: translateY(0rem); 
-  }
-  25%{
-    transform: translateY(-0.1rem);
-  }
-  50% {
-    transform: translateY(-0.4rem);
-   }
-   75%{
-    transform: translateY(-0.1rem);
-  }
-  100% {
-    transform: translateY(0rem);
-    
-  }
+.navSocial:hover {
+  transform:rotateZ(360deg);
 }
-
-@keyframes logo-spin {
-  0% {
-    transform: rotate(0deg); 
+@media (prefers-reduced-motion: prefer-reduced-motion) {
+  .navSocialGmail:hover {
+    transform: none;
   }
-  30% {
-    transform: rotate(-30deg);
-    }
-  60% {
-    transform: rotate(30deg);
-    }
 
+  .navSocialLinkedin:hover {
+    transform: none;
+  }
+
+  .navSocial:hover {
+    transform: none;
+  }
+  
 }
 
 
 @media (max-width: 800px) {
   .title{
-    font-size: 1.2rem;
-    padding-right: 0.2rem;
-    margin-right: 0px;
-    
+    font-size: 90%;
   }
 
 
   .navSocial{
+    width: 28px;
+  }
+
+  .navSocialLinkedin{
     width: 28px;
   }
   .navSocialGmail{
@@ -92,15 +100,25 @@
     padding-top: 8px;
   }
 
+  .dropdown:hover{
+    transition-duration: 500ms;
+    color: aliceblue;
+    font-size:small;
+  }
+  
+  .title:hover{
+    transition-duration: 500ms;
+    font-size:small;
+    color: aliceblue;
+  }
+
 }
 
 @media (max-width: 576px) {
   .title{
-    font-size: 1.0rem;
-    padding-right: 0rem;
-    margin-right: 0px;
-    padding-top: 0;
-    padding-bottom: 3px;
+    font-size: 75%;
+    padding: 0rem;
+    margin: 0rem;
   }
 
   .dropdown{
@@ -113,13 +131,14 @@
   .navSocial{
     width: 18px;
   }
+
+  .navSocialLinkedin{
+    width: 18px;
+  }
   .navSocialGmail{
     width: 18px;
     padding-top: 4px;
   }
 
-}
-.parallax{
-  background-image: '../components/Elements/Slide/photos/misc/IMG_6832.jpeg';
 }
 

@@ -1,14 +1,15 @@
 .text{
     color:#eff7ff;
     font-size: 120%;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Andale Mono", monospace;
+    font-weight:bolder;
     line-height: 2;
 }
 
 .textBox{
     display: block;
     width: fit-content;
-    max-width: 80%;
+    max-width: 60%;
     min-width: 15rem;
     margin: auto;
     margin-top: 2rem;

@@ -60,7 +60,7 @@ h1 {
   color:  #EEFBFB;
   font-size: 200%;
   padding-top: 0.9rem;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "DejaVu Sans Mono", monospace;
   font-weight: bold;
   font-style: normal;
   text-align: center;
@@ -71,7 +71,7 @@ h2 {
   color:  #EEFBFB;
   font-size: 150%;
   margin: 0%;
-  font-family: "Arial", Arial, Sans-serif;
+  font-family: "DejaVu Sans Mono", monospace;
   border-radius: 25px;
   font-weight: bolder;
   font-style: normal;
@@ -99,19 +99,20 @@ img {
 
 a {
   color: #48a3de;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "DejaVu Sans Mono", monospace;
   text-decoration: none;
 }
 
 
 p {
   display:contents;
-  background-color: white;
-  margin: 5%;
-  font-family: "Helvetica Neue", sans-serif;
+  font-size: 120%;
+  font-family: "Andale Mono", monospace;
+  font-weight:bolder;
+  line-height: 2;
   align-items: left;
   text-align: left;
-  color: white;
+  color:#eff7ff;
 }
 
 
