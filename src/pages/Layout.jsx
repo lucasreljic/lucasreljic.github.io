@@ -9,6 +9,10 @@ import mail from "./../icons/NavSocials/gmail.png";
 import github from "./../icons/NavSocials/github.png";
 
 import linkedIn from "./../icons/NavSocials/official-linkedin-logo----17.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 // import { useState, useEffect } from "react";
 
 const Layout = () => {
@@ -93,21 +97,21 @@ const Layout = () => {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Nav className="justify-self-start" size="xs">
+          <Nav className="justify-self-start me-2" size="xs">
             <Nav.Item>
               <Nav.Link
                 className={styles.icon}
                 href="https://github.com/lucasreljic/"
               >
-                <img
-                  src={github}
-                  className={styles.navSocial}
+                <FontAwesomeIcon 
+                
+                className={styles.navSocial}
                   style={{
-                    backgroundColor: "grey",
+                    color:'white',
                     borderRadius: "1.5rem 1.5rem",
                   }}
-                  alt="github logo"
-                />
+                  icon={faGithub} size="2x" />
+
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -115,11 +119,15 @@ const Layout = () => {
                 className={styles.icon}
                 href="https://www.linkedin.com/in/lucas-reljic/"
               >
-                <img
-                  className={styles.navSocialLinkedin}
-                  src={linkedIn}
-                  alt="linkedIn logo"
-                />
+                <FontAwesomeIcon 
+                
+                className={styles.navSocialLinkedin}
+                  style={{
+                    color:'white',
+                    borderRadius: "1.5rem 1.5rem",
+                  }}
+                  icon={faLinkedin} size="2x" />
+
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -127,11 +135,15 @@ const Layout = () => {
                 className={styles.icon}
                 href="mailto:lucas.reljic+Portfolio@gmail.com"
               >
-                <img
-                  className={styles.navSocialGmail}
-                  src={mail}
-                  alt="mail logo"
-                />
+                <FontAwesomeIcon 
+                
+                className={styles.navSocialGmail}
+                  style={{
+                    color:'white',
+                    borderRadius: "1.5rem 1.5rem",
+                  }}
+                  icon={faEnvelope} size="2x" />
+
               </Nav.Link>
             </Nav.Item>
           </Nav>
