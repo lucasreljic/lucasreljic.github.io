@@ -53,7 +53,7 @@ export default function Home() {
             LUCAS RELJIC-DUMONT
           </Fade>
         </h1>
-        <Row xl={4} lg={2} sm={2} xs={2}>
+        <Row className="me-5 ms-5"xl={4} lg={2} sm={2} xs={2}>
         <Col>
             <AttentionSeeker effect="pulse" delay={1500} duration={1500}>
               <IconBox
@@ -79,7 +79,7 @@ export default function Home() {
             </AttentionSeeker>
           </Col>
           <Col>
-            <AttentionSeeker effect="pulse" delay={5500} duration={1500}>
+            <AttentionSeeker effect="pulse" delay={4500} duration={1500}>
               <IconBox className={styles.frcIcon} url={frcPhoto}></IconBox>
             </AttentionSeeker>
           </Col>
