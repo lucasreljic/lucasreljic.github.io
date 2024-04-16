@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.893aadf3.css",
-    "main.js": "/static/js/main.18647633.js",
+    "main.css": "/static/css/main.c817ab13.css",
+    "main.js": "/static/js/main.22cb652d.js",
     "static/js/787.aeca62f9.chunk.js": "/static/js/787.aeca62f9.chunk.js",
     "static/media/20221201_192840.jpg": "/static/media/20221201_192840.d5ac9f6aa0654ebc79eb.jpg",
     "static/media/20221201_193342.jpg": "/static/media/20221201_193342.d962a0288164a2f624e1.jpg",
@@ -19,7 +19,6 @@
     "static/media/1stplane.JPG": "/static/media/1stplane.c428189c08468abf40dc.JPG",
     "static/media/IMG_0197.JPG": "/static/media/IMG_0197.4b4ef05cb6b2498df22d.JPG",
     "static/media/IMG_0072.jpg": "/static/media/IMG_0072.7cbc80cc010ec2985b42.jpg",
-    "static/media/Collage.png": "/static/media/Collage.e63607f02fe9e6a826aa.png",
     "static/media/welding.JPG": "/static/media/welding.51034717dd19bb30f637.JPG",
     "static/media/IMG_8108.jpeg": "/static/media/IMG_8108.bc72deb8154da52236ea.jpeg",
     "static/media/output2.png": "/static/media/output2.3c90cdf2c50586f339e8.png",
@@ -69,12 +68,12 @@
     "static/media/profile.jpeg": "/static/media/profile.74f57c1a5026ecee3cee.jpeg",
     "index.html": "/index.html",
     "static/media/arrow-down-3101.svg": "/static/media/arrow-down-3101.a36a2777b9c1a6f478737fad02a5705f.svg",
-    "main.893aadf3.css.map": "/static/css/main.893aadf3.css.map",
-    "main.18647633.js.map": "/static/js/main.18647633.js.map",
+    "main.c817ab13.css.map": "/static/css/main.c817ab13.css.map",
+    "main.22cb652d.js.map": "/static/js/main.22cb652d.js.map",
     "787.aeca62f9.chunk.js.map": "/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.893aadf3.css",
-    "static/js/main.18647633.js"
+    "static/css/main.c817ab13.css",
+    "static/js/main.22cb652d.js"
   ]
 }
