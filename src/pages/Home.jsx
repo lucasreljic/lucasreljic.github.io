@@ -53,12 +53,17 @@ export default function Home() {
             LUCAS RELJIC-DUMONT
           </Fade>
         </h1>
-        <Row className="me-5 ms-5"xl={4} lg={2} sm={2} xs={2}>
-        <Col>
-            <AttentionSeeker effect="pulse" delay={1500} duration={1500}>
+        <Row className={styles.iconbox} xl={4} lg={2} sm={2} xs={2}>
+          <Col>
+            <AttentionSeeker effect="pulse" delay={4500} duration={1500}>
+              <IconBox className={styles.frcIcon} url={frcPhoto}></IconBox>
+            </AttentionSeeker>
+          </Col>
+          <Col>
+            <AttentionSeeker effect="pulse" delay={3500} duration={1500}>
               <IconBox
-                className={styles.watoIcon}
-                url={watoPhoto}
+                className={styles.rocketryIcon}
+                url={rocketryPhoto}
               ></IconBox>
             </AttentionSeeker>
           </Col>
@@ -71,18 +76,35 @@ export default function Home() {
             </AttentionSeeker>
           </Col>
           <Col>
-            <AttentionSeeker effect="pulse" delay={3500} duration={1500}>
+            <AttentionSeeker effect="pulse" delay={1500} duration={1500}>
               <IconBox
-                className={styles.rocketryIcon}
-                url={rocketryPhoto}
+                className={styles.watoIcon}
+                url={watoPhoto}
               ></IconBox>
             </AttentionSeeker>
           </Col>
-          <Col>
-            <AttentionSeeker effect="pulse" delay={4500} duration={1500}>
-              <IconBox className={styles.frcIcon} url={frcPhoto}></IconBox>
-            </AttentionSeeker>
-          </Col>
+        </Row>
+        <Row>
+          <div className={styles.timeline_container}>
+            <div className={styles.timeline}>
+              <div className={styles.timeline_item}>
+                <div className={styles.timeline_content}>
+                  <span className={styles.timeline_date}>Sept. 2019 - May 2022</span>
+                </div>
+                <div className={styles.timeline_content}>
+                  <span className={styles.timeline_date}>Jan. 2023 - Aug. 2023</span>
+                </div>
+                <div className={styles.timeline_content}>
+                  <span className={styles.timeline_date}>May 2023 - Present</span>
+                </div>
+                <div className={styles.timeline_content}>
+                  <span className={styles.timeline_date}>Feb. 2024 - Present</span>
+                </div>
+              </div>
+
+              {/* Add more timeline items as needed */}
+            </div>
+          </div>
         </Row>
         {/*
         <Col xs="auto">
@@ -185,7 +207,7 @@ export default function Home() {
             <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
               <Fade delay={0} duration={1000} triggerOnce={true}>
                 <Blocks link="/uofthacksX" photo={uoftHacks}>
-                UofTHacks X
+                  UofTHacks X
                 </Blocks>
               </Fade>
             </Reveal>
