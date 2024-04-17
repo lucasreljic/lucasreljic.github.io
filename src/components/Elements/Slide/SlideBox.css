@@ -184,10 +184,6 @@ Hand Sanitizer
     background-position: 50% 50%;
 }
 
-.photo3dprint {
-    background-image: url('./photos/misc/3dprinter.JPG');
-}
-
 .photobike {
     background-image: url('./photos/misc/bike.jpg');
 }
@@ -198,9 +194,7 @@ Hand Sanitizer
     margin: auto;
 }
 
-.photoprofile {
-    background-image: url('./photos/misc/profile.jpeg');
-}
+
 
 /*
 Robot Project 1A
