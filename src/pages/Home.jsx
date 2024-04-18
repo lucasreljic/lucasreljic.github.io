@@ -36,6 +36,7 @@ import sanitizer from "../components/Elements/Slide/photos/handSanitizer/IMG_294
 import piLaptop from "../components/Elements/Slide/photos/RPiLaptop/IMG_6924.jpeg";
 import planes from "../components/Elements/Slide/photos/RCplanes/latest1.jpeg";
 import gokart from "../components/Elements/Slide/photos/gokart/IMG_1418.jpeg";
+import makeuoft from "../components/Elements/Slide/photos/makeuoft/313F83B7-17CE-4966-BA50-67043EB49253_1_105_c.jpeg";
 
 export default function Home() {
   const handleClickScroll = () => {
@@ -144,6 +145,15 @@ export default function Home() {
       </AttentionSeeker>
       <Container className={styles.containerFluid} fluid>
         <Row xxl={4} xl={3} lg={2} md={2} sm={1} xs={1}>
+        <Col>
+            <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
+              <Fade delay={0} duration={1000} triggerOnce={true}>
+                <Blocks link="/makeuoft" photo={makeuoft}>
+                  MakeUofT 2024
+                </Blocks>
+              </Fade>
+            </Reveal>
+          </Col>
           <Col>
             <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
               <Fade delay={0} duration={1000} triggerOnce={true}>

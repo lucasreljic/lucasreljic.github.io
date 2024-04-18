@@ -5,10 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Layout.module.css";
-import mail from "./../icons/NavSocials/gmail.png";
-import github from "./../icons/NavSocials/github.png";
 
-import linkedIn from "./../icons/NavSocials/official-linkedin-logo----17.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -69,6 +66,9 @@ const Layout = () => {
               title={<span className={styles.dropdown}>Experiences</span>}
               id="navbarScrollingDropdown"
             >
+              <NavDropdown.Item href="/#/makeuoft">
+                <span className={styles.tab}>MakeUofT</span>
+              </NavDropdown.Item>
               <NavDropdown.Item href="/#/uofthacksXI">
                 <span className={styles.tab}>UofTHacksXI</span>
               </NavDropdown.Item>
