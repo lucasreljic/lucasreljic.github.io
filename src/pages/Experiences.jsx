@@ -5,6 +5,43 @@ import Text from "../components/Elements/Text/Text";
 import styles from "./Experiences.module.css";
 import YoutubeEmbed from "../components/Elements/Other/YoutubeEmbed";
 
+const MakeUofT = () => {
+  return (
+    <Container fluid>
+      <h1 id="makeUofT">MakeUofT</h1>
+      <h2>2024</h2>
+      <Slide>
+        <SlideBox photo="photomakeuoft">The Hat</SlideBox>
+        <SlideBox photo="photomakeuoft2">Looking stylish</SlideBox>
+        <SlideBox photo="photomakeuoft3"></SlideBox>
+        <SlideBox photo="photomakeuoft4">What the hat sees</SlideBox>
+        
+      </Slide>
+      <div className={styles.button}>
+        <Button href="https://github.com/hepromark/BlindWatchers">GitHub</Button>
+      </div>
+      <Text>
+        - Configured NVIDIA Jetson Nano to run remotely interfacing through Jypter Notebook 
+        <br></br>- Designed and manufactured a hat with headphones and 2 cameras to identify objects in the user's surroundings
+        <br></br>- Implemented Google speech to text for the visually impaired to interact with the hat and query objects
+        <br></br>- Created a sleek hat that could be worn by the visually impaired to identify objects in their surroundings with spatial audio feedback
+      </Text>
+      <br></br>
+      <Text>
+        Make UofT was an awesome experience as the first makeathon I have attended. 
+        With my skills in Linux bash and working with the Nvidia Jetson,
+        I took on the hardware integration. I also assembled all the hardware 
+        components and fashioned the sleek looking design of the hat. 
+        All in all it was a lot of fun and reminded me about the often times difficult
+         nature of integrating hardware with software. I was a member of a team of
+        3, for more information here is the{" "}
+        <a href="https://devpost.com/software/blind-watchers">Devpost</a>.
+      </Text>
+    </Container>
+  );
+};
+
+
 const UofTHacksXI = () => {
   return (
     <Container fluid>
@@ -303,4 +340,5 @@ export {
   Toyota2023,
   Hackthe6ix,
   UofTHacksXI,
+  MakeUofT,
 };

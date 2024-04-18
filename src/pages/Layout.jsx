@@ -69,6 +69,9 @@ const Layout = () => {
               title={<span className={styles.dropdown}>Experiences</span>}
               id="navbarScrollingDropdown"
             >
+              <NavDropdown.Item href="/#/makeuoft">
+                <span className={styles.tab}>MakeUofT</span>
+              </NavDropdown.Item>
               <NavDropdown.Item href="/#/uofthacksXI">
                 <span className={styles.tab}>UofTHacksXI</span>
               </NavDropdown.Item>
