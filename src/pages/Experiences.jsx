@@ -21,7 +21,7 @@ const MakeUofT = () => {
         <Button href="https://github.com/hepromark/BlindWatchers">GitHub</Button>
       </div>
       <Text>
-        - Configured NVIDIA Jetson Nano to run remotely interfacing through Jypter Notebook 
+        - Configured NVIDIA Jetson Nano to run remotely interfacing through Jupyter Notebook 
         <br></br>- Designed and manufactured a hat with headphones and 2 cameras to identify objects in the user's surroundings
         <br></br>- Implemented Google speech to text for the visually impaired to interact with the hat and query objects
         <br></br>- Created a sleek hat that could be worn by the visually impaired to identify objects in their surroundings with spatial audio feedback

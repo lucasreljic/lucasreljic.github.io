@@ -5,10 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Layout.module.css";
-import mail from "./../icons/NavSocials/gmail.png";
-import github from "./../icons/NavSocials/github.png";
 
-import linkedIn from "./../icons/NavSocials/official-linkedin-logo----17.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
