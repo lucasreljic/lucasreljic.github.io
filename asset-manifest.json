@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.6484b3cb.css",
-    "main.js": "/static/js/main.145bf961.js",
+    "main.css": "/static/css/main.caa69941.css",
+    "main.js": "/static/js/main.0a88e325.js",
     "static/js/787.aeca62f9.chunk.js": "/static/js/787.aeca62f9.chunk.js",
     "static/media/20221201_192840.jpg": "/static/media/20221201_192840.d5ac9f6aa0654ebc79eb.jpg",
     "static/media/20221201_193342.jpg": "/static/media/20221201_193342.d962a0288164a2f624e1.jpg",
+    "static/media/walking_robbie.gif": "/static/media/walking_robbie.7f1fe8fcf6011eab05a7.gif",
     "static/media/robot1A.jpg": "/static/media/robot1A.dcf38f0ec869dafda472.jpg",
+    "static/media/IMG_7961.JPG": "/static/media/IMG_7961.58abe82341966636a7f0.JPG",
     "static/media/2022 Robot.JPG": "/static/media/2022 Robot.69a96bf8137ae8f62970.JPG",
     "static/media/2020 Robot Ball Detection.jpg": "/static/media/2020 Robot Ball Detection.03cec56277255de6c019.jpg",
     "static/media/IMG_3426.JPG": "/static/media/IMG_3426.2ff89cbbd260a77e3a7f.JPG",
@@ -19,6 +21,7 @@
     "static/media/1stplane.JPG": "/static/media/1stplane.c428189c08468abf40dc.JPG",
     "static/media/IMG_0197.JPG": "/static/media/IMG_0197.4b4ef05cb6b2498df22d.JPG",
     "static/media/IMG_0072.jpg": "/static/media/IMG_0072.7cbc80cc010ec2985b42.jpg",
+    "static/media/initial_robbie.gif": "/static/media/initial_robbie.692b485d3ca886593edb.gif",
     "static/media/welding.JPG": "/static/media/welding.51034717dd19bb30f637.JPG",
     "static/media/IMG_8108.jpeg": "/static/media/IMG_8108.bc72deb8154da52236ea.jpeg",
     "static/media/output2.png": "/static/media/output2.3c90cdf2c50586f339e8.png",
@@ -30,6 +33,7 @@
     "static/media/Screenshot3.png": "/static/media/Screenshot3.b7d9a9966032ae970730.png",
     "static/media/latest1.jpeg": "/static/media/latest1.67a5578e6bdb3646f203.jpeg",
     "static/media/IMG_6923.jpeg": "/static/media/IMG_6923.ed6eb4465aaf4acd17c8.jpeg",
+    "static/media/robbie9_2024-side.png": "/static/media/robbie9_2024-side.fc70d9ed087a8c6aeadc.png",
     "static/media/Screenshot 2024-01-29 133339.png": "/static/media/Screenshot 2024-01-29 133339.75fa123cad19986ca8e5.png",
     "static/media/output2crop.png": "/static/media/output2crop.95d6967944c453c9a300.png",
     "static/media/IMG_3428.jpeg": "/static/media/IMG_3428.fef55236c39e52588979.jpeg",
@@ -37,6 +41,7 @@
     "static/media/IMG_1424.jpeg": "/static/media/IMG_1424.9d1a6a0aaac13f7b3ec8.jpeg",
     "static/media/IMG_8106.jpeg": "/static/media/IMG_8106.fa04aefbe88744c66748.jpeg",
     "static/media/IMG_3525.jpeg": "/static/media/IMG_3525.e0c48a9f18f3156bbdb8.jpeg",
+    "static/media/robbie9_2024-front2.png": "/static/media/robbie9_2024-front2.b0cf0d3a9ff2ce464432.png",
     "static/media/IMG_1418.jpeg": "/static/media/IMG_1418.f21236f8c66487f43548.jpeg",
     "static/media/OpenMV Cam on Robot.jpeg": "/static/media/OpenMV Cam on Robot.f0cc531fa6d21d8f0205.jpeg",
     "static/media/IMG_1470.jpeg": "/static/media/IMG_1470.d4c331d270ae23239559.jpeg",
@@ -45,11 +50,16 @@
     "static/media/IMG_3098.jpeg": "/static/media/IMG_3098.509dbd8009ded07f3d49.jpeg",
     "static/media/Capture1.PNG": "/static/media/Capture1.8236f8a10dd56df0aeb3.PNG",
     "static/media/Capture3.PNG": "/static/media/Capture3.0acae362349515a3299b.PNG",
+    "static/media/robbie9_2024-front.png": "/static/media/robbie9_2024-front.99fe7fce6322107c6da6.png",
     "static/media/IMG_3101.jpeg": "/static/media/IMG_3101.d0e761101bae9a1ed6cc.jpeg",
     "static/media/IMG_2952.jpeg": "/static/media/IMG_2952.6f453dc2deb943e3c84b.jpeg",
     "static/media/Capture.PNG": "/static/media/Capture.f405c8d9b57b62db64e5.PNG",
+    "static/media/Robbie_Image.png": "/static/media/Robbie_Image.04ffb55506f44e0f4e16.png",
     "static/media/IMG_2960.jpeg": "/static/media/IMG_2960.62ba52a917ee458061b1.jpeg",
     "static/media/IMG_6971.jpeg": "/static/media/IMG_6971.7635bafbc595be172d42.jpeg",
+    "static/media/with_robbie.jpeg": "/static/media/with_robbie.6542382b0299efeabd47.jpeg",
+    "static/media/robbie_standing.jpeg": "/static/media/robbie_standing.aaaa692007d7aee70f5a.jpeg",
+    "static/media/robbie_side.jpeg": "/static/media/robbie_side.791b82f688b8dc6f9e27.jpeg",
     "static/media/rocketry.png": "/static/media/rocketry.5260a1d8d73d33fede94.png",
     "static/media/2019RobotTesting.jpg": "/static/media/2019RobotTesting.2028a072dce0f3b9a61f.jpg",
     "static/media/C72591B7-4AF9-4D0C-8E9A-001934A0A6F7_1_105_c.jpeg": "/static/media/C72591B7-4AF9-4D0C-8E9A-001934A0A6F7_1_105_c.046ccf1625de8347a86b.jpeg",
@@ -70,12 +80,12 @@
     "static/media/profile.jpeg": "/static/media/profile.74f57c1a5026ecee3cee.jpeg",
     "index.html": "/index.html",
     "static/media/arrow-down-3101.svg": "/static/media/arrow-down-3101.a36a2777b9c1a6f478737fad02a5705f.svg",
-    "main.6484b3cb.css.map": "/static/css/main.6484b3cb.css.map",
-    "main.145bf961.js.map": "/static/js/main.145bf961.js.map",
+    "main.caa69941.css.map": "/static/css/main.caa69941.css.map",
+    "main.0a88e325.js.map": "/static/js/main.0a88e325.js.map",
     "787.aeca62f9.chunk.js.map": "/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6484b3cb.css",
-    "static/js/main.145bf961.js"
+    "static/css/main.caa69941.css",
+    "static/js/main.0a88e325.js"
   ]
 }
