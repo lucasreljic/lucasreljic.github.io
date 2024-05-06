@@ -7,7 +7,7 @@ import NoPage from "./pages/NoPage";
 import Layout from "./pages/Layout";
 import Home from './pages/Home';
 import ScrollToTop from './ScrollToTop';
-import { Roots2stem, FRC4627, FRC5078, Toyota, UofTHacks, Toyota2023, Hackthe6ix, UofTHacksXI, MakeUofT } from "./pages/Experiences";
+import { Roots2stem, FRC4627, FRC5078, Toyota, UofTHacks, Toyota2023, Hackthe6ix, UofTHacksXI, MakeUofT, GoodlabsRobot, GoodlabsRL } from "./pages/Experiences";
 import { Gokart, Plant, Sanitizer, Project1a, PiLaptop, Marketalarm, RCplanes, Openmv } from "./pages/Projects";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -38,6 +38,8 @@ root.render(
           <Route path="hackthe6ix" element={<Hackthe6ix />} />
           <Route path="uofthacksXI" element={<UofTHacksXI />} />
           <Route path="makeuoft" element={<MakeUofT />} />
+          <Route path="goodlabsrobotics" element={<GoodlabsRobot />} />
+          <Route path="goodlabsrl" element={<GoodlabsRL />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

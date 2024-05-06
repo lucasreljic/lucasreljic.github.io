@@ -5,6 +5,77 @@ import Text from "../components/Elements/Text/Text";
 import styles from "./Experiences.module.css";
 import YoutubeEmbed from "../components/Elements/Other/YoutubeEmbed";
 
+const GoodlabsRL = () => {
+  return (
+    <Container fluid>
+      <h1 id="goodlabsrl">Reinforcement Learning @ GoodLabs Studio</h1>
+      <h2>2023 - 2024</h2>
+      <Slide>
+        <SlideBox photo="photogoodlabs1">Simulation Model of the robot</SlideBox>
+        <SlideBox photo="photogoodlabs7">Natural Walking</SlideBox>
+        <SlideBox photo="photogoodlabs8">The very first attempt</SlideBox>
+        <SlideBox photo="photogoodlabs3"></SlideBox>
+        
+      </Slide>
+      <br></br>
+      <Text>
+        At GoodLabs Studio in my role of Bipedal Robotics Engineering, I developed a PPO reinforcement learning model for a bipedal robot within NVIDIA's Isaac Gym.
+        This took nearly 4 months of work and lots of learning from developing a simulation model of the robot to developing the RL algorithm, and testing various other methods
+        within the field. Our codebase worked off an existing open source Isaac Gym legged robots codebase, and we had to modify it heavily to work for bipedal humanoid robots.  
+        With reward functions that encourages walking, including a custom gait reward function that I developed which follows an 8 stage human gait cycle.
+        This led to natural walking for <a href="#/goodlabsrobotics">Robbie the robot</a>.
+      </Text>
+
+      <Text>
+        - Developed a proximal policy optimization reinforcement learning algorithm in PyTorch to produce natural walking for the robot
+        <br></br>- Synthesized human gait patterns into reward functions to produce optimized and natural walking
+        <br></br>- Produced a near accurate model of the robot in Isaac Gym's simulation environment to ensure easy sim-to-real transfer
+       </Text>
+      <div className={styles.button}>
+        <Button href="https://www.goodlabs.studio/robotics-ai-engineering">Learn more about Robbie's goal!</Button>
+      </div>
+      <br></br>
+    </Container>
+  );
+};
+
+const GoodlabsRobot = () => {
+  return (
+    <Container fluid>
+      <h1 id="goodlabs">Bipedal Robot @ GoodLabs Studio</h1>
+      <h2>2023 - 2024</h2>
+      <Slide>
+        <SlideBox photo="photogoodlabs6">Robbie the robot</SlideBox>
+        <SlideBox photo="photogoodlabs5"></SlideBox>
+        <SlideBox photo="photogoodlabs10"></SlideBox>
+        <SlideBox photo="photogoodlabs4"></SlideBox>
+        <SlideBox photo="photogoodlabs9"></SlideBox>
+        
+      </Slide>
+      <br></br>
+      <Text>
+        At GoodLabs Studio in my role of Bipedal Robotics Engineering, I designed, built and developed a bipedal robot alongside <a href="https://ca.linkedin.com/in/bchharawala">Brendan Chharawala</a> and <a href="https://www.linkedin.com/in/ethan-hemeon-119bb3269/">Ethan Hemeon</a>. 
+        The culmination of 4 months of work during my first co-op term resulted in a functional bipedal robot that could resist pushes and remain stable through the use of feedback control.
+        I specifically designed the hip joints and knee joints, and developed the PID control system in C++ for the robot.
+        In the co-op that followed I went on to develop a reinforcement learning algorithm, <a href="#/goodlabsrl">that has its own page</a>, which produced natural walking for this robot. Our team also kept a {" "}
+        <a href="https://www.instagram.com/goodlabs_studio_robotics/">Instagram</a> journal that provides details of our progress throughout the term.
+      </Text>
+
+      <Text>
+        - Designed 17 DOF bipedal robot with 3D printed parts to mimic human-like walking
+        <br></br>- Assembled electronics including designing PDPs, controllers and communication systems
+        <br></br>- Developed interface for robot control through Jetson Nano utilizing Jupyter Notebook and Docker
+        <br></br>- Programmed in Python and C++ to develop walking algorithms and PID control systems
+      </Text>
+      <div className={styles.button}>
+        <Button href="https://www.goodlabs.studio/robotics-ai-engineering">Learn more about Robbie's goal!</Button>
+      </div>
+      <br></br>
+    </Container>
+  );
+};
+
+
 const MakeUofT = () => {
   return (
     <Container fluid>
@@ -341,4 +412,6 @@ export {
   Hackthe6ix,
   UofTHacksXI,
   MakeUofT,
+  GoodlabsRobot,
+  GoodlabsRL,
 };

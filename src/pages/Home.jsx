@@ -12,6 +12,7 @@ import {
   AttentionSeeker,
   Reveal,
 } from "react-awesome-reveal";
+import { Link } from "react-router-dom";
 
 // Photos/logos
 import arrow from "../icons/arrow-down-3101.svg";
@@ -48,20 +49,20 @@ export default function Home() {
   };
   return (
     <Container fluid className={styles.container}>
-      <Appear timeout={0.1} fillmode={"forwards"}>
+      <Appear timeout={0} fillmode={"forwards"}>
         <h1 className={styles.mainHeader}>
-          <Fade cascade damping={1e-1} triggerOnce={true} duration={2000}>
+          <Fade cascade damping={5e-2} triggerOnce={true} duration={1500}>
             LUCAS RELJIC-DUMONT
           </Fade>
         </h1>
         <Row className={styles.iconbox} xl={4} lg={2} sm={2} xs={2}>
           <Col>
-            <AttentionSeeker effect="pulse" delay={4500} duration={1500}>
-              <IconBox className={styles.frcIcon} url={frcPhoto}></IconBox>
+            <AttentionSeeker effect="pulse" delay={3500} duration={1500}>
+              <IconBox className={styles.frcIcon} link="/frc4627" url={frcPhoto}></IconBox>
             </AttentionSeeker>
           </Col>
           <Col>
-            <AttentionSeeker effect="pulse" delay={3500} duration={1500}>
+            <AttentionSeeker effect="pulse" delay={2500} duration={1500}>
               <IconBox
                 className={styles.rocketryIcon}
                 url={rocketryPhoto}
@@ -69,15 +70,16 @@ export default function Home() {
             </AttentionSeeker>
           </Col>
           <Col>
-            <AttentionSeeker effect="pulse" delay={2500} duration={1500}>
+            <AttentionSeeker effect="pulse" delay={1500} duration={1500}>
               <IconBox
                 className={styles.goodlabsIcon}
                 url={goodlabsPhoto}
+                link="/goodlabsrobotics"
               ></IconBox>
             </AttentionSeeker>
           </Col>
           <Col>
-            <AttentionSeeker effect="pulse" delay={1500} duration={1500}>
+            <AttentionSeeker effect="pulse" delay={500} duration={1500}>
               <IconBox
                 className={styles.watoIcon}
                 url={watoPhoto}
@@ -102,7 +104,6 @@ export default function Home() {
                   <span className={styles.timeline_date}>Feb. 2024 - Present</span>
                 </div>
               </div>
-
               {/* Add more timeline items as needed */}
             </div>
           </div>
@@ -120,17 +121,19 @@ export default function Home() {
         <Text
           style={{
             textShadow: "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black",
+            marginBottom: "0rem",
           }}
         >
-          I am a 20 year old pursuing a BASc in Mechatronics Engineering at the
-          University of Waterloo. Currently in my 2nd year. I have a passion for
-          mechanical and software projects as evident through the various
-          projects I have accomplished over the years, some of which are visible
-          on this website. Many of my experiences prior to university guided me
-          towards pursuing an engineering degree.
+          I'm a 20-year-old second-year student pursuing a BASc in Mechatronics Engineering at the
+          University of Waterloo. With a passion for both 
+          mechanical and software projects, I've undertaken a variety of endeavors 
+          showcased on this website. My journey towards an engineering degree has been shaped by 
+          diverse experiences prior to university, such as being a <Link to="frc4627">First Robotics Team Captain</Link> and 
+          a member of a <Link to="/roots2stem">Junior Engineering Club</Link>. Furthermore, I continue to enhance my skills 
+          through dynamic, innovation-driven internships, like my recent experience at <Link to="/goodlabsrobotics">GoodLabs Studio</Link>
         </Text>
-        <Slide delay={4500} duration={1000} direction="down" triggerOnce={true}>
-          <Fade delay={4000} duration={3000} triggerOnce={true}>
+        <Slide delay={4000} duration={1000} direction="down" triggerOnce={true}>
+          <Fade delay={3500} duration={3000} triggerOnce={true}>
             <img
               onClick={handleClickScroll}
               className={styles.arrow}

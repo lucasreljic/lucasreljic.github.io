@@ -184,9 +184,6 @@ Hand Sanitizer
     background-position: 50% 50%;
 }
 
-.photobike {
-    background-image: url('./photos/misc/bike.jpg');
-}
 
 .photomarket {
     background-image: url('./photos/misc/marketalarm.PNG');
@@ -499,5 +496,93 @@ Makeuoft
     width: 100%;
     max-width: 1200px;
     background-size: contain;
+    margin: auto;
+}
+
+.photogoodlabs1 {
+    background-image: url('./photos/goodlabs/robbie9_2024-front.png');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 1000px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photogoodlabs2 {
+    background-image: url('./photos/goodlabs/robbie9_2024-front2.png');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 1200px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photogoodlabs3 {
+    background-image: url('./photos/goodlabs/robbie9_2024-side.png');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 1200px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photogoodlabs4 {
+    background-image: url('./photos/goodlabs/with_robbie.jpeg');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 1000px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photogoodlabs5 {
+    background-image: url('./photos/goodlabs/robbie_standing.jpeg');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 700px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photogoodlabs6 {
+    background-image: url('./photos/goodlabs/robbie_side.jpeg');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 700px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photogoodlabs7 {
+    background-image: url('./photos/goodlabs/walking_robbie.gif');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 1400px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photogoodlabs8 {
+    background-image: url('./photos/goodlabs/initial_robbie.gif');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 1400px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photogoodlabs9 {
+    background-image: url('./photos/goodlabs/Robbie_Image.png');
+    background-position: 50% 0%;
+    max-width: 25rem;
+    background-size:contain;
+    margin: auto;
+}
+
+.photogoodlabs10 {
+    background-image: url('./photos/goodlabs/IMG_7961.JPG');
+    background-position: 50% 50%;
+    max-width: 55rem;
+    background-size:contain;
     margin: auto;
 }
