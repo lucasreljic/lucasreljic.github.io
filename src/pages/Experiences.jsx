@@ -19,6 +19,11 @@ const GoodlabsRL = () => {
       </Slide>
       <br></br>
       <Text>
+        - Developed a proximal policy optimization reinforcement learning algorithm in PyTorch to produce natural walking for the robot
+        <br></br>- Synthesized human gait patterns into reward functions to produce optimized and natural walking
+        <br></br>- Produced a near accurate model of the robot in Isaac Gym's simulation environment to ensure easy sim-to-real transfer
+       </Text>
+      <Text>
         At GoodLabs Studio in my role of Bipedal Robotics Engineering, I developed a PPO reinforcement learning model for a bipedal robot within NVIDIA's Isaac Gym.
         This took nearly 4 months of work and lots of learning from developing a simulation model of the robot to developing the RL algorithm, and testing various other methods
         within the field. Our codebase worked off an existing open source Isaac Gym legged robots codebase, and we had to modify it heavily to work for bipedal humanoid robots.  
@@ -26,11 +31,6 @@ const GoodlabsRL = () => {
         This led to natural walking for <a href="#/goodlabsrobotics">Robbie the robot</a>.
       </Text>
 
-      <Text>
-        - Developed a proximal policy optimization reinforcement learning algorithm in PyTorch to produce natural walking for the robot
-        <br></br>- Synthesized human gait patterns into reward functions to produce optimized and natural walking
-        <br></br>- Produced a near accurate model of the robot in Isaac Gym's simulation environment to ensure easy sim-to-real transfer
-       </Text>
       <div className={styles.button}>
         <Button href="https://www.goodlabs.studio/robotics-ai-engineering">Learn more about Robbie's goal!</Button>
       </div>
@@ -53,19 +53,19 @@ const GoodlabsRobot = () => {
         
       </Slide>
       <br></br>
-      <Text>
-        At GoodLabs Studio in my role of Bipedal Robotics Engineering, I designed, built and developed a bipedal robot alongside <a href="https://ca.linkedin.com/in/bchharawala">Brendan Chharawala</a> and <a href="https://www.linkedin.com/in/ethan-hemeon-119bb3269/">Ethan Hemeon</a>. 
-        The culmination of 4 months of work during my first co-op term resulted in a functional bipedal robot that could resist pushes and remain stable through the use of feedback control.
-        I specifically designed the hip joints and knee joints, and developed the PID control system in C++ for the robot.
-        In the co-op that followed I went on to develop a reinforcement learning algorithm, <a href="#/goodlabsrl">that has its own page</a>, which produced natural walking for this robot. Our team also kept a {" "}
-        <a href="https://www.instagram.com/goodlabs_studio_robotics/">Instagram</a> journal that provides details of our progress throughout the term.
-      </Text>
 
       <Text>
         - Designed 17 DOF bipedal robot with 3D printed parts to mimic human-like walking
         <br></br>- Assembled electronics including designing PDPs, controllers and communication systems
         <br></br>- Developed interface for robot control through Jetson Nano utilizing Jupyter Notebook and Docker
         <br></br>- Programmed in Python and C++ to develop walking algorithms and PID control systems
+      </Text>
+      <Text>
+        At GoodLabs Studio in my role of Bipedal Robotics Engineering, I designed, built and developed a bipedal robot alongside <a href="https://ca.linkedin.com/in/bchharawala">Brendan Chharawala</a> and <a href="https://www.linkedin.com/in/ethan-hemeon-119bb3269/">Ethan Hemeon</a>. 
+        The culmination of 4 months of work during my first co-op term resulted in a functional bipedal robot that could resist pushes and remain stable through the use of feedback control.
+        I specifically designed the hip joints and knee joints, and developed the PID control system in C++ for the robot.
+        In the co-op that followed I went on to develop a reinforcement learning algorithm, <a href="#/goodlabsrl">that has its own page</a>, which produced natural walking for this robot. Our team also kept a {" "}
+        <a href="https://www.instagram.com/goodlabs_studio_robotics/">Instagram</a> journal that provides details of our progress throughout the term.
       </Text>
       <div className={styles.button}>
         <Button href="https://www.goodlabs.studio/robotics-ai-engineering">Learn more about Robbie's goal!</Button>
