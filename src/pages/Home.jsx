@@ -38,7 +38,7 @@ import piLaptop from "../components/Elements/Slide/photos/RPiLaptop/IMG_6924.jpe
 import planes from "../components/Elements/Slide/photos/RCplanes/latest1.jpeg";
 import gokart from "../components/Elements/Slide/photos/gokart/IMG_1418.jpeg";
 import makeuoft from "../components/Elements/Slide/photos/makeuoft/hat.jpeg";
-
+import hackmit from "../components/Elements/Slide/photos/HackMIT/mit_dome.jpg";
 export default function Home() {
   const handleClickScroll = () => {
     const element = document.getElementById("projects");
@@ -150,6 +150,15 @@ export default function Home() {
       </AttentionSeeker>
       <Container className={styles.containerFluid} fluid>
         <Row xxl={4} xl={3} lg={2} md={2} sm={1} xs={1}>
+        <Col>
+            <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
+              <Fade delay={0} duration={1000} triggerOnce={true}>
+                <Blocks link="/hackmit" photo={hackmit}>
+                  HackMIT 2024
+                </Blocks>
+              </Fade>
+            </Reveal>
+          </Col>
         <Col>
             <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
               <Fade delay={0} duration={1000} triggerOnce={true}>

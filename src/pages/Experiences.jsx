@@ -5,6 +5,39 @@ import Text from "../components/Elements/Text/Text";
 import styles from "./Experiences.module.css";
 import YoutubeEmbed from "../components/Elements/Other/YoutubeEmbed";
 
+const HackMIT = () => {
+  return (
+    <Container fluid>
+      <h1 id="hackmit">HackMIT</h1>
+      <h2>2024</h2>
+      <Slide>
+        <SlideBox photo="photohackmit3">The main page with live stress feed</SlideBox>
+        <SlideBox photo="photohackmit4">Prediction</SlideBox>
+        <SlideBox photo="photohackmit">MIT</SlideBox>
+        <SlideBox photo="photohackmit2">The team</SlideBox>
+
+      </Slide>
+      <div className={styles.button}>
+        <Button href="https://github.com/lucasreljic/HackMIT2024">GitHub</Button>
+      </div>
+      <Text>
+        - Wired ESP8266 to IMU {`(`}the MPU6050{`)`} and performed signal processing
+        <br></br>- Coded a secure WPA2 Enterprise connection to eduroam on the ESP8266  {`(`}a feat in itself cause it's not supported{`)`}
+        <br></br>- Developed a REST API in Convex to communicate with the ESP8266 and Convex Queries to communicate with the React FrontEnd
+        <br></br>- Created a sleek wearable device that could detect stress levels and provide personalized mental health insights
+      </Text>
+      <br></br>
+      <Text>
+        I had an incredible experience at HackMIT! We focused on detecting stress levels using wearable data and AI to provide personalized mental health insights.
+         We explored how factors like muscle activity, heart rate, and environmental conditions influence anxiety, helping users better understand their mental health.
+          I was a member of a team of
+        4, for more information here is the{" "}
+        <a href="https://ballot.hackmit.org/project/obqlb-ujizx-fcvdq-obhsp">project link</a>.
+      </Text>
+    </Container>
+  );
+};
+
 const GoodlabsRL = () => {
   return (
     <Container fluid>
@@ -15,18 +48,18 @@ const GoodlabsRL = () => {
         <SlideBox photo="photogoodlabs7">Natural Walking</SlideBox>
         <SlideBox photo="photogoodlabs8">The very first attempt</SlideBox>
         <SlideBox photo="photogoodlabs3"></SlideBox>
-        
+
       </Slide>
       <br></br>
       <Text>
         - Developed a proximal policy optimization reinforcement learning algorithm in PyTorch to produce natural walking for the robot
         <br></br>- Synthesized human gait patterns into reward functions to produce optimized and natural walking
         <br></br>- Produced a near accurate model of the robot in Isaac Gym's simulation environment to ensure easy sim-to-real transfer
-       </Text>
+      </Text>
       <Text>
         At GoodLabs Studio in my role of Bipedal Robotics Engineering, I developed a PPO reinforcement learning model for a bipedal robot within NVIDIA's Isaac Gym.
         This took nearly 4 months of work and lots of learning from developing a simulation model of the robot to developing the RL algorithm, and testing various other methods
-        within the field. Our codebase worked off an existing open source Isaac Gym legged robots codebase, and we had to modify it heavily to work for bipedal humanoid robots.  
+        within the field. Our codebase worked off an existing open source Isaac Gym legged robots codebase, and we had to modify it heavily to work for bipedal humanoid robots.
         With reward functions that encourages walking, including a custom gait reward function that I developed which follows an 8 stage human gait cycle.
         This led to natural walking for <a href="#/goodlabsrobotics">Robbie the robot</a>.
       </Text>
@@ -50,7 +83,7 @@ const GoodlabsRobot = () => {
         <SlideBox photo="photogoodlabs10"></SlideBox>
         <SlideBox photo="photogoodlabs4"></SlideBox>
         <SlideBox photo="photogoodlabs9"></SlideBox>
-        
+
       </Slide>
       <br></br>
 
@@ -61,7 +94,7 @@ const GoodlabsRobot = () => {
         <br></br>- Programmed in Python and C++ to develop walking algorithms and PID control systems
       </Text>
       <Text>
-        At GoodLabs Studio in my role of Bipedal Robotics Engineering, I designed, built and developed a bipedal robot alongside <a href="https://ca.linkedin.com/in/bchharawala">Brendan Chharawala</a> and <a href="https://www.linkedin.com/in/ethan-hemeon-119bb3269/">Ethan Hemeon</a>. 
+        At GoodLabs Studio in my role of Bipedal Robotics Engineering, I designed, built and developed a bipedal robot alongside <a href="https://ca.linkedin.com/in/bchharawala">Brendan Chharawala</a> and <a href="https://www.linkedin.com/in/ethan-hemeon-119bb3269/">Ethan Hemeon</a>.
         The culmination of 4 months of work during my first co-op term resulted in a functional bipedal robot that could resist pushes and remain stable through the use of feedback control.
         I specifically designed the hip joints and knee joints, and developed the PID control system in C++ for the robot.
         In the co-op that followed I went on to develop a reinforcement learning algorithm, <a href="#/goodlabsrl">that has its own page</a>, which produced natural walking for this robot. Our team also kept a {" "}
@@ -86,25 +119,25 @@ const MakeUofT = () => {
         <SlideBox photo="photomakeuoft2">Looking stylish</SlideBox>
         <SlideBox photo="photomakeuoft3"></SlideBox>
         <SlideBox photo="photomakeuoft4">What the hat sees</SlideBox>
-        
+
       </Slide>
       <div className={styles.button}>
         <Button href="https://github.com/hepromark/BlindWatchers">GitHub</Button>
       </div>
       <Text>
-        - Configured NVIDIA Jetson Nano to run remotely interfacing through Jupyter Notebook 
+        - Configured NVIDIA Jetson Nano to run remotely interfacing through Jupyter Notebook
         <br></br>- Designed and manufactured a hat with headphones and 2 cameras to identify objects in the user's surroundings
         <br></br>- Implemented Google speech to text for the visually impaired to interact with the hat and query objects
         <br></br>- Created a sleek hat that could be worn by the visually impaired to identify objects in their surroundings with spatial audio feedback
       </Text>
       <br></br>
       <Text>
-        Make UofT was an awesome experience as the first makeathon I have attended. 
+        Make UofT was an awesome experience as the first makeathon I have attended.
         With my skills in Linux bash and working with the Nvidia Jetson,
-        I took on the hardware integration. I also assembled all the hardware 
-        components and fashioned the sleek looking design of the hat. 
+        I took on the hardware integration. I also assembled all the hardware
+        components and fashioned the sleek looking design of the hat.
         All in all it was a lot of fun and reminded me about the often times difficult
-         nature of integrating hardware with software. I was a member of a team of
+        nature of integrating hardware with software. I was a member of a team of
         3, for more information here is the{" "}
         <a href="https://devpost.com/software/blind-watchers">Devpost</a>.
       </Text>
@@ -414,4 +447,5 @@ export {
   MakeUofT,
   GoodlabsRobot,
   GoodlabsRL,
+  HackMIT,
 };

@@ -499,6 +499,10 @@ Makeuoft
     margin: auto;
 }
 
+/*
+Goodlabs
+*/
+
 .photogoodlabs1 {
     background-image: url('./photos/goodlabs/robbie9_2024-front.png');
     background-position: 50% 50%;
@@ -584,5 +588,45 @@ Makeuoft
     background-position: 50% 50%;
     max-width: 55rem;
     background-size:contain;
+    margin: auto;
+}
+
+/*
+Hackmit
+*/
+
+.photohackmit {
+    background-image: url('./photos/HackMIT/mit_dome.jpg');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 1000px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photohackmit2 {
+    background-image: url('./photos/HackMIT/team.jpg');
+    background-position: 50% 80%;
+    width: 100%;
+    max-width: 1100px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photohackmit3 {
+    background-image: url('./photos/HackMIT/axy_main_page.png');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 380px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photohackmit4 {
+    background-image: url('./photos/HackMIT/axy_calender.png');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 380px;
+    background-size: contain;
     margin: auto;
 }
