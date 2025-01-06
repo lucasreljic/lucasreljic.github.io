@@ -5,6 +5,42 @@ import Text from "../components/Elements/Text/Text";
 import styles from "./Experiences.module.css";
 import YoutubeEmbed from "../components/Elements/Other/YoutubeEmbed";
 
+const CalHacks = () => {
+  return (
+    <Container fluid>
+      <h1 id="calhacks">Cal Hacks 11.0 @ Berkeley</h1>
+      <h2>2024</h2>
+      <Slide>
+        <SlideBox photo="photocalhack">Teammate wearing PulseWalk</SlideBox>
+        <SlideBox photo="photocalhack2">The PulseWalk product</SlideBox>
+        <SlideBox photo="photocalhack3">At Cal Hacks</SlideBox>
+        <SlideBox photo="photocalhack4">PulseWalk</SlideBox>
+        
+
+      </Slide>
+      <div className={styles.button}>
+        <Button href="https://github.com/lucasreljic/PulseWalk">GitHub</Button>
+      </div>
+      <Text>
+        - Wired ESP32 to servo expansion board, the IR sensors, the vibration motors
+        <br></br>- Coded a Bluetooth Low Energy {`(`}BLE{')'} connection to a phone on the ESP32
+        <br></br>- Setup high torque 20 kg*cm servos and manufactured the product on a low budget
+        <br></br>- Developed C++ code on the ESP32 for actuating the servos in relation to sensor position
+      </Text>
+      <br></br>
+      <Text>
+        I had an incredible experience at Cal Hacks! We focused on creating a wearable device that adds a 6th sense to a user's foot! 
+        For those with vision impairement or really anyone who wants to feel through pressure how far the ground is this is the product. 
+        Our team was able to achieve a full prototype of our idea in just 36 hours! I am very proud of what we were able to accomplish with a few hgih torque servos and IR sensors.
+        We even impressed the judges and won best hardware hack!
+          I was a member of a team of
+        3, for more information here is the{" "}
+        <a href="https://devpost.com/software/pulsewalk">project link</a>.
+      </Text>
+    </Container>
+  );
+};
+
 const HackMIT = () => {
   return (
     <Container fluid>
@@ -448,4 +484,5 @@ export {
   GoodlabsRobot,
   GoodlabsRL,
   HackMIT,
+  CalHacks
 };

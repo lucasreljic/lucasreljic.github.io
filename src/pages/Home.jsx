@@ -39,6 +39,7 @@ import planes from "../components/Elements/Slide/photos/RCplanes/latest1.jpeg";
 import gokart from "../components/Elements/Slide/photos/gokart/IMG_1418.jpeg";
 import makeuoft from "../components/Elements/Slide/photos/makeuoft/hat.jpeg";
 import hackmit from "../components/Elements/Slide/photos/HackMIT/mit_dome.jpg";
+import calhacks from "../components/Elements/Slide/photos/CalHacks/IMG_0604.jpeg";
 export default function Home() {
   const handleClickScroll = () => {
     const element = document.getElementById("projects");
@@ -126,7 +127,7 @@ export default function Home() {
             marginBottom: "0rem",
           }}
         >
-          I'm a 20-year-old second-year student pursuing a BASc in Mechatronics Engineering at the
+          I'm a 21-year-old third-year student pursuing a BASc in Mechatronics Engineering at the
           University of Waterloo. With a passion for both 
           mechanical and software projects, I've undertaken a variety of endeavors 
           showcased on this website. My journey towards an engineering degree has been shaped by 
@@ -150,6 +151,15 @@ export default function Home() {
       </AttentionSeeker>
       <Container className={styles.containerFluid} fluid>
         <Row xxl={4} xl={3} lg={2} md={2} sm={1} xs={1}>
+        <Col>
+            <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
+              <Fade delay={0} duration={1000} triggerOnce={true}>
+                <Blocks link="/calhacks" photo={calhacks}>
+                  Cal Hacks 11.0
+                </Blocks>
+              </Fade>
+            </Reveal>
+          </Col>
         <Col>
             <Reveal delay={0} triggerOnce={true} style={{ opacity: "0" }}>
               <Fade delay={0} duration={1000} triggerOnce={true}>

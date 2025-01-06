@@ -630,3 +630,39 @@ Hackmit
     background-size: contain;
     margin: auto;
 }
+
+.photocalhack {
+    background-image: url('./photos/CalHacks/IMG_0600.jpeg');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 720px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photocalhack2 {
+    background-image: url('./photos/CalHacks/IMG_0604.jpeg');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 1080px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photocalhack3 {
+    background-image: url('./photos/CalHacks/IMG_0588.jpeg');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 800px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photocalhack4 {
+    background-image: url('./photos/CalHacks/IMG_0606.jpeg');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 1000px;
+    background-size: contain;
+    margin: auto;
+}
