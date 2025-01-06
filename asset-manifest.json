@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.8d8bf774.css",
-    "main.js": "/static/js/main.a6bc2400.js",
+    "main.css": "/static/css/main.79eb9ae3.css",
+    "main.js": "/static/js/main.26612c20.js",
     "static/js/787.2c1cee2b.chunk.js": "/static/js/787.2c1cee2b.chunk.js",
     "static/media/20221201_192840.jpg": "/static/media/20221201_192840.44e87a4f471e12289cb9.jpg",
     "static/media/20221201_193342.jpg": "/static/media/20221201_193342.d962a0288164a2f624e1.jpg",
     "static/media/walking_robbie.gif": "/static/media/walking_robbie.7f1fe8fcf6011eab05a7.gif",
+    "static/media/IMG_0606.jpeg": "/static/media/IMG_0606.72bf1bad12e75faf0868.jpeg",
+    "static/media/IMG_0600.jpeg": "/static/media/IMG_0600.8fb97aeb57ddabde1036.jpeg",
+    "static/media/IMG_0604.jpeg": "/static/media/IMG_0604.a0e0e539fe2f44e5b054.jpeg",
     "static/media/robot1A.jpg": "/static/media/robot1A.dcf38f0ec869dafda472.jpg",
     "static/media/IMG_7961.JPG": "/static/media/IMG_7961.58abe82341966636a7f0.JPG",
     "static/media/2022 Robot.JPG": "/static/media/2022 Robot.69a96bf8137ae8f62970.JPG",
@@ -21,6 +24,7 @@
     "static/media/1stplane.JPG": "/static/media/1stplane.c428189c08468abf40dc.JPG",
     "static/media/IMG_0197.JPG": "/static/media/IMG_0197.4b4ef05cb6b2498df22d.JPG",
     "static/media/IMG_0072.jpg": "/static/media/IMG_0072.7cbc80cc010ec2985b42.jpg",
+    "static/media/IMG_0588.jpeg": "/static/media/IMG_0588.65d25e6a7cc434f21ba4.jpeg",
     "static/media/initial_robbie.gif": "/static/media/initial_robbie.692b485d3ca886593edb.gif",
     "static/media/welding.JPG": "/static/media/welding.51034717dd19bb30f637.JPG",
     "static/media/IMG_8108.jpeg": "/static/media/IMG_8108.bc72deb8154da52236ea.jpeg",
@@ -84,12 +88,12 @@
     "static/media/profile.jpeg": "/static/media/profile.74f57c1a5026ecee3cee.jpeg",
     "index.html": "/index.html",
     "static/media/arrow-down-3101.svg": "/static/media/arrow-down-3101.3a8a028c4b1d2a81744064bf430e899a.svg",
-    "main.8d8bf774.css.map": "/static/css/main.8d8bf774.css.map",
-    "main.a6bc2400.js.map": "/static/js/main.a6bc2400.js.map",
+    "main.79eb9ae3.css.map": "/static/css/main.79eb9ae3.css.map",
+    "main.26612c20.js.map": "/static/js/main.26612c20.js.map",
     "787.2c1cee2b.chunk.js.map": "/static/js/787.2c1cee2b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d8bf774.css",
-    "static/js/main.a6bc2400.js"
+    "static/css/main.79eb9ae3.css",
+    "static/js/main.26612c20.js"
   ]
 }
