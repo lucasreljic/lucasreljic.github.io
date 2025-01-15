@@ -114,10 +114,10 @@ const GoodlabsRobot = () => {
       <h1 id="goodlabs">Bipedal Robot @ GoodLabs Studio</h1>
       <h2>2023 - 2024</h2>
       <Slide>
-        <SlideBox photo="photogoodlabs6">Robbie the robot</SlideBox>
-        <SlideBox photo="photogoodlabs5"></SlideBox>
+        <SlideBox photo="photogoodlabs6">Robbie the robot walking</SlideBox>
+        <SlideBox photo="photogoodlabs5">Robbie the robot</SlideBox>
         <SlideBox photo="photogoodlabs10"></SlideBox>
-        <SlideBox photo="photogoodlabs4"></SlideBox>
+        <SlideBox photo="photogoodlabs4">Working on the electronics</SlideBox>
         <SlideBox photo="photogoodlabs9"></SlideBox>
 
       </Slide>
@@ -133,7 +133,7 @@ const GoodlabsRobot = () => {
         At GoodLabs Studio in my role of Bipedal Robotics Engineering, I designed, built and developed a bipedal robot alongside <a href="https://ca.linkedin.com/in/bchharawala">Brendan Chharawala</a> and <a href="https://www.linkedin.com/in/ethan-hemeon-119bb3269/">Ethan Hemeon</a>.
         The culmination of 4 months of work during my first co-op term resulted in a functional bipedal robot that could resist pushes and remain stable through the use of feedback control.
         I specifically designed the hip joints and knee joints, and developed the PID control system in C++ for the robot.
-        In the co-op that followed I went on to develop a reinforcement learning algorithm, <a href="#/goodlabsrl">that has its own page</a>, which produced natural walking for this robot. Our team also kept a {" "}
+        In the co-op that followed I went on to develop a reinforcement learning algorithm, <a href="#/goodlabsrl">that has its own page</a>, which produced natural walking for this robot. In my third co-op term my team and I were able to achieve untethered walking with the robot through my implementation of RL alongside a specialized gait function. We also kept a {" "}
         <a href="https://www.instagram.com/goodlabs_studio_robotics/">Instagram</a> journal that provides details of our progress throughout the term.
       </Text>
       <div className={styles.button}>
