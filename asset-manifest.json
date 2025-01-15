@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.79eb9ae3.css",
+    "main.css": "/static/css/main.02dc4f38.css",
     "main.js": "/static/js/main.b4d3369d.js",
     "static/js/787.2c1cee2b.chunk.js": "/static/js/787.2c1cee2b.chunk.js",
     "static/media/20221201_192840.jpg": "/static/media/20221201_192840.44e87a4f471e12289cb9.jpg",
     "static/media/20221201_193342.jpg": "/static/media/20221201_193342.d962a0288164a2f624e1.jpg",
+    "static/media/walking_robbie2.gif": "/static/media/walking_robbie2.728586167b161745a7d6.gif",
     "static/media/walking_robbie.gif": "/static/media/walking_robbie.7f1fe8fcf6011eab05a7.gif",
     "static/media/IMG_0606.jpeg": "/static/media/IMG_0606.72bf1bad12e75faf0868.jpeg",
     "static/media/IMG_0600.jpeg": "/static/media/IMG_0600.8fb97aeb57ddabde1036.jpeg",
@@ -35,6 +36,7 @@
     "static/media/original.jpg": "/static/media/original.ffe9bab95fb632f6db1a.jpg",
     "static/media/Screenshot 2024-01-29 133055.png": "/static/media/Screenshot 2024-01-29 133055.b7d9a9966032ae970730.png",
     "static/media/Screenshot3.png": "/static/media/Screenshot3.b7d9a9966032ae970730.png",
+    "static/media/robbie_standing.png": "/static/media/robbie_standing.7420f0b25d55794c2d0f.png",
     "static/media/latest1.jpeg": "/static/media/latest1.67a5578e6bdb3646f203.jpeg",
     "static/media/IMG_6923.jpeg": "/static/media/IMG_6923.ed6eb4465aaf4acd17c8.jpeg",
     "static/media/robbie9_2024-side.png": "/static/media/robbie9_2024-side.fc70d9ed087a8c6aeadc.png",
@@ -65,8 +67,6 @@
     "static/media/axy_calender.png": "/static/media/axy_calender.cbe85f26574bcb320517.png",
     "static/media/team.jpg": "/static/media/team.0260fb4a0315a2c46aeb.jpg",
     "static/media/with_robbie.jpeg": "/static/media/with_robbie.6542382b0299efeabd47.jpeg",
-    "static/media/robbie_standing.jpeg": "/static/media/robbie_standing.aaaa692007d7aee70f5a.jpeg",
-    "static/media/robbie_side.jpeg": "/static/media/robbie_side.791b82f688b8dc6f9e27.jpeg",
     "static/media/rocketry.png": "/static/media/rocketry.5260a1d8d73d33fede94.png",
     "static/media/mit_dome.jpg": "/static/media/mit_dome.270934be3295e5d610e3.jpg",
     "static/media/2019RobotTesting.jpg": "/static/media/2019RobotTesting.2028a072dce0f3b9a61f.jpg",
@@ -88,12 +88,12 @@
     "static/media/profile.jpeg": "/static/media/profile.74f57c1a5026ecee3cee.jpeg",
     "index.html": "/index.html",
     "static/media/arrow-down-3101.svg": "/static/media/arrow-down-3101.3a8a028c4b1d2a81744064bf430e899a.svg",
-    "main.79eb9ae3.css.map": "/static/css/main.79eb9ae3.css.map",
+    "main.02dc4f38.css.map": "/static/css/main.02dc4f38.css.map",
     "main.b4d3369d.js.map": "/static/js/main.b4d3369d.js.map",
     "787.2c1cee2b.chunk.js.map": "/static/js/787.2c1cee2b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79eb9ae3.css",
+    "static/css/main.02dc4f38.css",
     "static/js/main.b4d3369d.js"
   ]
 }
