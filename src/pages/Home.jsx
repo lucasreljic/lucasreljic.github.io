@@ -86,7 +86,7 @@ export default function Home() {
               <IconBox
                 className={styles.watoIcon}
                 url={watoPhoto}
-                link="https://github.com/WATonomous/wato_monorepo/pull/131"
+                link="/watonomous"
               ></IconBox>
             </AttentionSeeker>
           </Col>

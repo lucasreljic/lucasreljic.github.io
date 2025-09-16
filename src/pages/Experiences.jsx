@@ -5,6 +5,44 @@ import Text from "../components/Elements/Text/Text";
 import styles from "./Experiences.module.css";
 import YoutubeEmbed from "../components/Elements/Other/YoutubeEmbed";
 
+const Watonomous = () => {
+  return (
+    <Container fluid>
+      <h1 id="watonomous">Autonomy Software Development @ Watonomous</h1>
+      <h2>2024 - 2025</h2>
+      <Slide>
+        <SlideBox photo="photowatonomous">The Team</SlideBox>
+        <SlideBox photo="photowatonomous2">The Kia Soul</SlideBox>
+        <SlideBox photo="photowatonomous3">Testing LiDAR</SlideBox>
+        <SlideBox photo="photowatonomous4">Working late at night</SlideBox>
+        <SlideBox photo="photowatonomous5">Semantic Segmentation</SlideBox>
+        <SlideBox photo="photowatonomous6">Batched TensorRT Object Detection</SlideBox>
+
+
+      </Slide>
+      <br></br>
+      <Text>
+        - Leading a team of 20 members with weekly meetings and work sessions, mentoring members on using a Dockerized
+ROS software stack and for tasks like depth estimation and 2D-to-3D object tracking
+        <br></br><br></br>- Programmed and deployed a ROS 2 Python node for the autonomous car, integrating the segmentation model with
+the vehicle’s perception pipeline, leading to a more accurate and robust understanding of the driving environment
+        <br></br><br></br>- Integrated camera and LiDAR drivers and troubleshot network communication between sensors (cameras, LiDAR), utilizing Docker and ROS diagnostics
+      </Text>
+      <Text>
+    At Watonomous, the University of Waterloo’s autonomous vehicle design team, I had the opportunity to grow as both a technical contributor and a team lead. I led a team of 20 members, organizing weekly meetings and collaborative work sessions while mentoring students on using our Dockerized ROS software stack. My focus was on helping newer members contribute to advanced perception tasks such as depth estimation, anomaly detection and 2D-to-3D object tracking, ensuring they developed both practical skills and confidence in working within a large-scale autonomy system.
+
+
+    <br></br><br></br>
+    On the technical side, I developed and deployed a ROS 2 Python node for our autonomous car’s perception pipeline. This node integrated a segmentation model that improved the vehicle’s ability to accurately and robustly interpret its driving environment. I also set up the drivers for our Flir GigE cameras and Velodyne LiDAR, and troubleshot network communication issues.
+<br></br><br></br>
+      This role balanced leadership and engineering: I guided the team’s technical direction while also being hands-on in developing perception components. Working in a multidisciplinary student team environment mirrored the challenges of a startup: tight timelines, changing goals, and the need to balance research-driven development with practical integration on the vehicle. Ultimately, my contributions advanced both the robustness of the perception stack and the growth of the next generation of engineers on the team.
+      </Text>
+
+      <br></br>
+    </Container>
+  );
+};
+
 const Envgo = () => {
   return (
     <Container fluid>
@@ -522,5 +560,6 @@ export {
   GoodlabsRL,
   HackMIT,
   CalHacks,
-  Envgo
+  Envgo,
+  Watonomous
 };
