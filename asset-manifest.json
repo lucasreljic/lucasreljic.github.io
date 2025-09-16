@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.02dc4f38.css",
-    "main.js": "/static/js/main.6e4fbbcf.js",
+    "main.css": "/static/css/main.6f0dcb58.css",
+    "main.js": "/static/js/main.564eb645.js",
     "static/js/787.2c1cee2b.chunk.js": "/static/js/787.2c1cee2b.chunk.js",
     "static/media/20221201_192840.jpg": "/static/media/20221201_192840.44e87a4f471e12289cb9.jpg",
     "static/media/20221201_193342.jpg": "/static/media/20221201_193342.d962a0288164a2f624e1.jpg",
@@ -23,6 +23,7 @@
     "static/media/2ndplane.JPG": "/static/media/2ndplane.51e374a8b18404713f15.JPG",
     "static/media/IMG_5826.PNG": "/static/media/IMG_5826.588a69fb95906156f7d8.PNG",
     "static/media/1stplane.JPG": "/static/media/1stplane.c428189c08468abf40dc.JPG",
+    "static/media/IMG_2334.jpeg": "/static/media/IMG_2334.437dc735a93eba6bba25.jpeg",
     "static/media/IMG_0197.JPG": "/static/media/IMG_0197.4b4ef05cb6b2498df22d.JPG",
     "static/media/IMG_0072.jpg": "/static/media/IMG_0072.7cbc80cc010ec2985b42.jpg",
     "static/media/IMG_0588.jpeg": "/static/media/IMG_0588.65d25e6a7cc434f21ba4.jpeg",
@@ -38,6 +39,7 @@
     "static/media/Screenshot3.png": "/static/media/Screenshot3.b7d9a9966032ae970730.png",
     "static/media/robbie_standing.png": "/static/media/robbie_standing.7420f0b25d55794c2d0f.png",
     "static/media/latest1.jpeg": "/static/media/latest1.67a5578e6bdb3646f203.jpeg",
+    "static/media/nv1.jpg": "/static/media/nv1.4ca0e6a463d31aedef48.jpg",
     "static/media/IMG_6923.jpeg": "/static/media/IMG_6923.ed6eb4465aaf4acd17c8.jpeg",
     "static/media/robbie9_2024-side.png": "/static/media/robbie9_2024-side.fc70d9ed087a8c6aeadc.png",
     "static/media/Screenshot 2024-01-29 133339.png": "/static/media/Screenshot 2024-01-29 133339.75fa123cad19986ca8e5.png",
@@ -48,6 +50,7 @@
     "static/media/IMG_8106.jpeg": "/static/media/IMG_8106.fa04aefbe88744c66748.jpeg",
     "static/media/IMG_3525.jpeg": "/static/media/IMG_3525.e0c48a9f18f3156bbdb8.jpeg",
     "static/media/robbie9_2024-front2.png": "/static/media/robbie9_2024-front2.b0cf0d3a9ff2ce464432.png",
+    "static/media/IMG_2453.jpeg": "/static/media/IMG_2453.a861ace9af71da32a9bb.jpeg",
     "static/media/IMG_1418.jpeg": "/static/media/IMG_1418.f21236f8c66487f43548.jpeg",
     "static/media/axy_main_page.png": "/static/media/axy_main_page.ae176240d1d352be4bf9.png",
     "static/media/OpenMV Cam on Robot.jpeg": "/static/media/OpenMV Cam on Robot.f0cc531fa6d21d8f0205.jpeg",
@@ -88,12 +91,12 @@
     "static/media/profile.jpeg": "/static/media/profile.74f57c1a5026ecee3cee.jpeg",
     "index.html": "/index.html",
     "static/media/arrow-down-3101.svg": "/static/media/arrow-down-3101.3a8a028c4b1d2a81744064bf430e899a.svg",
-    "main.02dc4f38.css.map": "/static/css/main.02dc4f38.css.map",
-    "main.6e4fbbcf.js.map": "/static/js/main.6e4fbbcf.js.map",
+    "main.6f0dcb58.css.map": "/static/css/main.6f0dcb58.css.map",
+    "main.564eb645.js.map": "/static/js/main.564eb645.js.map",
     "787.2c1cee2b.chunk.js.map": "/static/js/787.2c1cee2b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.02dc4f38.css",
-    "static/js/main.6e4fbbcf.js"
+    "static/css/main.6f0dcb58.css",
+    "static/js/main.564eb645.js"
   ]
 }
