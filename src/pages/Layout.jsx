@@ -69,6 +69,9 @@ const Layout = () => {
               <NavDropdown.Item href="/#/envgo">
                 <span className={styles.tab}>Autonomous Boat ENVGO</span>
               </NavDropdown.Item>
+              <NavDropdown.Item href="/#/watonomous">
+                <span className={styles.tab}>Autonomous Car Watonomous</span>
+              </NavDropdown.Item>
               <NavDropdown.Item href="/#/calhacks">
                 <span className={styles.tab}>Cal Hacks</span>
               </NavDropdown.Item>

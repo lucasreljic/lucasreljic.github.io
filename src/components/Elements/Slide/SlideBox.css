@@ -693,3 +693,57 @@ Hackmit
     background-size: contain;
     margin: auto;
 }
+
+.photowatonomous {
+    background-image: url('./photos/watonomous/IMG_6673.jpeg');
+    background-position: 35% 50%;
+    width: 100%;
+    max-width: 1500px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photowatonomous2 {
+    background-image: url('./photos/watonomous/IMG_1615.jpeg');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 600px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photowatonomous3 {
+    background-image: url('./photos/watonomous/IMG_1637.jpg');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 600px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photowatonomous4 {
+    background-image: url('./photos/watonomous/IMG_1642.jpeg');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 900px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photowatonomous5 {
+    background-image: url('./photos/watonomous/segmentation.jpg');
+    background-position: 0% 50%;
+    width: 100%;
+    max-width: 1500px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photowatonomous6 {
+    background-image: url('./photos/watonomous/cropped_object_det.gif');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 1600px;
+    background-size: contain;
+    margin: auto;
+}

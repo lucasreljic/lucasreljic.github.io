@@ -7,7 +7,7 @@ import NoPage from "./pages/NoPage";
 import Layout from "./pages/Layout";
 import Home from './pages/Home';
 import ScrollToTop from './ScrollToTop';
-import { Roots2stem, FRC4627, FRC5078, Toyota, UofTHacks, Toyota2023, Hackthe6ix, UofTHacksXI, MakeUofT, GoodlabsRobot, GoodlabsRL, HackMIT, CalHacks, Envgo } from "./pages/Experiences";
+import { Roots2stem, FRC4627, FRC5078, Toyota, UofTHacks, Toyota2023, Hackthe6ix, UofTHacksXI, MakeUofT, GoodlabsRobot, GoodlabsRL, HackMIT, CalHacks, Envgo, Watonomous} from "./pages/Experiences";
 import { Gokart, Plant, Sanitizer, Project1a, PiLaptop, Marketalarm, RCplanes, Openmv } from "./pages/Projects";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -43,6 +43,7 @@ root.render(
           <Route path="hackmit" element={<HackMIT />} />
           <Route path="calhacks" element={<CalHacks />} />
           <Route path="envgo" element={<Envgo />} />
+          <Route path="watonomous" element={<Watonomous />} />
           
           
           <Route path="*" element={<NoPage />} />
