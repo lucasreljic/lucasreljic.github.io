@@ -666,3 +666,30 @@ Hackmit
     background-size: contain;
     margin: auto;
 }
+
+.photoenvgo {
+    background-image: url('./photos/envgo/nv1.jpg');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 1200px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photoenvgo2 {
+    background-image: url('./photos/envgo/IMG_2334.jpeg');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 600px;
+    background-size: contain;
+    margin: auto;
+}
+
+.photoenvgo3 {
+    background-image: url('./photos/envgo/IMG_2453.jpeg');
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 500px;
+    background-size: contain;
+    margin: auto;
+}

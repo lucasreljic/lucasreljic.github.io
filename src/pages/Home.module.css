@@ -76,6 +76,13 @@ li{
   width: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+  .timeline_container {
+    opacity: 0.0;
+      height: 2rem;
+  }
+}
+
 .timeline {
   position: relative;
   padding: 0;
@@ -179,6 +186,7 @@ li{
 
 .goodlabsIcon{
   width: 13rem;
+  filter: grayscale(100%);
   transition: transform 0.5s; /* Apply transition to the transform property */
 }
 

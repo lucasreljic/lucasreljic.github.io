@@ -21,6 +21,7 @@ import rocketryPhoto from "./../icons/rocketry.png";
 // import uwaterlooPhoto from "./../icons/University_of_Waterloo.svg.png";
 import goodlabsPhoto from "./../icons/goodlabs.png";
 import watoPhoto from "./../icons/wato_icon.jpeg";
+import envgoPhoto from "./../icons/envgo_logo2.jpeg";
 
 
 //images
@@ -56,7 +57,7 @@ export default function Home() {
             LUCAS RELJIC-DUMONT
           </Fade>
         </h1>
-        <Row className={styles.iconbox} xl={4} lg={2} sm={2} xs={2}>
+        <Row className={styles.iconbox} xl={5} lg={2} sm={2} xs={2}>
           <Col>
             <AttentionSeeker effect="pulse" delay={3500} duration={1500}>
               <IconBox className={styles.frcIcon} link="/frc4627" url={frcPhoto}></IconBox>
@@ -89,6 +90,15 @@ export default function Home() {
               ></IconBox>
             </AttentionSeeker>
           </Col>
+          <Col>
+            <AttentionSeeker effect="pulse" delay={200} duration={1500}>
+              <IconBox
+                className={styles.watoIcon}
+                url={envgoPhoto}
+                link="/envgo"
+              ></IconBox>
+            </AttentionSeeker>
+          </Col>
         </Row>
         <Row>
           <div className={styles.timeline_container}>
@@ -101,10 +111,13 @@ export default function Home() {
                   <span className={styles.timeline_date}>Jan. 2023 - Aug. 2023</span>
                 </div>
                 <div className={styles.timeline_content}>
-                  <span className={styles.timeline_date}>May 2023 - Present</span>
+                  <span className={styles.timeline_date}>May 2023 - Dec. 2024</span>
                 </div>
                 <div className={styles.timeline_content}>
                   <span className={styles.timeline_date}>Feb. 2024 - Present</span>
+                </div>
+                <div className={styles.timeline_content}>
+                  <span className={styles.timeline_date}>May. 2025 - Present</span>
                 </div>
               </div>
               {/* Add more timeline items as needed */}
@@ -133,7 +146,7 @@ export default function Home() {
           showcased on this website. My journey towards an engineering degree has been shaped by 
           diverse experiences prior to university, such as being a <Link to="frc4627">First Robotics Team Captain</Link> and 
           a member of a <Link to="/roots2stem">Junior Engineering Club</Link>. Furthermore, I continue to enhance my skills 
-          through dynamic, innovation-driven internships, like my recent experience at <Link to="/goodlabsrobotics">GoodLabs Studio</Link>
+          through dynamic, innovation-driven internships, like my recent experience at <Link to="/envgo">ENVGO</Link>
         </Text>
         <Slide delay={4000} duration={1000} direction="down" triggerOnce={true}>
           <Fade delay={3500} duration={3000} triggerOnce={true}>

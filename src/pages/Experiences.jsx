@@ -5,6 +5,43 @@ import Text from "../components/Elements/Text/Text";
 import styles from "./Experiences.module.css";
 import YoutubeEmbed from "../components/Elements/Other/YoutubeEmbed";
 
+const Envgo = () => {
+  return (
+    <Container fluid>
+      <h1 id="envgo">Autonomy Software Development @ ENVGO</h1>
+      <h2>Summer 2025</h2>
+      <Slide>
+        <SlideBox photo="photoenvgo">NV1 - Hydrofoiling boat</SlideBox>
+        <SlideBox photo="photoenvgo3">A demo event for the NV1</SlideBox>
+        <SlideBox photo="photoenvgo2">Test ride on the NV1</SlideBox>
+
+
+      </Slide>
+      <br></br>
+      <Text>
+        - Designed and implemented a multi-sensor autonomy pipeline integrating cameras and radar for an hydrofoiling electric boat, establishing the company’s first perception system from scratch.
+        <br></br><br></br>- Developed a ROS 2 C++ perception node with a semantic segmentation model for free-space detection, training on both open-source datasets and custom-labeled data (generated via a slower baseline model), and optimized inference to 100 FPS on Jetson Orin using TensorRT batching and CUDA kernels.
+        <br></br><br></br>- Built customer-facing situational awareness features (surround view, front/back view) with real-time video streaming through WebRTC and Jetson-optimized GStreamer pipelines.
+      </Text>
+      <Text>
+      At ENVGO, I worked in a fast-paced startup environment where I helped establish the foundation of the company’s autonomy efforts for a hydrofoiling electric boat. 
+      I designed the architecture for the perception pipeline and implemented its first ROS 2 C++ node, focused on free-space detection. This node leveraged a semantic segmentation model trained on a mix of open-source datasets and custom-labeled data generated from a baseline system. 
+      To meet real-time performance requirements, I optimized inference to run at 100 FPS on NVIDIA Jetson Orin using TensorRT batching and custom CUDA kernels. 
+      This laid the groundwork for a scalable, multi-node perception system integrating cameras and marine radar for reliable situational awareness.
+    <br></br><br></br>
+      In parallel with the autonomy research, I also developed customer-facing features to demonstrate immediate value. 
+      These included real-time situational awareness tools such as surround view and front/back camera feeds, implemented through low-latency WebRTC streaming with Jetson-optimized GStreamer pipelines. 
+      Balancing R&D with customer-focused development was key in a startup setting, where rapid iteration and demonstrable progress are critical.
+<br></br><br></br>
+      Beyond building the first node, I continue to provide autonomy consultation to ENVGO as they expand the perception stack and implement the full autonomy pipeline. 
+      This role allowed me to contribute both technically and strategically, designing the core architecture, delivering features to customers, and guiding the company’s broader autonomy roadmap.
+      </Text>
+
+      <br></br>
+    </Container>
+  );
+};
+
 const CalHacks = () => {
   return (
     <Container fluid>
@@ -484,5 +521,6 @@ export {
   GoodlabsRobot,
   GoodlabsRL,
   HackMIT,
-  CalHacks
+  CalHacks,
+  Envgo
 };
